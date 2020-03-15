@@ -703,7 +703,7 @@ module.exports = {
        </div>
        </div>
        <p id = "up" class="w3-large w3-center w3-padding-16">최종 업데이트(외교부 최종 발표): ${worldT}</p>
-       ${gp}
+
        <div id="info-box"></div>
 
          <?xml version="1.0"?>
@@ -905,7 +905,8 @@ module.exports = {
        </script>
 
        </div>
-
+<h2 style="margin-top:200px"></h2>
+         ${gp}
        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
        <div class="w3-quarter w3-section">
        <span class="w3-xlarge">${globePatients.cn}</span><br>
