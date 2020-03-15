@@ -58,9 +58,9 @@ app.get('/china/china.js', function(req, res) {
 });
 var gp;
 app.get('/',function(req, res) {
-  let rawdat1a = fs.readFileSync('./china/chinaDB.json');
+  let rawdat1a = fs.readFileSync(path.join(__dirname + ('./china/chinaDB.json')));
   let chinaDB = JSON.parse(rawdat1a);
-  let currency = fs.readFileSync('./data/patientdb.json');
+  let currency = fs.readFileSync(path.join(__dirname + ('./data/patientdb.json')));
   let cData = JSON.parse(currency);
   var patientstr= "|";
   var globePatients = cData.globe;
@@ -80,7 +80,7 @@ app.get('/',function(req, res) {
   }
   str= str.slice(0,str.length-1) + "}"
   let stat = a[1];
-      fs.readFile('./data/globeP.html', function read(err, data) {
+      fs.readFile(path.join(__dirname + ('./data/globeP.html'))), function read(err, data) {
           if (err) {
               throw err;
           }
