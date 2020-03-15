@@ -1,0 +1,1090 @@
+{
+  "0":{
+    "GL": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "CA": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "US": {
+      "color": 1,
+      "banDetail": "",
+      "website": "https://kr.usembassy.gov/ko/"
+    },
+    "MX": {
+      "color": 2,
+      "banDetail": "한국 방문한 내외국인 의료문진 실시(2.28)",
+      "website": "http://overseas.mofa.go.kr/mx-ko/index.do"
+    },
+    "CU": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "BS": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "JM": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.27)",
+      "website": "http://overseas.mofa.go.kr/jm-ko/index.do"
+    },
+    "HT": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "DO": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "PR": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "KN": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AG": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "GP": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "DM": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "LC": {
+      "color": 3,
+      "banDetail": "한국을 방문한 외국인 14일 격리(2.26)",
+      "website": ""
+    },
+    "VC": {
+      "color": 3,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일 격리(2.26)",
+      "website": ""
+    },
+    "GD": {
+      "color": 3,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일 격리(3.7)",
+      "website": ""
+    },
+    "BB": {
+      "color": 2,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일 자가격리",
+      "website": ""
+    },
+    "GT": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "BZ": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "SV": {
+      "color": 5,
+      "banDetail": "입국 전 30일 이내 한국을 방문한 외국인 입국 금지(2.26)",
+      "website": "http://overseas.mofa.go.kr/sv-ko/index.do"
+    },
+    "HN": {
+      "color": 2,
+      "banDetail":
+      "입국 전 한국 방문한 외국인 발열검사 실시---검역검진서 작성---14일간 자가격리(2.20)",
+      "website": "http://overseas.mofa.go.kr/hn-ko/index.do"
+    },
+    "NI": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "CR": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 발열검사 실시 후 입국 허가(2.29)",
+      "website": "http://overseas.mofa.go.kr/cr-ko/index.do"
+    },
+    "PA": {
+      "color": 2,
+      "banDetail":
+        "입국 전 30일 이내 한국을 방문한 외국인 문진 실시---검역검진서 작성---14일간 자가격리(2.27)",
+      "website": "http://overseas.mofa.go.kr/pa-ko/index.do"
+    },
+    "TT": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.27)",
+      "website": "http://overseas.mofa.go.kr/tt-ko/index.do"
+    },
+    "KY": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "TC": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "VG": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AI": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "MS": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "VI": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "MQ": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "SR": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "GY": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "VE": {
+      "color": 2,
+      "banDetail": "입국 전 한국을 방문한 외국인 발열 검사---검역 신고서 작성(2.27)",
+      "website": "http://overseas.mofa.go.kr/ve-ko/index.do"
+    },
+    "CO": {
+      "color": 2,
+      "banDetail": "입국 전 한국을 방문한 외국인 문진 실시(2.24)",
+      "website": "http://overseas.mofa.go.kr/co-ko/index.do"
+    },
+    "BR": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "PY": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 보건당국의 인터뷰 실시---14일간 자가격리(2.29)",
+      "website": "http://overseas.mofa.go.kr/py-ko/index.do"
+    },
+    "EC": {
+      "color": 2,
+      "banDetail":
+        "입국 전 한국을 방문한 외국인 발열검사 실시---14일간 자가격리(3.5)",
+      "website": "http://overseas.mofa.go.kr/ec-ko/index.do"
+    },
+    "PE": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "BO": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "CL": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AR": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "UY": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "FK": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "GF": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "KR": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "KP": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "JP": {
+      "color": 5,
+      "banDetail":
+        "입국 전 14일 이내 대구.청도 방문한 외국인 입국 금지(2.27)---단수‧복수 사증 효력 정지---한국 방문한 외국인 격리(3.9)",
+      "website": "https://www.kr.emb-japan.go.jp/itprtop_ko/index.html"
+    },
+    "MN": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.26)",
+      "website": "http://overseas.mofa.go.kr/mn-ko/index.do"
+    },
+    "CN": {
+      "color": 4,
+      "banDetail": "성 마다 다름 (이건 따로 정리를 하자 중국 지도에)",
+      "website": "http://kr.china-embassy.org/kor/"
+    },
+    "TW": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 14일간 자가격리(2.25)",
+      "website": "http://overseas.mofa.go.kr/tw-ko/index.do"
+    },
+    "MO": {
+      "color": 3,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 격리(2.26)",
+      "website": ""
+    },
+    "HK": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.25)",
+      "website": "http://overseas.mofa.go.kr/hk-ko/index.do"
+    },
+    "BN": {
+      "color": 2,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일간 자가격리(2.27)",
+      "website": "http://overseas.mofa.go.kr/bn-ko/index.do"
+    },
+    "ID": {
+      "color": 4,
+      "banDetail": "3.8 이후 입국 전 14일 이내 대국.경북 방문한 외국인 입국 금지(2.28)",
+      "website": "http://overseas.mofa.go.kr/id-ko/index.do"
+    },
+    "KH": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "LA": {
+      "color": 2,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 검역신고서 작성 의무화(2.27)",
+      "website": "http://overseas.mofa.go.kr/la-ko/index.do"
+    },
+    "MY": {
+      "color": 4,
+      "banDetail": "입국 전 14일 이내 대구.청도 방문한 외국인 입국 금지(2.28)",
+      "website": "http://overseas.mofa.go.kr/my-ko/index.do"
+    },
+    "MM": {
+      "color": 4,
+      "banDetail": "3.7 이후 대구․경북 방문한 외국인 입국금지(3.6.)",
+      "website": "http://overseas.mofa.go.kr/mm-ko/index.do"
+    },
+    "PH": {
+      "color": 4,
+      "banDetail": "대구.경북 방문한 외국인 입국 금지(2.26)",
+      "website": "http://overseas.mofa.go.kr/ph-ko/index.do"
+    },
+    "SG": {
+      "color": 5,
+      "banDetail": "3.5 이후 입국 전 14일 이내 한국을 방문한 외국인 입국 금지(3.3)",
+      "website": "http://overseas.mofa.go.kr/sg-ko/index.do"
+    },
+    "TH": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 14일간 자가격리(2.23)",
+      "website": "http://www.thaiembassy.org/seoul/ko/"
+    },
+    "TL": {
+      "color": "",
+      "banDetail": "",
+      "website": ""
+    },
+    "VN": {
+      "color": 3,
+      "banDetail": "한국을 방문한 외국인 14일 격리(2.29)",
+      "website": "http://overseas.mofa.go.kr/vn-ko/index.do"
+    },
+    "NP": {
+      "color": 5,
+      "banDetail": "3.10 이후 한국을 방문한 외국인 도착 비자발급 중단(3.3)",
+      "website": "http://overseas.mofa.go.kr/np-ko/index.do"
+    },
+    "MV": {
+      "color": 4,
+      "banDetail": "입국 전 14일 이내 대구.경북.경남.부산 방문한 외국인 입국 금지(3.2)",
+      "website": ""
+    },
+    "BD": {
+      "color": 5,
+      "banDetail": "한국인에 대한 도착비자 발급 중단(3.4)",
+      "website": "http://overseas.mofa.go.kr/bd-ko/index.do"
+    },
+    "BT": {
+      "color": 5,
+      "banDetail": "3.6.부터 향후 2주간 모든 외국인 대상 입국금지(3.6.)",
+      "website": ""
+    },
+    "LK": {
+      "color": 3,
+      "banDetail": "3.9부터 입국 전 14일 이내 한국을 방문한 외국인 격리(3.8)",
+      "website": "http://overseas.mofa.go.kr/lk-ko/index.do"
+    },
+    "IN": {
+      "color": 2,
+      "banDetail":
+        "3.3 이전 발급된 비자 무력화---신규비자 발급 필요",
+      "website": "http://overseas.mofa.go.kr/in-ko/index.do"
+    },
+    "PK": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "IR": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AF": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "UZ": {
+      "color": 3,
+      "banDetail":
+        "3.1 이후 한국 방문한 외국인 14일 격리---격리해제 후 전화 문진(3.4)",
+      "website": "http://overseas.mofa.go.kr/uz-ko/index.do"
+    },
+    "KZ": {
+      "color": 5,
+      "banDetail": "3.8 이후 한국을 방문한 외국인 입국 금지(3.5)",
+      "website": "http://overseas.mofa.go.kr/kz-ko/index.do"
+    },
+    "KG": {
+      "color": 5,
+      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(3.1)",
+      "website": "http://overseas.mofa.go.kr/kg-ko/index.do"
+    },
+    "TJ": {
+      "color": 3,
+      "banDetail": "한국을 방문한 외국인 격리(2.25)",
+      "website": "http://overseas.mofa.go.kr/tj-ko/index.do"
+    },
+    "TM": {
+      "color": 3,
+      "banDetail": "모든 외국인 입국 후 최대 24일 격리(2.28)",
+      "website": "http://overseas.mofa.go.kr/tm-ko/index.do"
+    },
+    "LB": {
+      "color": 5,
+      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(2.28)",
+      "website": "http://overseas.mofa.go.kr/lb-ko/index.do"
+    },
+    "BH": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.21)",
+      "website": "http://overseas.mofa.go.kr/bh-ko/index.do"
+    },
+    "SA": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(3.8)",
+      "website": "http://overseas.mofa.go.kr/sa-ko/index.do"
+    },
+    "SY": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AE": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AM": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AZ": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 발열검사 실시(2.28)",
+      "website": "http://overseas.mofa.go.kr/az-ko/index.do"
+    },
+    "YE": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "OM": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(3.8)",
+      "website": "http://overseas.mofa.go.kr/om-ko/index.do"
+    },
+    "JO": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.23)",
+      "website": "http://overseas.mofa.go.kr/jo-ko/index.do"
+    },
+    "IQ": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.25)",
+      "website": "http://overseas.mofa.go.kr/iq-ko/index.do"
+    },
+    "IL": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.24)",
+      "website": "https://embassies.gov.il/seoul/Pages/default.aspx"
+    },
+    "QA": {
+      "color": 5,
+      "banDetail": "입국 전 1달 이내 한국을 방문한 외국인 입국 금지(3.2)",
+      "website": "http://overseas.mofa.go.kr/qa-ko/index.do"
+    },
+    "KW": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.25)",
+      "website": "http://overseas.mofa.go.kr/kw-ko/index.do"
+    },
+    "CY": {
+      "color": 2,
+      "banDetail": "입국 전 15일 이내 한국을 방문한 외국인 자가격리(2.28)",
+      "website": ""
+    },
+    "TR": {
+      "color": 5,
+      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(3.1)",
+      "website": "http://overseas.mofa.go.kr/tr-ko/index.do"
+    },
+    "PS": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.26)",
+      "website": "http://overseas.mofa.go.kr/ps-ko/index.do"
+    },
+    "GS": {
+      "color": 2,
+      "banDetail":
+        "입국 전 21일 이내 한국을 방문한 외국인 검역---면담 실시(2.28.)",
+      "website": "http://overseas.mofa.go.kr/ge-ko/index.do"
+    },
+    "DJ": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "ER": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "ET": {
+      "color": 2,
+      "banDetail":
+        "한국을 방문한 외국인 14일간 자가격리---전화 모니타링(2.18)---건강신고서 작성(3.2)",
+      "website": "http://overseas.mofa.go.kr/et-ko/index.do"
+    },
+    "KE": {
+      "color": 2,
+      "banDetail": "입국 전 14일이내 한국을 방문한 외국인 14일간 자가격리(2.27)",
+      "website": "http://overseas.mofa.go.kr/ke-ko/index.do"
+    },
+    "SC": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.25)",
+      "website": ""
+    },
+    "SO": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "TZ": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "CF": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "CD": {
+      "color": 2,
+      "banDetail":
+        "한국을 방문한 외국인 발열 검사 실시---검역신고서 작성(3.2)",
+      "website": "http://overseas.mofa.go.kr/cd-ko/index.do"
+    },
+    "UG": {
+      "color": 2,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일간 자가격리(2.27)",
+      "website": "http://overseas.mofa.go.kr/ug-ko/index.do"
+    },
+    "BI": {
+      "color": 3,
+      "banDetail": "한국을 방문한 외국인 14일 간 격리(3.5)",
+      "website": ""
+    },
+    "RW": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "SS": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "BJ": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "BF": {
+      "color": 2,
+      "banDetail": "모든 외국인 발열검사 실시(3.5)",
+      "website": ""
+    },
+    "CV": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "TD": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "CI": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "GM": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "GH": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "GN": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "GW": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "LR": {
+      "color": 3,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 후 격리(3.2)",
+      "website": ""
+    },
+    "ML": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "MR": {
+      "color": 3,
+      "banDetail": "한국 방문한 외국인 14일간 격리(3.3)",
+      "website": ""
+    },
+    "NE": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "NG": {
+      "color": 2,
+      "banDetail": "한국 방문한 외국인 14일간 자가격리(2.27)",
+      "website": "http://overseas.mofa.go.kr/ng-ko/index.do"
+    },
+    "SN": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "SL": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "TG": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "CG": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 발열검사 실시(3.6)",
+      "website": ""
+    },
+    "GQ": {
+      "color": 5,
+      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(2.26)",
+      "website": "http://overseas.mofa.go.kr/gq-ko/index.do"
+    },
+    "GA": {
+      "color": 3,
+      "banDetail": "한국을 방문한 외국인 입국 후 14일 격리(2.29)",
+      "website": "http://overseas.mofa.go.kr/ga-ko/index.do"
+    },
+    "CM": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "ST": {
+      "color": 5,
+      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(3.4)",
+      "website": ""
+    },
+    "DZ": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "EG": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "LY": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "MA": {
+      "color": 2,
+      "banDetail":
+        "한국을 방문한 외국인 입국심사---발열검사(2.29)",
+      "website": "http://overseas.mofa.go.kr/ma-ko/index.do"
+    },
+    "TN": {
+      "color": 2,
+      "banDetail":
+        "모든 외국인 발열 검사---검열신고서 작성(2.25)",
+      "website": "http://overseas.mofa.go.kr/tn-ko/index.do"
+    },
+    "EH": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AO": {
+      "color": 5,
+      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(2.29)",
+      "website": "http://overseas.mofa.go.kr/ao-ko/index.do"
+    },
+    "BW": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "SZ": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "LS": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "MG": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.28)",
+      "website": "http://overseas.mofa.go.kr/mg-ko/index.do"
+    },
+    "MW": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 14일간 자가격리(2.28)",
+      "website": ""
+    },
+    "MU": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.24)",
+      "website": ""
+    },
+    "MZ": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 14일간 자가격리(3.3)",
+      "website": "http://overseas.mofa.go.kr/mz-ko/index.do"
+    },
+    "NA": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "ZA": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "ZM": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 14일간 자가격리(2.26)",
+      "website": ""
+    },
+    "ZW": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 입국시 검사",
+      "website": "http://overseas.mofa.go.kr/zw-ko/index.do"
+    },
+    "PT": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "MT": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 14일간 자가격리(3.4)",
+      "website": ""
+    },
+    "ES": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "SM": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "VA": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "RS": {
+      "color": 2,
+      "banDetail":
+        "한국을 방문한 외국인 발열검사 실시---14일간 자가격리(2.27)",
+      "website": "http://overseas.mofa.go.kr/rs-ko/index.do"
+    },
+    "ME": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "SI": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "GR": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "BA": {
+      "color": 2,
+      "banDetail":
+        "입국 전 한국 방문한 외국인 발열검사 실시---검역검진서 작성(3.4)",
+      "website": ""
+    },
+    "MK": {
+      "color": 2,
+      "banDetail": "입국 전 14일 이내 한국 방문한 외국인 자가격리(2.27)",
+      "website": ""
+    },
+    "AL": {
+      "color": 2,
+      "banDetail": "입국 전 한국 방문한 외국인 14일간 자가격리(2.28)",
+      "website": ""
+    },
+    "HR": {
+      "color": 2,
+      "banDetail": "입국 전 14일 이내 한국 방문한 외국인 검역 및 14일간 건강상태 통보(2.29)",
+      "website": "http://overseas.mofa.go.kr/hr-ko/index.do"
+    },
+    "IT": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "IS": {
+      "color": 2,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 자가격리(2.26)",
+      "website": ""
+    },
+    "GB": {
+      "color": 2,
+      "banDetail": "2.19 이후 한국을 방문한 외국인 자가격리 및 부건의료서비스에 통보(2.25)",
+      "website": "http://overseas.mofa.go.kr/gb-ko/index.do"
+    },
+    "IE": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "DK": {
+      "color": 1,
+      "banDetail":
+        "대구.경북 방문한 외국인 발열검사 실시---검역검진서 작성---14일간 자가격리(3.2)",
+      "website": "https://sydkorea.um.dk/ko/"
+    },
+    "FI": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "NO": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "SE": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "EE": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "LV": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "LT": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "RU": {
+      "color": 2,
+      "banDetail":
+        "한국을 방문한 외국인 발열검사 실시---연락처 확보---14일간 자가격리(3.3)",
+      "website": "http://overseas.mofa.go.kr/ru-ko/index.do"
+    },
+    "RO": {
+      "color": 3,
+      "banDetail": "대구.청도 방문한 외국인 입국 후 14일 격리(3.2)",
+      "website": "http://overseas.mofa.go.kr/ro-ko/index.do"
+    },
+    "MD": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "BY": {
+      "color": 3,
+      "banDetail": "한국을 방문한 외국인 14일간 격리(2.25)",
+      "website": "http://overseas.mofa.go.kr/by-ko/index.do"
+    },
+    "BG": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 14일간 자가격리(2.24)",
+      "website": "http://overseas.mofa.go.kr/bg-ko/index.do"
+    },
+    "SK": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "UA": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "CZ": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "PL": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "HU": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "FR": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "LU": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "BE": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "NL": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "DE": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "CH": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AD": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "MC": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "AT": {
+      "color": 2,
+      "banDetail": "한국을 방문한 외국인 음성 판정서 필수(3.6)",
+      "website": "https://www.bmeia.gv.at/ko/oeb-seoul/"
+    },
+    "LI": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "GU": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "NR": {
+      "color": 5,
+      "banDetail": "입국 전 21일 이내 한국을 방문한 외국인 입국 금지(3.3)",
+      "website": ""
+    },
+    "NZ": {
+      "color": 2,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일간 자가격리(2.25)",
+      "website": "https://www.mfat.govt.nz/ko/countries-and-regions/north-asia/republic-of-korea-south/new-zealand-e"
+    },
+    "NU": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "MH": {
+      "color": 5,
+      "banDetail": "2019년 12월 31일 이후 한국을 방문한 외국인 입국 금지(2.28)",
+      "website": ""
+    },
+    "FM": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.24)",
+      "website": ""
+    },
+    "VU": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.28)",
+      "website": "http://www.searoadvmsl.com/front/phtml/sub01_05.php"
+    },
+    "MP": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "WS": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.19)",
+      "website": ""
+    },
+    "SB": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.25)",
+      "website": ""
+    },
+    "AU": {
+      "color": 5,
+      "banDetail": "(3.5~3.11)간 입국 전 14일 이내 한국을 방문한 외국인 입국 금지(3.5)",
+      "website": "https://southkorea.embassy.gov.au/seolkorean/home.html"
+    },
+    "CK": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.27)",
+      "website": ""
+    },
+    "KI": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.11)",
+      "website": ""
+    },
+    "TO": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "TV": {
+      "color": 5,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.24)",
+      "website": ""
+    },
+    "PG": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "PW": {
+      "color": 1,
+      "banDetail": "",
+      "website": ""
+    },
+    "FJ": {
+      "color": 5,
+      "banDetail": "3.7 이후 한국 방문한 외국인 입국 금지(3.6)",
+      "website": "http://overseas.mofa.go.kr/fj-ko/index.do"
+    },
+    "PF": {
+      "color": 2,
+      "banDetail":
+        "입국 전 검역설문지 작성---미감염 증명하는 의료소견서 제출(2.27)",
+      "website": ""
+    }
+  }
+}

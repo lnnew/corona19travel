@@ -1,0 +1,292 @@
+<style>
+    table, td {
+    	color: #000;
+    	font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif
+    }
+
+    /* end basic styling                                 */
+
+    /* define height and width of scrollable area. Add 16px to width for scrollbar          */
+    div.tableContainer {
+    	clear: both;
+    	border: 1px solid #963;
+    	height: 285px;
+    	overflow: auto;
+    	width: 900px
+    }
+
+    /* Reset overflow value to hidden for all non-IE browsers. */
+    html>body div.tableContainer {
+    	overflow: hidden;
+    	width: 900px
+    }
+
+    /* define width of table. IE browsers only                 */
+    div.tableContainer table {
+    	float: left;
+    	/* width: 740px */
+    }
+
+    /* define width of table. Add 16px to width for scrollbar.           */
+    /* All other non-IE browsers.                                        */
+    html>body div.tableContainer table {
+    	/* width: 756px */
+    }
+
+    /* set table header to a fixed position. WinIE 6.x only                                       */
+    /* In WinIE 6.x, any element with a position property set to relative and is a child of       */
+    /* an element that has an overflow property set, the relative value translates into fixed.    */
+    /* Ex: parent element DIV with a class of tableContainer has an overflow property set to auto */
+
+    thead.fixedHeader tr {
+    	position: relative;
+    }
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    #customers td {
+      width: 50%;
+    }
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+    #customers tr:hover {background-color: #ddd;}
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #1abc9c;
+      color: white;
+    }
+    /* set THEAD element to have block level attributes. All other non-IE browsers            */
+    /* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+
+    /* make the TH elements pretty */
+    thead.fixedHeader th {
+    	background: #C96;
+    	border-left: 1px solid #EB8;
+    	border-right: 1px solid #B74;
+    	border-top: 1px solid #EB8;
+    	font-weight: normal;
+    	padding: 4px 3px;
+    	text-align: left
+    }
+
+    html>body tbody.scrollContent {
+    	display: block;
+    	height: 262px;
+    	overflow: auto;
+    	width: 100%
+    }
+
+    html>body thead.fixedHeader {
+    	display: table;
+    	overflow: auto;
+    	width: 100%
+    }
+
+    /* make TD elements pretty. Provide alternating classes for striping the table */
+    /* http://www.alistapart.com/articles/zebratables/                             */
+    tbody.scrollContent td, tbody.scrollContent tr.normalRow td {
+    	background: #FFF;
+    	border-bottom: none;
+    	border-left: none;
+    	border-right: 1px solid #CCC;
+    	border-top: 1px solid #DDD;
+    	padding: 2px 3px 3px 4px
+    }
+
+
+
+    tbody.scrollContent tr.alternateRow td {
+
+    	background: #EEE;
+    	border-bottom: none;
+    	border-left: none;
+    	border-right: 1px solid #CCC;
+    	border-top: 1px solid #DDD;
+    	padding: 2px 3px 3px 4px
+    }
+        </style>
+    <table id="customers" align="center" class="scrollTable">
+								<h2 align="center"   id ="koreamap" class= "htag" style="margin-top:50px;"><i class="fa fa-th-list" style="color:#1abc9c"></i>국외 발생현황표 - 지역 및 국가, 확진환자 발생수(사망)으로 구성</h2>
+								<colgroup>
+									<col style="width: 30%">
+									<col style="width: 30%">
+									<col style="width: 40%">
+								</colgroup>
+								<thead class="fixedHeader">
+									<tr>
+										<th colspan="2" scope="col">지역 및 국가</th>
+										<th scope="col">환자발생 수 (사망)</th>
+									</tr>
+								</thead>
+								<tbody class="scrollContent">
+									<tr>
+										<th rowspan="23" scope="row">아시아</th>
+										<td class="w_bold">중국</td><td>80,844명(사망 3,199)</td>
+									</tr>
+<tr><td class="w_bold">홍콩</td><td>142명(사망 4)</td></tr>
+<tr><td class="w_bold">대만</td><td>53명(사망 1)</td></tr>
+<tr><td class="w_bold">마카오</td><td>10명</td></tr>
+<tr><td class="w_bold">일본</td><td>780명(사망 22)</td></tr>
+<tr><td class="w_bold">싱가포르</td><td>212명</td></tr>
+<tr><td class="w_bold">태국</td><td>75명(사망 1)</td></tr>
+<tr><td class="w_bold">말레이시아</td><td>197명</td></tr>
+<tr><td class="w_bold">베트남</td><td>48명</td></tr>
+<tr><td class="w_bold">인도</td><td>82명(사망 2)</td></tr>
+<tr><td class="w_bold">필리핀</td><td>64명(사망 1)</td></tr>
+<tr><td class="w_bold">캄보디아</td><td>7명</td></tr>
+<tr><td class="w_bold">네팔</td><td>1명</td></tr>
+<tr><td class="w_bold">러시아</td><td>34명</td></tr>
+<tr><td class="w_bold">스리랑카</td><td>6명</td></tr>
+<tr><td class="w_bold">아프가니스탄</td><td>10명</td></tr>
+<tr><td class="w_bold">파키스탄</td><td>28명</td></tr>
+<tr><td class="w_bold">인도네시아</td><td>69명(사망 3)</td></tr>
+<tr><td class="w_bold">부탄</td><td>1명</td></tr>
+<tr><td class="w_bold">몰디브</td><td>9명</td></tr>
+<tr><td class="w_bold">방글라데시</td><td>3명</td></tr>
+<tr><td class="w_bold">브루나이</td><td>25명</td></tr>
+<tr><td class="w_bold">몽골</td><td>1명</td></tr>
+									<tr>
+										<th rowspan="15" scope="row">중동</th>
+										<td class="w_bold">이란</td><td>12,729명(사망 611)</td>
+									</tr>
+<tr><td class="w_bold">쿠웨이트</td><td>104명</td></tr>
+<tr><td class="w_bold">바레인</td><td>211명</td></tr>
+<tr><td class="w_bold">아랍에미리트</td><td>85명</td></tr>
+<tr><td class="w_bold">이라크</td><td>85명(사망 9)</td></tr>
+<tr><td class="w_bold">오만</td><td>20명</td></tr>
+<tr><td class="w_bold">레바논</td><td>93명(사망 3)</td></tr>
+<tr><td class="w_bold">이스라엘</td><td>126명</td></tr>
+<tr><td class="w_bold">이집트</td><td>93명(사망 2)</td></tr>
+<tr><td class="w_bold">알제리</td><td>26명(사망 2)</td></tr>
+<tr><td class="w_bold">카타르</td><td>337명</td></tr>
+<tr><td class="w_bold">요르단</td><td>1명</td></tr>
+<tr><td class="w_bold">튀니지</td><td>16명</td></tr>
+<tr><td class="w_bold">사우디아라비아</td><td>86명</td></tr>
+<tr><td class="w_bold">모로코</td><td>17명(사망 1)</td></tr>
+
+									<tr>
+										<th rowspan="23" scope="row">아메리카</th>
+										<td class="w_bold">미국</td><td>2,726명(사망 54)</td>
+									</tr>
+<tr><td class="w_bold">캐나다</td><td>176명(사망 1)</td></tr>
+<tr><td class="w_bold">브라질</td><td>98명</td></tr>
+<tr><td class="w_bold">멕시코</td><td>26명</td></tr>
+<tr><td class="w_bold">에콰도르</td><td>23명</td></tr>
+<tr><td class="w_bold">도미니카공화국</td><td>5명</td></tr>
+<tr><td class="w_bold">아르헨티나</td><td>34명(사망 2)</td></tr>
+<tr><td class="w_bold">칠레</td><td>43명</td></tr>
+<tr><td class="w_bold">콜롬비아</td><td>16명</td></tr>
+<tr><td class="w_bold">페루</td><td>28명</td></tr>
+<tr><td class="w_bold">코스타리카</td><td>23명</td></tr>
+<tr><td class="w_bold">파라과이</td><td>8명</td></tr>
+<tr><td class="w_bold">파나마</td><td>27명(사망 1)</td></tr>
+<tr><td class="w_bold">볼리비아</td><td>3명</td></tr>
+<tr><td class="w_bold">자메이카</td><td>7명</td></tr>
+<tr><td class="w_bold">온두라스</td><td>2명</td></tr>
+<tr><td class="w_bold">세인트빈센트그레나딘</td><td>1명</td></tr>
+<tr><td class="w_bold">쿠바</td><td>4명</td></tr>
+<tr><td class="w_bold">가이아나</td><td>6명(사망 1)</td></tr>
+<tr><td class="w_bold">푸에르토리코</td><td>3명</td></tr>
+<tr><td class="w_bold">베네수엘라</td><td>2명</td></tr>
+<tr><td class="w_bold">앤티가바부다</td><td>1명</td></tr>
+<tr><td class="w_bold">트리니다드토바고</td><td>1명</td></tr>
+									<tr>
+										<th rowspan="46" scope="row">유럽</th>
+										<td class="w_bold">이탈리아</td><td>21,157명(사망 14,41)</td>
+									</tr>
+<tr><td class="w_bold">독일</td><td>3,795명(사망 8)</td></tr>
+<tr><td class="w_bold">프랑스</td><td>4,499명(사망 91)</td></tr>
+<tr><td class="w_bold">영국</td><td>1,140명(사망 21)</td></tr>
+<tr><td class="w_bold">스페인</td><td>5,753명(사망 136)</td></tr>
+<tr><td class="w_bold">오스트리아</td><td>504명(사망 1)</td></tr>
+<tr><td class="w_bold">크로아티아</td><td>31명</td></tr>
+<tr><td class="w_bold">핀란드</td><td>155명</td></tr>
+<tr><td class="w_bold">스웨덴</td><td>775명</td></tr>
+<tr><td class="w_bold">스위스</td><td>1,189명(사망 11)</td></tr>
+<tr><td class="w_bold">벨기에</td><td>559명(사망 3)</td></tr>
+<tr><td class="w_bold">덴마크</td><td>801명</td></tr>
+<tr><td class="w_bold">에스토니아</td><td>79명</td></tr>
+<tr><td class="w_bold">조지아</td><td>25명</td></tr>
+<tr><td class="w_bold">그리스</td><td>133명(사망 1)</td></tr>
+<tr><td class="w_bold">북마케도니아</td><td>9명</td></tr>
+<tr><td class="w_bold">노르웨이</td><td>750명(사망 1)</td></tr>
+<tr><td class="w_bold">루마니아</td><td>64명</td></tr>
+<tr><td class="w_bold">네덜란드</td><td>804명(사망 10)</td></tr>
+<tr><td class="w_bold">벨라루스</td><td>21명</td></tr>
+<tr><td class="w_bold">리투아니아</td><td>6명</td></tr>
+<tr><td class="w_bold">산마리노</td><td>77명(사망 5)</td></tr>
+<tr><td class="w_bold">아제르바이잔</td><td>11명</td></tr>
+<tr><td class="w_bold">아이슬란드</td><td>126명</td></tr>
+<tr><td class="w_bold">모나코</td><td>2명</td></tr>
+<tr><td class="w_bold">룩셈부르크</td><td>38명(사망 1)</td></tr>
+<tr><td class="w_bold">아르메니아</td><td>8명</td></tr>
+<tr><td class="w_bold">아일랜드</td><td>90명(사망 1)</td></tr>
+<tr><td class="w_bold">체코</td><td>150명</td></tr>
+<tr><td class="w_bold">포르투갈</td><td>112명</td></tr>
+<tr><td class="w_bold">라트비아</td><td>17명</td></tr>
+<tr><td class="w_bold">안도라</td><td>2명</td></tr>
+<tr><td class="w_bold">폴란드</td><td>64명</td></tr>
+<tr><td class="w_bold">우크라이나</td><td>3명(사망 1)</td></tr>
+<tr><td class="w_bold">헝가리</td><td>19명</td></tr>
+<tr><td class="w_bold">보스니아 헤르체고비나</td><td>13명</td></tr>
+<tr><td class="w_bold">슬로베니아</td><td>141명</td></tr>
+<tr><td class="w_bold">리히텐슈타인</td><td>4명</td></tr>
+<tr><td class="w_bold">세르비아</td><td>31명</td></tr>
+<tr><td class="w_bold">슬로바키아</td><td>32명</td></tr>
+<tr><td class="w_bold">불가리아</td><td>10명(사망 1)</td></tr>
+<tr><td class="w_bold">몰타</td><td>12명</td></tr>
+<tr><td class="w_bold">몰도바</td><td>8명</td></tr>
+<tr><td class="w_bold">알바니아</td><td>33명(사망 1)</td></tr>
+<tr><td class="w_bold">사이프러스</td><td>14명</td></tr>
+<tr><td class="w_bold">터키</td><td>5명</td></tr>
+									<tr>
+										<th rowspan="2" scope="row">오세아니아</th>
+										<td class="w_bold">호주</td><td>197명(사망 3)</td>
+									</tr>
+<tr><td class="w_bold">뉴질랜드</td><td>6명</td></tr>
+
+									<tr>
+										<th rowspan="14" scope="row">아프리카</th>
+										<td class="w_bold">나이지리아</td><td>2명</td>
+									</tr>
+<tr><td class="w_bold">세네갈</td><td>10명</td></tr>
+<tr><td class="w_bold">카메룬</td><td>2명</td></tr>
+<tr><td class="w_bold">남아프리카공화국</td><td>17명</td></tr>
+<tr><td class="w_bold">토고</td><td>1명</td></tr>
+<tr><td class="w_bold">부르키나파소</td><td>2명</td></tr>
+<tr><td class="w_bold">DR콩고</td><td>2명</td></tr>
+<tr><td class="w_bold">코트디부아르</td><td>1명</td></tr>
+<tr><td class="w_bold">수단</td><td>1명(사망 1)</td></tr>
+<tr><td class="w_bold">에티오피아</td><td>1명</td></tr>
+<tr><td class="w_bold">가봉</td><td>1명</td></tr>
+<tr><td class="w_bold">가나</td><td>1명</td></tr>
+<tr><td class="w_bold">기니</td><td>1명</td></tr>
+<tr><td class="w_bold">케냐</td><td>1명</td></tr>
+									<tr>
+										<th rowspan="15" scope="row">기타</th>
+										<td class="w_bold">일본 크루즈</td><td>706명(사망 7)</td>
+									</tr>
+<tr><td class="w_bold">팔레스타인 </td><td>38명</td></tr>
+<tr><td class="w_bold">지브롤터</td><td>1명</td></tr>
+<tr><td class="w_bold">세인트마틴</td><td>2명</td></tr>
+<tr><td class="w_bold">생바르텔레미</td><td>1명</td></tr>
+<tr><td class="w_bold">바티칸</td><td>1명</td></tr>
+<tr><td class="w_bold">마르티니크</td><td>6명</td></tr>
+<tr><td class="w_bold">프랑스령 기아나</td><td>6명</td></tr>
+<tr><td class="w_bold">패로제도</td><td>3명</td></tr>
+<tr><td class="w_bold">건지섬</td><td>1명</td></tr>
+<tr><td class="w_bold">프랑스령 폴리네시아</td><td>1명</td></tr>
+<tr><td class="w_bold">저지섬</td><td>2명</td></tr>
+<tr><td class="w_bold">프랑스령 레위니옹</td><td>3명</td></tr>
+<tr><td class="w_bold">과들루프</td><td>1명</td></tr>
+<tr><td class="w_bold">케이맨제도</td><td>1명</td></tr>
+									<tr>
+										<th colspan="2" scope="row">합계</th>
+										<td class="w_bold">144,283명(사망 5,665)</td>
+									</tr>
+								</tbody>
+								</table>

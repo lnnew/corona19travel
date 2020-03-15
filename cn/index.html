@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+  <script src="geo2rect.js"></script>
+  <script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 12px;
+      color: #696969;
+    }
+
+    path{
+      fill:transparent;
+      stroke:rgba(0,0,0,0.3);
+    }
+    #main {
+      justify-content: center;
+    }
+
+    #nav-container {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+    #title {
+      display: flex;
+      justify-content: center;
+    }
+    #toggle {
+      background: #ddd;
+      padding: 5px 10px;
+    }
+    .hidden {
+      display: none;
+		}
+		div.tooltip {
+      color: #222;
+      background: #fff;
+      border-radius: 3px;
+      box-shadow: 0px 0px 2px 0px #a6a6a6;
+      padding: .2em;
+      text-shadow: #f5f5f5 0 1px 0;
+      opacity: 0.9;
+      position: absolute;
+		}
+  </style>
+</head>
+
+<body>
+<div id="main">
+<h1 id="title">Population chinoise active III</h1>
+
+<div id="nav-container">
+  <div id="toggle">Toggle</div>
+</div>
+<div class="tooltip"></div>
+</div>
+  </div>
+<script>
+var config = {
+  width : 960,
+  height : 450,
+  padding : 30,
+  projection : d3.geoMercator(),
+  duration : 1000,
+  key:function(d){return d.properties.code; },
+  grid : {
+    GS: {x: 2, y: 4 },
+    QH: {x: 1, y: 4 },
+    GX: {x: 5, y: 7 },
+    GZ: {x: 4, y: 6 },
+    CQ: {x: 4, y: 5 },
+    BJ: {x: 7, y: 3 },
+    FJ: {x: 7, y: 6 },
+    AH: {x: 6, y: 5 },
+    GD: {x: 6, y: 7 },
+    XZ: {x: 2, y: 5 },
+    XJ: {x: 0, y: 3 },
+    HI: {x: 6, y: 8 },
+    NX: {x: 3, y: 4 },
+    SN: {x: 4, y: 4 },
+    SX: {x: 5, y: 4 },
+    HB: {x: 5, y: 5 },
+    HN: {x: 5, y: 6 },
+    SC: {x: 3, y: 5 },
+    YN: {x: 3, y: 6 },
+    HE: {x: 6, y: 3 },
+    HA: {x: 6, y: 4 },
+    LN: {x: 7, y: 2 },
+    SD: {x: 8, y: 3 },
+    TJ: {x: 9, y: 3 },
+    JX: {x: 6, y: 6 },
+    JS: {x: 7, y: 4 },
+    SH: {x: 8, y: 4 },
+    ZJ: {x: 7, y: 5 },
+    JL: {x: 8, y: 2 },
+    NM: {x: 6, y: 2 },
+    HK: {x: 9, y: 1 }
+  }
+};
+
+var tooltip = d3.select("div.tooltip");
+
+// svg container
+var svg = d3.select('#main')
+  .append('svg')
+  .attr('width',config.width)
+  .attr('height',config.height);
+
+// colour scale
+var colours = d3.scaleThreshold()
+  .domain([27.25, 34.32, 36.5, 39.45, 62.6])
+  .range(
+    ['#edf8e9','#c7e9c0','#a1d99b','#74c476','#31a354','#006d2c']
+    );
+
+var g2r = new geo2rect.draw();
+
+
+
+d3.queue()
+  .defer(d3.json, "china.geojson")
+  .defer(d3.csv, "electricity2015.csv", function(d) {
+    d.value = +d.value;
+    return d;
+  })
+  .await(ready);
+
+function ready(error, provinces, electricity) {
+  var geojson = geo2rect.compute(provinces);
+  g2r.config = config;
+  g2r.data = geojson;
+  g2r.svg = svg.append('g');
+  g2r.draw();
+
+  //colours.domain(d3.extent(electricity, function(d) { return d.value; }))
+
+  electricity.forEach(function(p) {
+    d3.selectAll("svg .id-" + p.code)
+      .style("fill", colours(p.value))
+      .on("mouseover", function(d, i) {
+		  	d3.select(this)
+      		.attr("fill", "grey")
+      		.attr("stroke-width", 2)
+      		.style("hidden", false)
+      		.html(d.properties.province + ": " + p.value);
+			})
+  		.on("mousemove", function(d) {
+  			tooltip.classed("hidden", false)
+      		.style("top",  (d3.event.pageY) + "px")
+      		.style("left", (d3.event.pageX + 10) + "px")
+      		.html(d.properties.province + " (" + p.code + "): " + p.value + "%");
+      console.log(d.properties);
+			})
+  		.on("mouseout", function(d, i) {
+  			d3.select(this)
+      		.attr("fill", colours(i))
+      		.attr("stroke-width", 1);
+  			tooltip.classed("hidden", true)
+			})
+  })
+}
+
+
+
+var svg = d3.select("svg");
+
+// toggle button
+d3.select("#toggle")
+	.attr("y", 90)
+  .on('click', function() {
+  	g2r.toggle();
+  	g2r.draw();
+  // console.log(g2r.mode);
+	});
+
+// legend
+svg.append("g")
+  .attr("class", "legendQuant")
+  .attr("transform", "translate(410,20)");
+
+var legend = d3.legendColor()
+    .labelFormat(d3.format(".2f"))
+    .labels(d3.legendHelpers.thresholdLabels)
+    .useClass(false)
+    .scale(colours)
+
+/*
+----legendHelpers.thresholdLabels----
+function({
+  i,
+  genLength,
+  generatedLabels,
+  labelDelimiter
+}) {
+  if (i === 0) {
+    const values = generatedLabels[i].split(` ${labelDelimiter} `)
+    return `Less than ${values[1]}`
+  } else if (i === genLength - 1) {
+    const values = generatedLabels[i].split(` ${labelDelimiter} `)
+    return `${values[0]} or more`
+  }
+  return generatedLabels[i]
+}
+
+*/
+
+svg.select(".legendQuant")
+  .call(legend);
+
+
+
+</script>
+</body>
+</html>

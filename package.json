@@ -1,0 +1,38 @@
+{
+  "name": "cmappractice",
+  "version": "1.0.0",
+  "description": "svgMap is a JavaScript library that lets you easily create an interactable world map comparing customizable data for each country.",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "auto-reload-json": "^1.0.2",
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "compression": "^1.7.4",
+    "connect-loki": "^1.1.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.21.3",
+    "jsdom": "^16.2.1",
+    "lowdb": "^1.0.0",
+    "node-html-parser": "^1.2.12",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pm2": "^4.2.3",
+    "request": "^2.88.2",
+    "self-reload-json": "^0.4.0",
+    "shortid": "^2.2.15",
+    "stack": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

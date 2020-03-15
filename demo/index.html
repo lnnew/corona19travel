@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>svgMap demos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+  <style>
+      body {
+        font-family: sans-serif;
+        color: #000;
+        background: #fff;
+        padding: 0;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .demo-wrapper {
+        box-sizing: border-box;
+        width: 800px;
+        max-width: calc(100% - 30px);
+        margin: auto;
+        padding: 30px 0 0;
+      }
+
+      .demo-container {
+        padding: 0 0 80px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 32px;
+        margin: 0 0 25px;
+        font-weight: normal;
+      }
+
+      @media (max-width: 900px) {
+        h2 {
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        h2 {
+          font-size: 18px;
+        }
+      }
+
+  </style>
+  <style>
+      .svgMap-map-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 50%;
+        overflow: hidden;
+        background: #d9ecff;
+        color: #111;
+      }
+
+      .svgMap-map-wrapper * {
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      .svgMap-map-wrapper .svgMap-map-image {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      .svgMap-map-wrapper .svgMap-map-controls-wrapper {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        z-index: 1;
+        display: flex;
+        overflow: hidden;
+        border-radius: 2px;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .svgMap-map-wrapper .svgMap-map-controls-zoom,
+      .svgMap-map-wrapper .svgMap-map-controls-move {
+        display: flex;
+        margin-right: 5px;
+        overflow: hidden;
+        background: #fff;
+      }
+
+      .svgMap-map-wrapper .svgMap-map-controls-zoom:last-child,
+      .svgMap-map-wrapper .svgMap-map-controls-move:last-child {
+        margin-right: 0;
+      }
+
+      .svgMap-map-wrapper .svgMap-control-button {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: relative;
+      }
+
+      .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:before, .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #666;
+        transition: background-color .2s;
+      }
+
+      .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:before {
+        width: 11px;
+        height: 3px;
+      }
+
+      .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:hover:before, .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:hover:after {
+        background: #111;
+      }
+
+      .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button.svgMap-disabled:before, .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button.svgMap-disabled:after {
+        background: #ccc;
+      }
+
+      .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-in-button:after {
+        width: 3px;
+        height: 11px;
+      }
+
+      .svgMap-map-wrapper .svgMap-country {
+        cursor: pointer;
+        stroke: #fff;
+        stroke-width: 1;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+        transition: fill .2s, stroke .2s;
+      }
+
+      .svgMap-map-wrapper .svgMap-country:hover, .svgMap-map-wrapper .svgMap-country.svgMap-active {
+        stroke: #333;
+      }
+
+      .svgMap-map-wrapper .svgMap-country.svgMap-active {
+        stroke-width: 1.5;
+      }
+
+      .svgMap-tooltip {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        z-index: 2;
+        border-radius: 2px;
+        background: #fff;
+        transform: translate(-50%, -100%);
+        border-bottom: 1px solid #000;
+        display: none;
+        pointer-events: none;
+        min-width: 60px;
+      }
+
+      .svgMap-tooltip.svgMap-tooltip-flipped {
+        transform: translate(-50%, 0);
+        border-bottom: 0;
+        border-top: 1px solid #000;
+      }
+
+      .svgMap-tooltip.svgMap-active {
+        display: block;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content-container {
+        position: relative;
+        padding: 10px 20px;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content-container .svgMap-tooltip-flag-container {
+        text-align: center;
+        margin: 2px 0 5px;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content-container .svgMap-tooltip-flag-container.svgMap-tooltip-flag-container-emoji {
+        font-size: 50px;
+        line-height: 0;
+        padding: 25px 0 15px;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content-container .svgMap-tooltip-flag-container .svgMap-tooltip-flag {
+        display: block;
+        margin: auto;
+        width: auto;
+        height: 32px;
+        padding: 2px;
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-title {
+        white-space: nowrap;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0 0 8px;
+        text-align: center;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content {
+        white-space: nowrap;
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+        margin: -5px 0 0;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content table {
+        padding: 0;
+        border-spacing: 0px;
+        margin: auto;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content table td {
+        padding: 2px 0;
+        text-align: left;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content table td span {
+        color: #111;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content table td:first-child {
+        padding-right: 10px;
+        text-align: right;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content table td sup {
+        vertical-align: baseline;
+        position: relative;
+        top: -5px;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-content .svgMap-tooltip-no-data {
+        padding: 2px 0;
+        color: #777;
+        font-style: italic;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-pointer {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        height: 10px;
+        width: 30px;
+      }
+
+      .svgMap-tooltip .svgMap-tooltip-pointer:after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: 1px solid #000;
+        position: absolute;
+        bottom: 6px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+      }
+
+      .svgMap-tooltip.svgMap-tooltip-flipped .svgMap-tooltip-pointer {
+        bottom: auto;
+        top: -10px;
+        transform: translateX(-50%) scaleY(-1);
+      }
+
+      /*# sourceMappingURL=svgMap.css.map */
+
+  </style>
+
+  <script src="../dist/svgMap.js">
+  </script>
+</head>
+<body>
+    <!-- Demo GPD -->
+    <div class="demo-container">
+      <h2>GDP per capita (PPP)</h2>
+      <div id="svgMapGPD"></div>
+      <script>
+            var svgMapDataGPD = {
+              data: {
+                gdp: {
+                  name: 'GDP per capita',
+                  format: '{0} USD',
+                  thousandSeparator: ',',
+                  thresholdMax: 50000,
+                  thresholdMin: 1000
+                },
+                change: {
+                  name: 'Change to year before',
+                  format: '{0} %'
+                },
+                gdpAdjusted: {
+                  name: 'Purchasing Power Parity',
+                  format: '{0} USD',
+                  thousandSeparator: ',',
+                  thresholdMax: 4,
+                  thresholdMin: 0
+                },
+                changeAdjusted: {
+                  name: 'Change to year before',
+                  format: '{0} %'
+                }
+              },
+              applyData: 'gdpAdjusted',
+              values: {
+                AF: {gdp: 587, change: 4.73, gdpAdjusted: 1958, changeAdjusted: 0.02},
+                AL: {gdp: 4583, change: 11.09, gdpAdjusted: 12507, changeAdjusted: 4.04},
+                DZ: {gdp: 4293, change: 10.01, gdpAdjusted: 15237, changeAdjusted: 0.33},
+                AO: {gdp: 4408, change: 26.49, gdpAdjusted: 6753, changeAdjusted: -2.56},
+                AG: {gdp: 16702, change: 3.26, gdpAdjusted: 26231, changeAdjusted: 2.15},
+                AR: {gdp: 14467, change: 13.83, gdpAdjusted: 20876, changeAdjusted: 1.77},
+                AM: {gdp: 3861, change: 9.22, gdpAdjusted: 9456, changeAdjusted: 7.33},
+                AU: {gdp: 55707, change: 7.39, gdpAdjusted: 50334, changeAdjusted: 0.97},
+                AT: {gdp: 47290, change: 5.72, gdpAdjusted: 49869, changeAdjusted: 2.66},
+                AZ: {gdp: 4141, change: 6.29, gdpAdjusted: 17492, changeAdjusted: -0.91},
+                BS: {gdp: 31255, change: 2.21, gdpAdjusted: 31139, changeAdjusted: 0.31},
+                BH: {gdp: 24029, change: 6.32, gdpAdjusted: 48505, changeAdjusted: 1.02},
+                BD: {gdp: 1602, change: 9.79, gdpAdjusted: 4211, changeAdjusted: 6.10},
+                BB: {gdp: 17859, change: 7.83, gdpAdjusted: 18664, changeAdjusted: 0.64},
+                BY: {gdp: 5760, change: 14.69, gdpAdjusted: 18931, changeAdjusted: 2.52},
+                BE: {gdp: 43582, change: 5.30, gdpAdjusted: 46553, changeAdjusted: 1.13},
+                BZ: {gdp: 4806, change: -0.64, gdpAdjusted: 8324, changeAdjusted: -1.35},
+                BJ: {gdp: 830, change: 4.92, gdpAdjusted: 2277, changeAdjusted: 3.46},
+                BT: {gdp: 2903, change: 8.01, gdpAdjusted: 8744, changeAdjusted: 4.82},
+                BO: {gdp: 3353, change: 7.30, gdpAdjusted: 7547, changeAdjusted: 2.73},
+                BA: {gdp: 5149, change: 7.04, gdpAdjusted: 12724, changeAdjusted: 2.60},
+                BW: {gdp: 7877, change: 8.34, gdpAdjusted: 17828, changeAdjusted: 0.38},
+                BR: {gdp: 9895, change: 13.74, gdpAdjusted: 15602, changeAdjusted: 0.23},
+                BN: {gdp: 29712, change: 10.31, gdpAdjusted: 78196, changeAdjusted: -0.70},
+                BG: {gdp: 8064, change: 7.58, gdpAdjusted: 21687, changeAdjusted: 4.23},
+                BF: {gdp: 664, change: 8.11, gdpAdjusted: 1889, changeAdjusted: 3.55},
+                BI: {gdp: 312, change: 4.85, gdpAdjusted: 735, changeAdjusted: -5.20},
+                KH: {gdp: 1389, change: 8.76, gdpAdjusted: 4012, changeAdjusted: 5.46},
+                CM: {gdp: 1401, change: 2.94, gdpAdjusted: 3660, changeAdjusted: 0.62},
+                CA: {gdp: 45077, change: 6.27, gdpAdjusted: 48265, changeAdjusted: 2.10},
+                XK: {gdp: 3880, change: 6.23, gdpAdjusted: 10514, changeAdjusted: 3.14},
+                CV: {gdp: 3237, change: 4.91, gdpAdjusted: 6944, changeAdjusted: 2.69},
+                CF: {gdp: 387, change: 7.65, gdpAdjusted: 677, changeAdjusted: 2.45},
+                TD: {gdp: 810, change: -0.71, gdpAdjusted: 2344, changeAdjusted: -6.15},
+                CL: {gdp: 15070, change: 9.66, gdpAdjusted: 24537, changeAdjusted: 0.69},
+                CN: {gdp: 8643, change: 6.50, gdpAdjusted: 16660, changeAdjusted: 6.47},
+                CO: {gdp: 6273, change: 9.21, gdpAdjusted: 14485, changeAdjusted: 0.96},
+                KM: {gdp: 788, change: 3.09, gdpAdjusted: 1588, changeAdjusted: 0.25},
+                CG: {gdp: 1958, change: 6.66, gdpAdjusted: 6642, changeAdjusted: -7.20},
+                CR: {gdp: 11685, change: -0.77, gdpAdjusted: 16877, changeAdjusted: 2.24},
+                HR: {gdp: 13138, change: 6.70, gdpAdjusted: 24423, changeAdjusted: 3.15},
+                CY: {gdp: 24976, change: 5.65, gdpAdjusted: 37023, changeAdjusted: 3.95},
+                CZ: {gdp: 20152, change: 8.90, gdpAdjusted: 35512, changeAdjusted: 4.23},
+                CD: {gdp: 478, change: 2.32, gdpAdjusted: 790, changeAdjusted: 0.20},
+                DK: {gdp: 56444, change: 4.97, gdpAdjusted: 49883, changeAdjusted: 1.49},
+                DJ: {gdp: 1989, change: 4.52, gdpAdjusted: 3559, changeAdjusted: 5.19},
+                DM: {gdp: 7921, change: -3.63, gdpAdjusted: 11102, changeAdjusted: -4.69},
+                DO: {gdp: 7375, change: 3.67, gdpAdjusted: 16944, changeAdjusted: 3.50},
+                EC: {gdp: 6098, change: 2.21, gdpAdjusted: 11482, changeAdjusted: 1.29},
+                EG: {gdp: 2501, change: -32.17, gdpAdjusted: 12671, changeAdjusted: 2.36},
+                SV: {gdp: 4400, change: 4.06, gdpAdjusted: 8948, changeAdjusted: 1.88},
+                GQ: {gdp: 12727, change: 2.65, gdpAdjusted: 36017, changeAdjusted: -7.97},
+                ER: {gdp: 980, change: 13.88, gdpAdjusted: 1581, changeAdjusted: 2.73},
+                EE: {gdp: 19840, change: 11.47, gdpAdjusted: 31749, changeAdjusted: 5.08},
+                ET: {gdp: 873, change: 8.82, gdpAdjusted: 2161, changeAdjusted: 8.43},
+                FM: {gdp: 3200, change: 1.45, gdpAdjusted: 3393, changeAdjusted: 1.37},
+                FJ: {gdp: 5740, change: 7.44, gdpAdjusted: 9777, changeAdjusted: 3.08},
+                FI: {gdp: 46017, change: 5.75, gdpAdjusted: 44333, changeAdjusted: 2.63},
+                FR: {gdp: 39869, change: 4.35, gdpAdjusted: 43760, changeAdjusted: 1.46},
+                GA: {gdp: 7972, change: 6.96, gdpAdjusted: 19254, changeAdjusted: -1.33},
+                GM: {gdp: 480, change: 1.45, gdpAdjusted: 1713, changeAdjusted: 0.56},
+                GE: {gdp: 4099, change: 5.86, gdpAdjusted: 10747, changeAdjusted: 5.07},
+                DE: {gdp: 44550, change: 5.44, gdpAdjusted: 50425, changeAdjusted: 2.07},
+                GH: {gdp: 1663, change: 7.18, gdpAdjusted: 4729, changeAdjusted: 6.28},
+                GR: {gdp: 18637, change: 4.26, gdpAdjusted: 27737, changeAdjusted: 1.56},
+                GD: {gdp: 10360, change: 5.10, gdpAdjusted: 14926, changeAdjusted: 3.04},
+                GT: {gdp: 4472, change: 7.84, gdpAdjusted: 8145, changeAdjusted: 0.81},
+                GN: {gdp: 749, change: 11.88, gdpAdjusted: 2041, changeAdjusted: 4.09},
+                GW: {gdp: 794, change: 13.43, gdpAdjusted: 1845, changeAdjusted: 3.57},
+                GY: {gdp: 4710, change: 3.24, gdpAdjusted: 8161, changeAdjusted: 1.55},
+                HT: {gdp: 784, change: 3.96, gdpAdjusted: 1815, changeAdjusted: -0.03},
+                HN: {gdp: 2766, change: 4.66, gdpAdjusted: 5562, changeAdjusted: 3.17},
+                HK: {gdp: 46109, change: 6.01, gdpAdjusted: 61393, changeAdjusted: 2.90},
+                HU: {gdp: 15531, change: 3.16, gdpAdjusted: 29474, changeAdjusted: 4.32},
+                IS: {gdp: 70332, change: 16.46, gdpAdjusted: 51841, changeAdjusted: 2.87},
+                IN: {gdp: 1983, change: 13.35, gdpAdjusted: 7183, changeAdjusted: 5.43},
+                ID: {gdp: 3876, change: 7.53, gdpAdjusted: 12377, changeAdjusted: 4.33},
+                IR: {gdp: 5305, change: 5.53, gdpAdjusted: 20200, changeAdjusted: 3.24},
+                IQ: {gdp: 5088, change: 12.24, gdpAdjusted: 16954, changeAdjusted: -3.79},
+                IE: {gdp: 70638, change: 9.02, gdpAdjusted: 75539, changeAdjusted: 6.92},
+                IL: {gdp: 40258, change: 8.24, gdpAdjusted: 36340, changeAdjusted: 1.77},
+                IT: {gdp: 31984, change: 4.31, gdpAdjusted: 38140, changeAdjusted: 1.59},
+                CI: {gdp: 1617, change: 8.14, gdpAdjusted: 3883, changeAdjusted: 5.28},
+                JM: {gdp: 5048, change: 2.00, gdpAdjusted: 9163, changeAdjusted: 0.67},
+                JP: {gdp: 38440, change: -1.40, gdpAdjusted: 42832, changeAdjusted: 1.94},
+                JO: {gdp: 5678, change: 2.31, gdpAdjusted: 12494, changeAdjusted: 0.13},
+                KZ: {gdp: 8841, change: 18.57, gdpAdjusted: 26252, changeAdjusted: 2.87},
+                KE: {gdp: 1702, change: 9.66, gdpAdjusted: 3491, changeAdjusted: 2.29},
+                KI: {gdp: 1721, change: 6.42, gdpAdjusted: 1976, changeAdjusted: 0.43},
+                KW: {gdp: 26005, change: 5.60, gdpAdjusted: 66163, changeAdjusted: -4.31},
+                KG: {gdp: 1144, change: 7.19, gdpAdjusted: 3667, changeAdjusted: 3.05},
+                LA: {gdp: 2543, change: 5.20, gdpAdjusted: 7366, changeAdjusted: 5.38},
+                LV: {gdp: 15547, change: 10.98, gdpAdjusted: 27644, changeAdjusted: 5.58},
+                LB: {gdp: 11408, change: 2.73, gdpAdjusted: 19439, changeAdjusted: 0.63},
+                LS: {gdp: 1425, change: 12.94, gdpAdjusted: 3581, changeAdjusted: 1.78},
+                LR: {gdp: 729, change: -2.12, gdpAdjusted: 1354, changeAdjusted: -0.05},
+                LY: {gdp: 4859, change: 67.32, gdpAdjusted: 9987, changeAdjusted: 69.48},
+                LT: {gdp: 16730, change: 12.14, gdpAdjusted: 32299, changeAdjusted: 4.38},
+                LU: {gdp: 105803, change: 3.94, gdpAdjusted: 106374, changeAdjusted: 2.27},
+                MO: {gdp: 77451, change: 10.10, gdpAdjusted: 111629, changeAdjusted: 9.42},
+                MK: {gdp: 5474, change: 5.51, gdpAdjusted: 14914, changeAdjusted: -0.06},
+                MG: {gdp: 448, change: 11.50, gdpAdjusted: 1551, changeAdjusted: 1.37},
+                MW: {gdp: 324, change: 10.17, gdpAdjusted: 1167, changeAdjusted: 1.13},
+                MY: {gdp: 9813, change: 4.68, gdpAdjusted: 29041, changeAdjusted: 4.55},
+                MV: {gdp: 12527, change: 5.17, gdpAdjusted: 19151, changeAdjusted: 2.98},
+                ML: {gdp: 811, change: 5.62, gdpAdjusted: 2170, changeAdjusted: 2.31},
+                MT: {gdp: 27250, change: 8.83, gdpAdjusted: 41945, changeAdjusted: 6.26},
+                MH: {gdp: 3625, change: 8.21, gdpAdjusted: 3439, changeAdjusted: 1.83},
+                MR: {gdp: 1318, change: 5.15, gdpAdjusted: 4444, changeAdjusted: 0.52},
+                MU: {gdp: 9794, change: 1.88, gdpAdjusted: 21640, changeAdjusted: 3.67},
+                MX: {gdp: 9304, change: 5.64, gdpAdjusted: 19903, changeAdjusted: 0.91},
+                MD: {gdp: 2280, change: 19.51, gdpAdjusted: 5661, changeAdjusted: 4.24},
+                MN: {gdp: 3640, change: -0.75, gdpAdjusted: 12979, changeAdjusted: 3.65},
+                ME: {gdp: 7647, change: 8.80, gdpAdjusted: 17735, changeAdjusted: 4.16},
+                MA: {gdp: 3151, change: 4.89, gdpAdjusted: 8567, changeAdjusted: 2.96},
+                MZ: {gdp: 429, change: 9.50, gdpAdjusted: 1244, changeAdjusted: 0.09},
+                MM: {gdp: 1264, change: 4.41, gdpAdjusted: 6244, changeAdjusted: 5.82},
+                NA: {gdp: 5413, change: 14.96, gdpAdjusted: 11312, changeAdjusted: -3.12},
+                NR: {gdp: 8575, change: 9.60, gdpAdjusted: 12002, changeAdjusted: 1.22},
+                NP: {gdp: 834, change: 14.45, gdpAdjusted: 2679, changeAdjusted: 6.41},
+                NL: {gdp: 48346, change: 5.89, gdpAdjusted: 53635, changeAdjusted: 2.83},
+                NZ: {gdp: 41593, change: 6.51, gdpAdjusted: 38934, changeAdjusted: 2.03},
+                NI: {gdp: 2207, change: 2.57, gdpAdjusted: 5849, changeAdjusted: 3.82},
+                NE: {gdp: 440, change: 6.29, gdpAdjusted: 1164, changeAdjusted: 1.37},
+                NG: {gdp: 1994, change: -9.68, gdpAdjusted: 5929, changeAdjusted: -1.76},
+                NO: {gdp: 74941, change: 6.07, gdpAdjusted: 71831, changeAdjusted: 0.87},
+                OM: {gdp: 17973, change: 0.64, gdpAdjusted: 45157, changeAdjusted: -2.23},
+                PK: {gdp: 1541, change: 6.95, gdpAdjusted: 5358, changeAdjusted: 3.58},
+                PW: {gdp: 17096, change: 0.27, gdpAdjusted: 15934, changeAdjusted: -2.06},
+                PA: {gdp: 15089, change: 5.35, gdpAdjusted: 25351, changeAdjusted: 3.82},
+                PG: {gdp: 2861, change: 2.51, gdpAdjusted: 3674, changeAdjusted: 0.46},
+                PY: {gdp: 4260, change: 6.47, gdpAdjusted: 9826, changeAdjusted: 3.06},
+                PE: {gdp: 6199, change: 8.93, gdpAdjusted: 13334, changeAdjusted: 1.31},
+                PH: {gdp: 2976, change: 0.78, gdpAdjusted: 8315, changeAdjusted: 5.15},
+                PL: {gdp: 13822, change: 11.37, gdpAdjusted: 29521, changeAdjusted: 4.73},
+                PT: {gdp: 21161, change: 3.68, gdpAdjusted: 30417, changeAdjusted: 3.08},
+                PR: {gdp: 30488, change: -0.98, gdpAdjusted: 37339, changeAdjusted: -2.35},
+                QA: {gdp: 60804, change: 4.39, gdpAdjusted: 124529, changeAdjusted: -2.31},
+                RO: {gdp: 10757, change: 13.18, gdpAdjusted: 24508, changeAdjusted: 7.49},
+                RU: {gdp: 10608, change: 19.19, gdpAdjusted: 27834, changeAdjusted: 1.50},
+                RW: {gdp: 772, change: 5.20, gdpAdjusted: 2080, changeAdjusted: 3.70},
+                KN: {gdp: 16296, change: 1.90, gdpAdjusted: 26845, changeAdjusted: 1.71},
+                LC: {gdp: 9607, change: 1.99, gdpAdjusted: 14450, changeAdjusted: 2.51},
+                VC: {gdp: 7270, change: 3.99, gdpAdjusted: 11491, changeAdjusted: 0.70},
+                WS: {gdp: 4253, change: 5.93, gdpAdjusted: 5740, changeAdjusted: 1.80},
+                SM: {gdp: 47406, change: 3.80, gdpAdjusted: 59466, changeAdjusted: 1.65},
+                ST: {gdp: 1785, change: 5.70, gdpAdjusted: 3180, changeAdjusted: 2.58},
+                SA: {gdp: 21120, change: 3.95, gdpAdjusted: 54777, changeAdjusted: -2.63},
+                SN: {gdp: 1038, change: 8.73, gdpAdjusted: 2727, changeAdjusted: 4.39},
+                RS: {gdp: 5899, change: 8.71, gdpAdjusted: 15000, changeAdjusted: 1.83},
+                SC: {gdp: 15686, change: 2.97, gdpAdjusted: 28779, changeAdjusted: 3.75},
+                SL: {gdp: 492, change: -5.88, gdpAdjusted: 1553, changeAdjusted: 1.35},
+                SG: {gdp: 57713, change: 4.48, gdpAdjusted: 93906, changeAdjusted: 2.22},
+                SK: {gdp: 17664, change: 6.73, gdpAdjusted: 33025, changeAdjusted: 3.61},
+                SI: {gdp: 23654, change: 9.17, gdpAdjusted: 34408, changeAdjusted: 4.93},
+                SB: {gdp: 2081, change: 1.18, gdpAdjusted: 2157, changeAdjusted: 1.29},
+                SO: {gdp: 486, change: 6.38, gdpAdjusted: 1229, changeAdjusted: -1.82},
+                ZA: {gdp: 6180, change: 16.25, gdpAdjusted: 13545, changeAdjusted: -0.07},
+                KR: {gdp: 29891, change: 8.56, gdpAdjusted: 39434, changeAdjusted: 2.72},
+                SS: {gdp: 228, change: -18.73, gdpAdjusted: 1489, changeAdjusted: -12.82},
+                ES: {gdp: 28359, change: 6.31, gdpAdjusted: 38286, changeAdjusted: 3.01},
+                LK: {gdp: 4085, change: 6.95, gdpAdjusted: 12811, changeAdjusted: 3.46},
+                SD: {gdp: 1428, change: -1.91, gdpAdjusted: 4586, changeAdjusted: 0.82},
+                SR: {gdp: 5746, change: 0.76, gdpAdjusted: 13876, changeAdjusted: -0.87},
+                SZ: {gdp: 3915, change: 15.19, gdpAdjusted: 9884, changeAdjusted: -0.67},
+                SE: {gdp: 53218, change: 3.39, gdpAdjusted: 51475, changeAdjusted: 1.68},
+                CH: {gdp: 80591, change: 0.35, gdpAdjusted: 61422, changeAdjusted: 0.24},
+                TW: {gdp: 24577, change: 9.03, gdpAdjusted: 50294, changeAdjusted: 2.51},
+                TJ: {gdp: 824, change: 2.54, gdpAdjusted: 3211, changeAdjusted: 5.06},
+                TZ: {gdp: 1034, change: 5.58, gdpAdjusted: 3240, changeAdjusted: 2.96},
+                TH: {gdp: 6591, change: 10.39, gdpAdjusted: 17855, changeAdjusted: 3.68},
+                TL: {gdp: 2104, change: 1.19, gdpAdjusted: 5444, changeAdjusted: -2.67},
+                TG: {gdp: 611, change: 4.24, gdpAdjusted: 1659, changeAdjusted: 1.95},
+                TO: {gdp: 4177, change: 5.56, gdpAdjusted: 5608, changeAdjusted: 2.26},
+                TT: {gdp: 15769, change: -3.46, gdpAdjusted: 31367, changeAdjusted: -2.58},
+                TN: {gdp: 3496, change: -5.24, gdpAdjusted: 11755, changeAdjusted: 0.85},
+                TR: {gdp: 10512, change: -2.82, gdpAdjusted: 26893, changeAdjusted: 5.68},
+                TM: {gdp: 6643, change: 3.59, gdpAdjusted: 18126, changeAdjusted: 4.86},
+                TV: {gdp: 3638, change: 2.24, gdpAdjusted: 3807, changeAdjusted: 2.34},
+                UG: {gdp: 699, change: 1.04, gdpAdjusted: 2354, changeAdjusted: 2.86},
+                UA: {gdp: 2583, change: 17.46, gdpAdjusted: 8713, changeAdjusted: 3.02},
+                AE: {gdp: 37226, change: 5.21, gdpAdjusted: 67741, changeAdjusted: -0.86},
+                GB: {gdp: 39735, change: -1.96, gdpAdjusted: 44117, changeAdjusted: 1.21},
+                US: {gdp: 59501, change: 3.37, gdpAdjusted: 59501, changeAdjusted: 1.48},
+                UY: {gdp: 16722, change: 11.02, gdpAdjusted: 22371, changeAdjusted: 2.74},
+                UZ: {gdp: 1491, change: -28.81, gdpAdjusted: 6929, changeAdjusted: 3.89},
+                VU: {gdp: 3094, change: 6.51, gdpAdjusted: 2739, changeAdjusted: 2.33},
+                VE: {gdp: 6684, change: -12.16, gdpAdjusted: 12114, changeAdjusted: -15.30},
+                VN: {gdp: 2354, change: 8.37, gdpAdjusted: 6913, changeAdjusted: 5.78},
+                YE: {gdp: 551, change: -23.23, gdpAdjusted: 1287, changeAdjusted: -16.17},
+                ZM: {gdp: 1480, change: 18.11, gdpAdjusted: 3996, changeAdjusted: 0.95},
+                ZW: {gdp: 1176, change: 5.78, gdpAdjusted: 2283, changeAdjusted: 1.02}
+              }
+            }
+
+      </script>
+      <script >
+          var kor = {"GH":"\uac00\ub098","GA":"\uac00\ubd09","GY":"\uac00\uc774\uc544\ub098","GM":"\uac10\ube44\uc544","GG":"\uac74\uc9c0","GP":"\uacfc\ub4e4\ub8e8\ud504","GT":"\uacfc\ud14c\ub9d0\ub77c","GU":"\uad0c","GD":"\uadf8\ub808\ub098\ub2e4","GR":"\uadf8\ub9ac\uc2a4","GL":"\uadf8\ub9b0\ub780\ub4dc","GN":"\uae30\ub2c8","GW":"\uae30\ub2c8\ube44\uc0ac\uc6b0","NA":"\ub098\ubbf8\ube44\uc544","NR":"\ub098\uc6b0\ub8e8","NG":"\ub098\uc774\uc9c0\ub9ac\uc544","AQ":"\ub0a8\uadf9 \ub300\ub959","SS":"\ub0a8\uc218\ub2e8","ZA":"\ub0a8\uc544\ud504\ub9ac\uce74","NL":"\ub124\ub35c\ub780\ub4dc","BQ":"\ub124\ub35c\ub780\ub4dc\ub839 \uce74\ub9ac\ube0c","NP":"\ub124\ud314","NO":"\ub178\ub974\uc6e8\uc774","NF":"\ub178\ud37d\uc12c","NZ":"\ub274\uc9c8\ub79c\ub4dc","NC":"\ub274\uce7c\ub808\ub3c4\ub2c8\uc544","NU":"\ub2c8\uc6b0\uc5d0","NE":"\ub2c8\uc81c\ub974","NI":"\ub2c8\uce74\ub77c\uacfc","TW":"\ub300\ub9cc","KR":"\ub300\ud55c\ubbfc\uad6d","DK":"\ub374\ub9c8\ud06c","DM":"\ub3c4\ubbf8\ub2c8\uce74","DO":"\ub3c4\ubbf8\ub2c8\uce74 \uacf5\ud654\uad6d","DE":"\ub3c5\uc77c","TL":"\ub3d9\ud2f0\ubaa8\ub974","DG":"\ub514\uc5d0\uace0 \uac00\ub974\uc2dc\uc544","LA":"\ub77c\uc624\uc2a4","LR":"\ub77c\uc774\ubca0\ub9ac\uc544","LV":"\ub77c\ud2b8\ube44\uc544","RU":"\ub7ec\uc2dc\uc544","LB":"\ub808\ubc14\ub17c","LS":"\ub808\uc18c\ud1a0","RO":"\ub8e8\ub9c8\ub2c8\uc544","LU":"\ub8e9\uc148\ubd80\ub974\ud06c","RW":"\ub974\uc644\ub2e4","LY":"\ub9ac\ube44\uc544","RE":"\ub9ac\uc720\ub2c8\uc628","LT":"\ub9ac\ud22c\uc544\ub2c8\uc544","LI":"\ub9ac\ud788\ud150\uc288\ud0c0\uc778","MG":"\ub9c8\ub2e4\uac00\uc2a4\uce74\ub974","MQ":"\ub9c8\ub974\ud2f0\ub2c8\ud06c","MH":"\ub9c8\uc15c \uc81c\ub3c4","YT":"\ub9c8\uc694\ud2b8","MO":"\ub9c8\uce74\uc624(\uc911\uad6d \ud2b9\ubcc4\ud589\uc815\uad6c)","MK":"\ub9c8\ucf00\ub3c4\ub2c8\uc544","MW":"\ub9d0\ub77c\uc704","MY":"\ub9d0\ub808\uc774\uc2dc\uc544","ML":"\ub9d0\ub9ac","IM":"\ub9e8 \uc12c","MX":"\uba55\uc2dc\ucf54","MC":"\ubaa8\ub098\ucf54","MA":"\ubaa8\ub85c\ucf54","MU":"\ubaa8\ub9ac\uc154\uc2a4","MR":"\ubaa8\ub9ac\ud0c0\ub2c8","MZ":"\ubaa8\uc7a0\ube44\ud06c","ME":"\ubaac\ud14c\ub124\uadf8\ub85c","MS":"\ubaac\ud2b8\uc138\ub77c\ud2b8","MD":"\ubab0\ub3c4\ubc14","MV":"\ubab0\ub514\ube0c","MT":"\ubab0\ud0c0","MN":"\ubabd\uace8","US":"\ubbf8\uad6d","VI":"\ubbf8\uad6d\ub839 \ubc84\uc9c4\uc544\uc77c\ub79c\ub4dc","UM":"\ubbf8\uad6d\ub839 \ud574\uc678 \uc81c\ub3c4","MM":"\ubbf8\uc580\ub9c8","FM":"\ubbf8\ud06c\ub85c\ub124\uc2dc\uc544","VU":"\ubc14\ub204\uc544\ud22c","BH":"\ubc14\ub808\uc778","BB":"\ubc14\ubca0\uc774\ub3c4\uc2a4","VA":"\ubc14\ud2f0\uce78 \uc2dc\uad6d","BS":"\ubc14\ud558\ub9c8","BD":"\ubc29\uae00\ub77c\ub370\uc2dc","BM":"\ubc84\ubba4\ub2e4","BJ":"\ubca0\ub0c9","VE":"\ubca0\ub124\uc218\uc5d8\ub77c","VN":"\ubca0\ud2b8\ub0a8","BE":"\ubca8\uae30\uc5d0","BY":"\ubca8\ub77c\ub8e8\uc2a4","BZ":"\ubca8\ub9ac\uc988","BA":"\ubcf4\uc2a4\ub2c8\uc544 \ud5e4\ub974\uccb4\uace0\ube44\ub098","BW":"\ubcf4\uce20\uc640\ub098","BO":"\ubcfc\ub9ac\ube44\uc544","BI":"\ubd80\ub8ec\ub514","BF":"\ubd80\ub974\ud0a4\ub098\ud30c\uc18c","BT":"\ubd80\ud0c4","MP":"\ubd81\ub9c8\ub9ac\uc544\ub098\uc81c\ub3c4","KP":"\ubd81\ud55c","BG":"\ubd88\uac00\ub9ac\uc544","BR":"\ube0c\ub77c\uc9c8","BN":"\ube0c\ub8e8\ub098\uc774","WS":"\uc0ac\ubaa8\uc544","SA":"\uc0ac\uc6b0\ub514\uc544\ub77c\ube44\uc544","GS":"\uc0ac\uc6b0\uc2a4\uc870\uc9c0\uc544 \uc0ac\uc6b0\uc2a4\uc0cc\ub4dc\uc704\uce58 \uc81c\ub3c4","SM":"\uc0b0\ub9c8\ub9ac\ub178","ST":"\uc0c1\ud22c\uba54 \ud504\ub9b0\uc2dc\ud398","MF":"\uc0dd\ub9c8\ub974\ud0f1","BL":"\uc0dd\ubc14\ub974\ud154\ub808\ubbf8","PM":"\uc0dd\ud53c\uc5d0\ub974 \ubbf8\ud074\ub871","EH":"\uc11c\uc0ac\ud558\ub77c","SN":"\uc138\ub124\uac08","RS":"\uc138\ub974\ube44\uc544","EA":"\uc138\uc6b0\ud0c0 \ubc0f \uba5c\ub9ac\uc57c","SC":"\uc138\uc774\uc178","LC":"\uc138\uc778\ud2b8\ub8e8\uc2dc\uc544","VC":"\uc138\uc778\ud2b8\ube48\uc13c\ud2b8\uadf8\ub808\ub098\ub518","KN":"\uc138\uc778\ud2b8\ud0a4\uce20 \ub124\ube44\uc2a4","SH":"\uc138\uc778\ud2b8\ud5ec\ub808\ub098","SO":"\uc18c\ub9d0\ub9ac\uc544","SB":"\uc194\ub85c\ubaac \uc81c\ub3c4","SD":"\uc218\ub2e8","SR":"\uc218\ub9ac\ub0a8","LK":"\uc2a4\ub9ac\ub791\uce74","SJ":"\uc2a4\ubc1c\ubc14\ub974\uc81c\ub3c4-\uc580\ub9c8\uc6ec\uc12c","SE":"\uc2a4\uc6e8\ub374","CH":"\uc2a4\uc704\uc2a4","ES":"\uc2a4\ud398\uc778","SK":"\uc2ac\ub85c\ubc14\ud0a4\uc544","SI":"\uc2ac\ub85c\ubca0\ub2c8\uc544","SY":"\uc2dc\ub9ac\uc544","SL":"\uc2dc\uc5d0\ub77c\ub9ac\uc628","SX":"\uc2e0\ud2b8\ub9c8\ub974\ud134","SG":"\uc2f1\uac00\ud3ec\ub974","AE":"\uc544\ub78d\uc5d0\ubbf8\ub9ac\ud2b8","AW":"\uc544\ub8e8\ubc14","AM":"\uc544\ub974\uba54\ub2c8\uc544","AR":"\uc544\ub974\ud5e8\ud2f0\ub098","AS":"\uc544\uba54\ub9ac\uce78 \uc0ac\ubaa8\uc544","IS":"\uc544\uc774\uc2ac\ub780\ub4dc","HT":"\uc544\uc774\ud2f0","IE":"\uc544\uc77c\ub79c\ub4dc","AZ":"\uc544\uc81c\ub974\ubc14\uc774\uc794","AF":"\uc544\ud504\uac00\ub2c8\uc2a4\ud0c4","AD":"\uc548\ub3c4\ub77c","AL":"\uc54c\ubc14\ub2c8\uc544","DZ":"\uc54c\uc81c\ub9ac","AO":"\uc559\uace8\ub77c","AG":"\uc564\ud2f0\uac00 \ubc14\ubd80\ub2e4","AI":"\uc575\uadc8\ub77c","AC":"\uc5b4\uc13c\uc158 \uc12c","ER":"\uc5d0\ub9ac\ud2b8\ub9ac\uc544","SZ":"\uc5d0\uc2a4\uc640\ud2f0\ub2c8","EE":"\uc5d0\uc2a4\ud1a0\ub2c8\uc544","EC":"\uc5d0\ucf70\ub3c4\ub974","ET":"\uc5d0\ud2f0\uc624\ud53c\uc544","SV":"\uc5d8\uc0b4\ubc14\ub3c4\ub974","GB":"\uc601\uad6d","VG":"\uc601\uad6d\ub839 \ubc84\uc9c4\uc544\uc77c\ub79c\ub4dc","IO":"\uc601\uad6d\ub839 \uc778\ub3c4\uc591 \uc2dd\ubbfc\uc9c0","YE":"\uc608\uba58","OM":"\uc624\ub9cc","AU":"\uc624\uc2a4\ud2b8\ub808\uc77c\ub9ac\uc544","AT":"\uc624\uc2a4\ud2b8\ub9ac\uc544","HN":"\uc628\ub450\ub77c\uc2a4","AX":"\uc62c\ub780\ub4dc \uc81c\ub3c4","WF":"\uc648\ub9ac\uc2a4-\ud478\ud22c\ub098 \uc81c\ub3c4","JO":"\uc694\ub974\ub2e8","UG":"\uc6b0\uac04\ub2e4","UY":"\uc6b0\ub8e8\uacfc\uc774","UZ":"\uc6b0\uc988\ubca0\ud0a4\uc2a4\ud0c4","UA":"\uc6b0\ud06c\ub77c\uc774\ub098","XB":"\uc720\uc0ac \uc591\ubc29\ud5a5","XA":"\uc720\uc0ac \uc5b5\uc591","IQ":"\uc774\ub77c\ud06c","IR":"\uc774\ub780","IL":"\uc774\uc2a4\ub77c\uc5d8","EG":"\uc774\uc9d1\ud2b8","IT":"\uc774\ud0c8\ub9ac\uc544","IN":"\uc778\ub3c4","ID":"\uc778\ub3c4\ub124\uc2dc\uc544","JP":"\uc77c\ubcf8","JM":"\uc790\uba54\uc774\uce74","ZM":"\uc7a0\ube44\uc544","JE":"\uc800\uc9c0","GQ":"\uc801\ub3c4 \uae30\ub2c8","GE":"\uc870\uc9c0\uc544","CN":"\uc911\uad6d","CF":"\uc911\uc559 \uc544\ud504\ub9ac\uce74 \uacf5\ud654\uad6d","DJ":"\uc9c0\ubd80\ud2f0","GI":"\uc9c0\ube0c\ub864\ud130","ZW":"\uc9d0\ubc14\ube0c\uc6e8","TD":"\ucc28\ub4dc","CZ":"\uccb4\ucf54","CL":"\uce60\ub808","IC":"\uce74\ub098\ub9ac\uc544 \uc81c\ub3c4","CM":"\uce74\uba54\ub8ec","CV":"\uce74\ubcf4\ubca0\ub974\ub370","KZ":"\uce74\uc790\ud750\uc2a4\ud0c4","QA":"\uce74\ud0c0\ub974","KH":"\uce84\ubcf4\ub514\uc544","CA":"\uce90\ub098\ub2e4","KE":"\ucf00\ub0d0","KY":"\ucf00\uc774\ub9e8 \uc81c\ub3c4","KM":"\ucf54\ubaa8\ub85c","XK":"\ucf54\uc18c\ubcf4","CR":"\ucf54\uc2a4\ud0c0\ub9ac\uce74","CC":"\ucf54\ucf54\uc2a4 \uc81c\ub3c4","CI":"\ucf54\ud2b8\ub514\ubd80\uc544\ub974","CO":"\ucf5c\ub86c\ube44\uc544","CG":"\ucf69\uace0-\ube0c\ub77c\uc790\ube4c","CD":"\ucf69\uace0-\ud0a8\uc0e4\uc0ac","CU":"\ucfe0\ubc14","KW":"\ucfe0\uc6e8\uc774\ud2b8","CK":"\ucfe1 \uc81c\ub3c4","CW":"\ud034\ub77c\uc18c","HR":"\ud06c\ub85c\uc544\ud2f0\uc544","CX":"\ud06c\ub9ac\uc2a4\ub9c8\uc2a4\uc12c","KG":"\ud0a4\ub974\uae30\uc2a4\uc2a4\ud0c4","KI":"\ud0a4\ub9ac\ubc14\uc2dc","CY":"\ud0a4\ud504\ub85c\uc2a4","TJ":"\ud0c0\uc9c0\ud0a4\uc2a4\ud0c4","TZ":"\ud0c4\uc790\ub2c8\uc544","TH":"\ud0dc\uad6d","TC":"\ud130\ud06c\uc2a4 \ucf00\uc774\ucee4\uc2a4 \uc81c\ub3c4","TR":"\ud130\ud0a4","TG":"\ud1a0\uace0","TK":"\ud1a0\ucf08\ub77c\uc6b0","TO":"\ud1b5\uac00","TM":"\ud22c\ub974\ud06c\uba54\ub2c8\uc2a4\ud0c4","TV":"\ud22c\ubc1c\ub8e8","TN":"\ud280\ub2c8\uc9c0","TT":"\ud2b8\ub9ac\ub2c8\ub2e4\ub4dc \ud1a0\ubc14\uace0","TA":"\ud2b8\ub9ac\uc2a4\ud0c4\ub2e4\ucfe0\ub098","PA":"\ud30c\ub098\ub9c8","PY":"\ud30c\ub77c\uacfc\uc774","PK":"\ud30c\ud0a4\uc2a4\ud0c4","PG":"\ud30c\ud478\uc544\ub274\uae30\ub2c8","PW":"\ud314\ub77c\uc6b0","PS":"\ud314\ub808\uc2a4\ud0c0\uc778 \uc9c0\uad6c","FO":"\ud398\ub85c \uc81c\ub3c4","PE":"\ud398\ub8e8","PT":"\ud3ec\ub974\ud22c\uac08","FK":"\ud3ec\ud074\ub79c\ub4dc \uc81c\ub3c4","PL":"\ud3f4\ub780\ub4dc","PR":"\ud478\uc5d0\ub974\ud1a0\ub9ac\ucf54","FR":"\ud504\ub791\uc2a4","TF":"\ud504\ub791\uc2a4 \ub0a8\ubd80 \uc9c0\ubc29","GF":"\ud504\ub791\uc2a4\ub839 \uae30\uc544\ub098","PF":"\ud504\ub791\uc2a4\ub839 \ud3f4\ub9ac\ub124\uc2dc\uc544","FJ":"\ud53c\uc9c0","FI":"\ud540\ub780\ub4dc","PH":"\ud544\ub9ac\ud540","PN":"\ud54f\ucf00\uc5b8 \uc12c","HU":"\ud5dd\uac00\ub9ac","HK":"\ud64d\ucf69(\uc911\uad6d \ud2b9\ubcc4\ud589\uc815\uad6c)"};
+
+
+
+
+
+
+
+
+          /*{
+            AF: 'Afghanistan',
+            AX: 'Åland Islands',
+            AL: 'Albania',
+            DZ: 'Algeria',
+            AS: 'American Samoa',
+            AD: 'Andorra',
+            AO: 'Angola',
+            AI: 'Anguilla',
+            AQ: 'Antarctica',
+            AG: 'Antigua and Barbuda',
+            AR: 'Argentina',
+            AM: 'Armenia',
+            AW: 'Aruba',
+            AU: 'Australia',
+            AT: 'Austria',
+            AZ: 'Azerbaijan',
+            BS: 'Bahamas',
+            BH: 'Bahrain',
+            BD: 'Bangladesh',
+            BB: 'Barbados',
+            BY: 'Belarus',
+            BE: 'Belgium',
+            BZ: 'Belize',
+            BJ: 'Benin',
+            BM: 'Bermuda',
+            BT: 'Bhutan',
+            BO: 'Bolivia',
+            BA: 'Bosnia and Herzegovina',
+            BW: 'Botswana',
+            BR: 'Brazil',
+            IO: 'British Indian Ocean Territory',
+            VG: 'British Virgin Islands',
+            BN: 'Brunei Darussalam',
+            BG: 'Bulgaria',
+            BF: 'Burkina Faso',
+            BI: 'Burundi',
+            KH: 'Cambodia',
+            CM: 'Cameroon',
+            CA: 'Canada',
+            CV: 'Cape Verde',
+            BQ: 'Caribbean Netherlands',
+            KY: 'Cayman Islands',
+            CF: 'Central African Republic',
+            TD: 'Chad',
+            CL: 'Chile',
+            CN: 'China',
+            CX: 'Christmas Island',
+            CC: 'Cocos Islands',
+            CO: 'Colombia',
+            KM: 'Comoros',
+            CG: 'Congo',
+            CK: 'Cook Islands',
+            CR: 'Costa Rica',
+            HR: 'Croatia',
+            CU: 'Cuba',
+            CW: 'Curaçao',
+            CY: 'Cyprus',
+            CZ: 'Czech Republic',
+            CD: 'Democratic Republic of the Congo',
+            DK: 'Denmark',
+            DJ: 'Djibouti',
+            DM: 'Dominica',
+            DO: 'Dominican Republic',
+            EC: 'Ecuador',
+            EG: 'Egypt',
+            SV: 'El Salvador',
+            GQ: 'Equatorial Guinea',
+            ER: 'Eritrea',
+            EE: 'Estonia',
+            ET: 'Ethiopia',
+            FK: 'Falkland Islands',
+            FO: 'Faroe Islands',
+            FM: 'Federated States of Micronesia',
+            FJ: 'Fiji',
+            FI: 'Finland',
+            FR: 'France',
+            GF: 'French Guiana',
+            PF: 'French Polynesia',
+            TF: 'French Southern Territories',
+            GA: 'Gabon',
+            GM: 'Gambia',
+            GE: 'Georgia',
+            DE: 'Germany',
+            GH: 'Ghana',
+            GI: 'Gibraltar',
+            GR: 'Greece',
+            GL: 'Greenland',
+            GD: 'Grenada',
+            GP: 'Guadeloupe',
+            GU: 'Guam',
+            GT: 'Guatemala',
+            GN: 'Guinea',
+            GW: 'Guinea-Bissau',
+            GY: 'Guyana',
+            HT: 'Haiti',
+            HN: 'Honduras',
+            HK: 'Hong Kong',
+            HU: 'Hungary',
+            IS: 'Iceland',
+            IN: 'India',
+            ID: 'Indonesia',
+            IR: 'Iran',
+            IQ: 'Iraq',
+            IE: 'Ireland',
+            IM: 'Isle of Man',
+            IL: 'Israel',
+            IT: 'Italy',
+            CI: 'Ivory Coast',
+            JM: 'Jamaica',
+            JP: 'Japan',
+            JE: 'Jersey',
+            JO: 'Jordan',
+            KZ: 'Kazakhstan',
+            KE: 'Kenya',
+            KI: 'Kiribati',
+            XK: 'Kosovo',
+            KW: 'Kuwait',
+            KG: 'Kyrgyzstan',
+            LA: 'Laos',
+            LV: 'Latvia',
+            LB: 'Lebanon',
+            LS: 'Lesotho',
+            LR: 'Liberia',
+            LY: 'Libya',
+            LI: 'Liechtenstein',
+            LT: 'Lithuania',
+            LU: 'Luxembourg',
+            MO: 'Macau',
+            MK: 'Macedonia',
+            MG: 'Madagascar',
+            MW: 'Malawi',
+            MY: 'Malaysia',
+            MV: 'Maldives',
+            ML: 'Mali',
+            MT: 'Malta',
+            MH: 'Marshall Islands',
+            MQ: 'Martinique',
+            MR: 'Mauritania',
+            MU: 'Mauritius',
+            YT: 'Mayotte',
+            MX: 'Mexico',
+            MD: 'Moldova',
+            MC: 'Monaco',
+            MN: 'Mongolia',
+            ME: 'Montenegro',
+            MS: 'Montserrat',
+            MA: 'Morocco',
+            MZ: 'Mozambique',
+            MM: 'Myanmar',
+            NA: 'Namibia',
+            NR: 'Nauru',
+            NP: 'Nepal',
+            NL: 'Netherlands',
+            NC: 'New Caledonia',
+            NZ: 'New Zealand',
+            NI: 'Nicaragua',
+            NE: 'Niger',
+            NG: 'Nigeria',
+            NU: 'Niue',
+            NF: 'Norfolk Island',
+            KP: 'North Korea',
+            MP: 'Northern Mariana Islands',
+            NO: 'Norway',
+            OM: 'Oman',
+            PK: 'Pakistan',
+            PW: 'Palau',
+            PS: 'Palestine',
+            PA: 'Panama',
+            PG: 'Papua New Guinea',
+            PY: 'Paraguay',
+            PE: 'Peru',
+            PH: 'Philippines',
+            PN: 'Pitcairn Islands',
+            PL: 'Poland',
+            PT: 'Portugal',
+            PR: 'Puerto Rico',
+            QA: 'Qatar',
+            RE: 'Reunion',
+            RO: 'Romania',
+            RU: 'Russia',
+            RW: 'Rwanda',
+            SH: 'Saint Helena',
+            KN: 'Saint Kitts and Nevis',
+            LC: 'Saint Lucia',
+            PM: 'Saint Pierre and Miquelon',
+            VC: 'Saint Vincent and the Grenadines',
+            WS: 'Samoa',
+            SM: 'San Marino',
+            ST: 'São Tomé and Príncipe',
+            SA: 'Saudi Arabia',
+            SN: 'Senegal',
+            RS: 'Serbia',
+            SC: 'Seychelles',
+            SL: 'Sierra Leone',
+            SG: 'Singapore',
+            SX: 'Sint Maarten',
+            SK: 'Slovakia',
+            SI: 'Slovenia',
+            SB: 'Solomon Islands',
+            SO: 'Somalia',
+            ZA: 'South Africa',
+            GS: 'South Georgia and the South Sandwich Islands',
+            KR: 'South Korea',
+            SS: 'South Sudan',
+            ES: 'Spain',
+            LK: 'Sri Lanka',
+            SD: 'Sudan',
+            SR: 'Suriname',
+            SJ: 'Svalbard and Jan Mayen',
+            SZ: 'Eswatini',
+            SE: 'Sweden',
+            CH: 'Switzerland',
+            SY: 'Syria',
+            TW: 'Taiwan',
+            TJ: 'Tajikistan',
+            TZ: 'Tanzania',
+            TH: 'Thailand',
+            TL: 'Timor-Leste',
+            TG: 'Togo',
+            TK: 'Tokelau',
+            TO: 'Tonga',
+            TT: 'Trinidad and Tobago',
+            TN: 'Tunisia',
+            TR: 'Turkey',
+            TM: 'Turkmenistan',
+            TC: 'Turks and Caicos Islands',
+            TV: 'Tuvalu',
+            UG: 'Uganda',
+            UA: 'Ukraine',
+            AE: 'United Arab Emirates',
+            GB: 'United Kingdom',
+            US: 'United States',
+            UM: 'United States Minor Outlying Islands',
+            VI: 'United States Virgin Islands',
+            UY: 'Uruguay',
+            UZ: 'Uzbekistan',
+            VU: 'Vanuatu',
+            VA: 'Vatican City',
+            VE: 'Venezuela',
+            VN: 'Vietnam',
+            WF: 'Wallis and Futuna',
+            EH: 'Western Sahara',
+            YE: 'Yemen',
+            ZM: 'Zambia',
+            ZW: 'Zimbabwe'
+          }; */
+
+      </script>
+      <script>
+
+          new svgMap({
+            targetElementID: 'svgMapGPD',
+            countryNames: kor,
+            data: svgMapDataGPD
+          });
+      </script>
+    </div>
+</body>
+
+</html>
