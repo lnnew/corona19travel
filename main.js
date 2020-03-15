@@ -30,17 +30,17 @@ app.use(session({
 app.get('/dist/svgMap.js', function(req, res) {
     res.sendFile(path.join(__dirname + ('/dist/svgMap.js')));
 });
-app.get('/data/italy.jpg', function(req, res) {
-    res.sendFile(path.join(__dirname + ('/data/italy.jpg')));
+app.get('/data/italy.JPG', function(req, res) {
+    res.sendFile(path.join(__dirname + ('/data/italy.JPG')));
 });
-app.get('/data/hongkong.jpg', function(req, res) {
-    res.sendFile(path.join(__dirname + ('/data/hongkong.jpg')));
+app.get('/data/hongkong.JPG', function(req, res) {
+    res.sendFile(path.join(__dirname + ('/data/hongkong.JPG')));
 });
-app.get('/data/japan.jpg', function(req, res) {
-    res.sendFile(path.join(__dirname + ('/data/japan.jpg')));
+app.get('/data/japan.JPG', function(req, res) {
+    res.sendFile(path.join(__dirname + ('/data/japan.JPG')));
 });
-app.get('/data/china.jpg', function(req, res) {
-    res.sendFile(path.join(__dirname + ('/data/china.jpg')));
+app.get('/data/china.JPG', function(req, res) {
+    res.sendFile(path.join(__dirname + ('/data/china.JPG')));
 });
 app.get('/data/banner.jpg', function(req, res) {
     res.sendFile(path.join(__dirname + ('/data/banner.jpg')));

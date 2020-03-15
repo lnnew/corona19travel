@@ -1043,18 +1043,18 @@ module.exports = {
        </div>\
         <h2 id ="t0" class= "htag" >한국의 여행 정책 영향</h2>
         <h2 id ="t1" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>이탈리아</h2>
-        <img src="/data/italy.jpg" id="t01" class="w3-image">
+        <img src="/data/italy.JPG" id="t01" class="w3-image">
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 3월 11일(수)부로 이탈리아 전역[기존의 여행경보 2단계(황색경보, 여행자제) 발령 지역* 제외]에 대한 여행경보 1단계(남색경보, 여행유의)를 추가 발령하였습니다. <br>여행경보 추가 발령은 이탈리아 내 코로나19 확진자가 전국적으로 확산되고 있고 전국적인 이동제한령이 내려지는 등 여행경보 미발령 지역 우리 국민의 감염 피해 노출이 우려되는 상황임을 감안한 것입니다.</p><br>
         </div>
         <h2 id ="t2" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>일본</h2>
-        <img src="/data/japan.jpg" id="t01" class="w3-image">
+        <img src="/data/japan.JPG" id="t01" class="w3-image">
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 3월 9일(월)부로 일본 전 지역(이미 여행경보 3단계(적색경보, 철수권고)가 발령중인 후쿠시마 원전 반경 30km 이내 및 일본 정부 지정 피난지시지역 제외)에 대한 여행경보를 현행 1단계(남색경보, 여행유의)에서 2단계(황색경보, 여행자제)로 상향 조정하였습니다. <br>여행경보 상향 조정은 최근 일본 내 불투명한 감염상황과 취약한 대응을 두고 국제사회로부터 여러 의문이 제기되고 있는 가운데 코로나19 감염 확산 지속에 따른 우리 국민 감염 피해 노출이 한층 우려되는 상황임을 감안한 것입니다.</p><br>
         </div>
         <h2 id ="t3" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>중국 및 홍콩</h2>
-        <img src="/data/china.jpg" id="t01" class="w3-image">
-        <img src="/data/hongkong.jpg" id="t01" class="w3-image">
+        <img src="/data/china.JPG" id="t01" class="w3-image">
+        <img src="/data/hongkong.JPG" id="t01" class="w3-image">
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 2020년 1월 28일부로 전 중국, 홍콩과 마카오에 여행경보 2단계(여행자제)를 발령하였습니다. <br>이번 발령은 중국 우한시에서 발생한 신종 코로나바이러스가 중국 전역으로 확산되고 있고, 확진환자 및 사망자 등 피해가 급증하고 있으며, 전염병 확산 방지를 위한 중국 정부의 대응조치 강화로 중국 내 이동 제약이 점차 심해지는 추세를 감안한 것입니다.</p><br>
         </div>
