@@ -2,7 +2,6 @@
 /*! svg-pan-zoom | https://github.com/ariutta/svg-pan-zoom | BSD 2-Clause "Simplified" License | Copyright Andrea Leofreddi <a.leofreddi@itcharm.com> */
 // svg-pan-zoom v3.6.1
 // https://github.com/ariutta/svg-pan-zoom
-
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 var SvgUtils = require("./svg-utilities");
 
@@ -2845,6 +2844,7 @@ svgMap.prototype.emojiFlags = {
 };
 // Create the SVG map
 svgMap.prototype.createMap = function () {
+
   // Create the tooltip
   this.createTooltip();
 
@@ -2876,7 +2876,6 @@ svgMap.prototype.createMap = function () {
     var countryElement = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 
     countryElement.setAttribute('d', countryData.d);
-    countryElement.setAttribute('d', countryData.d);
     countryElement.setAttribute('id', this.id + '-map-country-' + countryID);
     countryElement.setAttribute('data-id', countryID);
     countryElement.classList.add('svgMap-country');
@@ -2897,23 +2896,18 @@ svgMap.prototype.createMap = function () {
     });*/
 
     // Tooltip events
-    countryElement.addEventListener('click', function (e) {
+    countryElement.addEventListener('mouseenter', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
-      if(this.tooltip.classList.contains('svgMap-active')) {
-          this.hideTooltip();
-
-      } else{
-          this.showTooltip(e);
-      }
+      this.showTooltip(e);
     }.bind(this));
 
     countryElement.addEventListener('mousemove', function (e) {
-
+      this.moveTooltip(e);
     }.bind(this));
 
     countryElement.addEventListener('mouseleave', function () {
-
+      this.hideTooltip();
     }.bind(this));
 
   }.bind(this));
@@ -2962,18 +2956,11 @@ svgMap.prototype.getTooltipContent = function (countryID) {
 
   if (this.options.hideFlag === false) {
     // Flag
-    var ke1y ="website";
-    var  website = this.options.data.values[countryID][ke1y];
-
     var flagContainer = this.createElement('div', 'svgMap-tooltip-flag-container svgMap-tooltip-flag-container-' + this.options.flagType, tooltipContentWrapper)
 
     if (this.options.flagType === 'image') {
-        var link =this.createElement('a','',flagContainer);
-        link.setAttribute('href',`'${website }'`);
-        link.setAttribute('style',`'  display:block'`);
-      var flagi= this.createElement('img', 'svgMap-tooltip-flag', link);
-          flagi.setAttribute('src', this.options.flagURL.replace('{0}', countryID.toLowerCase()));
-
+      this.createElement('img', 'svgMap-tooltip-flag', flagContainer)
+          .setAttribute('src', this.options.flagURL.replace('{0}', countryID.toLowerCase()));
     } else if (this.options.flagType === 'emoji') {
       flagContainer.innerHTML = this.emojiFlags[countryID];
     }
@@ -2990,10 +2977,8 @@ svgMap.prototype.getTooltipContent = function (countryID) {
   } else {
     tooltipContentTable = '<table>';
     Object.keys(this.options.data.data).forEach(function (key) {
-
       var item = this.options.data.data[key];
       var value = this.options.data.values[countryID][key];
-
       item.floatingNumbers && (value = value.toFixed(1));
       item.thousandSeparator && (value = this.numberWithCommas(value, item.thousandSeparator));
       if(key=="website") {
@@ -3015,7 +3000,6 @@ svgMap.prototype.getTooltipContent = function (countryID) {
 
         }
     }
-
     }.bind(this));
     tooltipContentTable += '</table>';
     tooltipContent.innerHTML = tooltipContentTable;
@@ -3426,6 +3410,10 @@ svgMap.prototype.mapPaths = {
   "MA": {
     "d": "M965.2,348.4l-2.3-0.1l-5.5-1.4l-5,0.4l-3.1-2.7h-3.9l-1.8,3.9 l-3.7,6.7l-4,2.6l-5.4,2.9L927,365l-0.9,3.4l-2.1,5.4l1.1,7.9l-4.7,5.3l-2.7,1.7l-4.4,4.4l-5.1,0.7l-2.8,2.4l-0.1,0.1l-3.6,6.5 l-3.7,2.3l-2.1,4l-0.2,3.3l-1.6,3.8l-1.9,1l-3.1,4l-2,4.5l0.3,2.2l-1.9,3.3l-2.2,1.7l-0.3,3h0.1l12.4-0.5l0.7-2.3l2.3-2.9l2-8.8 l7.8-6.8l2.8-8.1l1.7-0.4l1.9-5l4.6-0.7l1.9,0.9h2.5l1.8-1.5l3.4-0.2l-0.1-3.4l0,0h0.8l0.1-7.5l8.9-4.7l5.4-1l4.4-1.7l2.1-3.2 l6.3-2.5l0.3-4.7l3.1-0.5l2.5-2.4l7-1l1-2.5l-1.4-1.4l-1.8-6.7l-0.3-3.9L965.2,348.4L965.2,348.4z"
   },
+  // Uncomment the following lines if you like to have Morocco and Western Sahara combined, then run the build process (gulp build)
+  //"MA": {
+  //  "d": "M969.3,363.1l-1.8-6.7l-0.3-3.9l-2-4.1l-2.3-0.1l-5.5-1.4l-5,0.4l-3.1-2.7h-3.9l-1.8,3.9l-3.7,6.7l-4,2.6l-5.4,2.9 L927,365l-0.9,3.4l-2.1,5.4l1.1,7.9l-4.7,5.3l-2.7,1.7l-4.4,4.4l-5.1,0.7l-2.8,2.4l-0.1,0.1l-3.6,6.5l-3.7,2.3l-2.1,4l-0.2,3.3 l-1.6,3.8l-1.9,1l-3.1,4l-2,4.5l0.3,2.2l-1.9,3.3l-2.2,1.7l-0.3,3l-0.3,2.7l1.2-2.2l21.6,0.1l-0.9-9.2l1.4-3.3l5.2-0.5l0.2-16.3 l17.9,0.3l0.2-9.7l0.1-1.2l0.1-7.9l8.9-4.7l5.4-1l4.4-1.7l2.1-3.2l6.3-2.5l0.3-4.7l3.1-0.5l2.5-2.4l7-1l1-2.5L969.3,363.1z"
+  //},
   "MZ": {
     "d": "M1203,640.7l-0.8-2.9l0,0l0,0l-4.6,3.7l-6.2,2.5l-3.3-0.1l-2.1,1.9 l-3.9,0.1l-1.4,0.8l-6.7-1.8l-2.1,0.3l-1.6,6l0.7,7.3h0.3l1.9,2l2.2,4.6l0.1,8.2l-2.5,1.3l-1.9,4.5l-3.4-4l-0.2-4.5l1.3-2.9 l-0.3-2.6l-2.1-1.6l-1.6,0.6l-3-3l-17.1,5.2l0.3,4.5l0.3,2.4l4.6-0.1l2.6,1.3l1.1,1.6l2.6,0.5l2.8,2l-0.3,8.1l-1.3,4.4l-0.5,4.7 l0.8,1.9l-0.8,3.7l-0.9,0.6l-1.6,4.6l-6.2,7.2l2.2,9l1.1,4.5l-1.4,7.1l0.4,2.3l0.6,2.9l0.3,2.8h4.1l0.7-3.3l-1.4-0.5l-0.3-2.6 l2.6-2.4l6.8-3.4l4.6-2.2l2.5-2.3l0.9-2.6l-1.2-1.1l1.1-3l0.5-6.2l-1,0.3v-1.9l-0.8-3.7l-2.4-4.8l0.7-4.6l2.3-1.4l4.1-4.6l2.2-1.1 l6.7-6.8l6.4-3.1l5.2-2.5l3.7-3.9l2.4-4.4l1.9-4.6l-0.9-3.1l0.2-9.9l-0.4-5.6L1203,640.7L1203,640.7z"
   },
@@ -3685,7 +3673,6 @@ svgMap.prototype.createTooltip = function () {
   this.tooltip = this.createElement('div', 'svgMap-tooltip', document.getElementsByTagName('body')[0]);
   this.tooltipContent = this.createElement('div', 'svgMap-tooltip-content-wrapper', this.tooltip);
   this.tooltipPointer = this.createElement('div', 'svgMap-tooltip-pointer', this.tooltip);
-
 };
 
 // Set the tooltips content
