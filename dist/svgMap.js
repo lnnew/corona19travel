@@ -2999,7 +2999,7 @@ svgMap.prototype.getTooltipContent = function (countryID) {
       if(key=="website") {
 
         if(value !="") {
-            $('#svgMapGPD-map-country-'+countryID).doubletap(function(e) {
+            $('#svgMapGPD-map-country-'+countryID).dblclick(function(e) {
               window.open(value,"_self");
             })
             tooltipContentTable += '<tr><td>영토 더블클릭시 주한대사관으로 이동</td></tr>';
