@@ -2981,6 +2981,23 @@ svgMap.prototype.getTooltipContent = function (countryID) {
       if(key=="website") {
 
         if(value !="") {
+            var tapped=false;
+            $('#svgMapGPD-map-country-'+countryID).on("touchstart",function(e){
+              if(!tapped){ //if tap is not set, set up single tap
+                tapped=setTimeout(function(){
+                    tapped=null
+                    var countryID = countryElement.getAttribute('data-id');
+                    this.setTooltipContent(this.getTooltipContent(countryID));
+                    this.showTooltip(e);
+                    //insert things you want to do when single tapped
+                },300);   //wait 300ms then run single click code
+              } else {    //tapped within 300ms of last tap. double tap
+                clearTimeout(tapped); //stop single tap callback
+                tapped=null
+                window.open(value,"_self");
+              }
+              e.preventDefault()
+            });
             $('#svgMapGPD-map-country-'+countryID).dblclick(function(e) {
               window.open(value,"_self");
             })
