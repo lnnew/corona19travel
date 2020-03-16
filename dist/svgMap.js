@@ -65,7 +65,7 @@ module.exports = {
     zoomIn.addEventListener(
       "touchstart",
       function() {
-        instance.getPublicInstance().zoomIn();
+        //instance.getPublicInstance().zoomIn();
       },
       false
     );
@@ -105,7 +105,7 @@ module.exports = {
     resetPanZoomControl.addEventListener(
       "touchstart",
       function() {
-        instance.getPublicInstance().reset();
+        //instance.getPublicInstance().reset();
       },
       false
     );
@@ -171,7 +171,7 @@ module.exports = {
     zoomOut.addEventListener(
       "touchstart",
       function() {
-        instance.getPublicInstance().zoomOut();
+        //instance.getPublicInstance().zoomOut();
       },
       false
     );
