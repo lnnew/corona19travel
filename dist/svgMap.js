@@ -2901,6 +2901,11 @@ svgMap.prototype.createMap = function () {
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
+    countryElement.addEventListener('touchstart', function (e) {
+      var countryID = countryElement.getAttribute('data-id');
+      this.setTooltipContent(this.getTooltipContent(countryID));
+      this.showTooltip(e);
+    }.bind(this));
 
   }.bind(this));
 
