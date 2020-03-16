@@ -2896,12 +2896,12 @@ svgMap.prototype.createMap = function () {
     });*/
 
     // Tooltip events
-  countryElement.addEventListener('click', function (e) {
+/*  countryElement.addEventListener('click', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
-    }.bind(this));
-    countryElement.addEventListener('touchstart', function (e) {
+    }.bind(this));*/
+    countryElement.addEventListener('hover', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
