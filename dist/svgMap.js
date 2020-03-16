@@ -2896,18 +2896,10 @@ svgMap.prototype.createMap = function () {
     });*/
 
     // Tooltip events
-    countryElement.addEventListener('mouseenter', function (e) {
+  countryElement.addEventListener('click', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
-    }.bind(this));
-
-    countryElement.addEventListener('mousemove', function (e) {
-      this.moveTooltip(e);
-    }.bind(this));
-
-    countryElement.addEventListener('mouseleave', function () {
-      this.hideTooltip();
     }.bind(this));
 
   }.bind(this));
