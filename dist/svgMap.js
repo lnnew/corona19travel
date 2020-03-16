@@ -65,7 +65,7 @@ module.exports = {
     zoomIn.addEventListener(
       "touchstart",
       function() {
-        //instance.getPublicInstance().zoomIn();
+        instance.getPublicInstance().zoomIn();
       },
       false
     );
@@ -105,7 +105,7 @@ module.exports = {
     resetPanZoomControl.addEventListener(
       "touchstart",
       function() {
-        //instance.getPublicInstance().reset();
+        instance.getPublicInstance().reset();
       },
       false
     );
@@ -171,7 +171,7 @@ module.exports = {
     zoomOut.addEventListener(
       "touchstart",
       function() {
-        //instance.getPublicInstance().zoomOut();
+        instance.getPublicInstance().zoomOut();
       },
       false
     );
@@ -2896,31 +2896,42 @@ svgMap.prototype.createMap = function () {
     });*/
 
     // Tooltip events
-  countryElement.addEventListener('click', function (e) {
+    countryElement.addEventListener('mouseenter', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
-    countryElement.addEventListener('touchstart', function (e) {
+    countryElement.addEventListener('hover', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
-        countryElement.addEventListener('touchcancel', function (e) {
+    countryElement.addEventListener('touchenter', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
-            countryElement.addEventListener('touchmove', function (e) {
+    countryElement.addEventListener('touchmove', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
+    }.bind(this));
+    countryElement.addEventListener('touchleave', function (e) {
+      var countryID = countryElement.getAttribute('data-id');
+      this.setTooltipContent(this.getTooltipContent(countryID));
+      this.showTooltip(e);
+    }.bind(this));
+    countryElement.addEventListener('touchend', function (e) {
+      var countryID = countryElement.getAttribute('data-id');
+      this.setTooltipContent(this.getTooltipContent(countryID));
+      this.showTooltip(e);
+    }.bind(this));
+    countryElement.addEventListener('mousemove', function (e) {
+      this.moveTooltip(e);
     }.bind(this));
 
-              countryElement.addEventListener('touchend', function (e) {
-      var countryID = countryElement.getAttribute('data-id');
-      this.setTooltipContent(this.getTooltipContent(countryID));
-      this.showTooltip(e);
+    countryElement.addEventListener('mouseleave', function () {
+      this.hideTooltip();
     }.bind(this));
 
   }.bind(this));
@@ -2998,22 +3009,7 @@ svgMap.prototype.getTooltipContent = function (countryID) {
 
         if(value !="") {
             var tapped=false;
-            $('#svgMapGPD-map-country-'+countryID).on("touchstart",function(e){
-              if(!tapped){ //if tap is not set, set up single tap
-                tapped=setTimeout(function(){
-                    tapped=null
-                    var countryID = countryElement.getAttribute('data-id');
-                    this.setTooltipContent(this.getTooltipContent(countryID));
-                    this.showTooltip(e);
-                    //insert things you want to do when single tapped
-                },300);   //wait 300ms then run single click code
-              } else {    //tapped within 300ms of last tap. double tap
-                clearTimeout(tapped); //stop single tap callback
-                tapped=null
-                window.open(value,"_self");
-              }
-              e.preventDefault()
-            });
+
             $('#svgMapGPD-map-country-'+countryID).dblclick(function(e) {
               window.open(value,"_self");
             })
