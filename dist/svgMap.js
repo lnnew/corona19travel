@@ -2901,7 +2901,23 @@ svgMap.prototype.createMap = function () {
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
-    countryElement.addEventListener('hover', function (e) {
+    countryElement.addEventListener('touchstart', function (e) {
+      var countryID = countryElement.getAttribute('data-id');
+      this.setTooltipContent(this.getTooltipContent(countryID));
+      this.showTooltip(e);
+    }.bind(this));
+        countryElement.addEventListener('touchcancel', function (e) {
+      var countryID = countryElement.getAttribute('data-id');
+      this.setTooltipContent(this.getTooltipContent(countryID));
+      this.showTooltip(e);
+    }.bind(this));
+            countryElement.addEventListener('touchmove', function (e) {
+      var countryID = countryElement.getAttribute('data-id');
+      this.setTooltipContent(this.getTooltipContent(countryID));
+      this.showTooltip(e);
+    }.bind(this));
+
+              countryElement.addEventListener('touchend', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
