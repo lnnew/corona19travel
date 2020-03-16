@@ -2901,40 +2901,27 @@ svgMap.prototype.createMap = function () {
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
-    countryElement.addEventListener('mouseover', function (e) {
-      var countryID = countryElement.getAttribute('data-id');
-      this.setTooltipContent(this.getTooltipContent(countryID));
-      this.showTooltip(e);
-    }.bind(this));
     countryElement.addEventListener('hover', function (e) {
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
     countryElement.addEventListener('touchenter', function (e) {
-         e.preventDefault();
-        e.target.click();
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
     countryElement.addEventListener('touchmove', function (e) {
-         e.preventDefault();
-        e.target.click();
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
     countryElement.addEventListener('touchleave', function (e) {
-         e.preventDefault();
-        e.target.click();
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
     }.bind(this));
     countryElement.addEventListener('touchend', function (e) {
-      e.preventDefault();
-        e.target.click();
       var countryID = countryElement.getAttribute('data-id');
       this.setTooltipContent(this.getTooltipContent(countryID));
       this.showTooltip(e);
