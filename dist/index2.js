@@ -149,7 +149,8 @@ module.exports = {
        <!-- First Parallax Image with Logo Text -->
        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
        <div class="w3-panel w3-white" style="position:relative; top:vw;text-align:center;">
-       <h1><i class='fa fa-map-signs' style='font-size:48px;color:red'></i>코로나19여행</h1>
+
+       <h2><i class='fa fa-map-signs' style='font-size:48px;color:red'></i>코로나19입국제한</h2>
 
        <style>
          .header {
