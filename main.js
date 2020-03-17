@@ -69,23 +69,43 @@ app.get('/',function(req, res) {
     patientstr+=i+":"+String(cData.korea[i])+"  "
   }
   patientstr+= "|";
-  let rawdata = fs.readFileSync('./db/beta.json');
+  let rawdata = fs.readFileSync(path.join(__dirname + ('/db/beta.json')));
   let a =  JSON.parse(rawdata);
   let beta = a[0];
   let worldT = a["last_update"];
-  var str="{";
-  for (var n in beta) {
-    str +="\""+ n+"\""+": { \"color\":\""+beta[n]['color']+"\", \"banDetail\":\""+beta[n]['banDetail']+"\", \"website\":\" "+beta[n]['website']+"\"}"
-    str+=","
-  }
-  str= str.slice(0,str.length-1) + "}"
   let stat = a[1];
       fs.readFile(path.join(__dirname + ('/data/globeP.html')), function read(err, data) {
           if (err) {
               throw err;
           }
           gp =data.toString();
-          var html = template.HTML(str,gp,patientstr, stat, worldT, chinaDB,globePatients,koreaN, c_rate.c_out(cData["currency"]));
+          for(key in beta) {
+
+            if(  beta[key]["banDetail"]==undefined ||  beta[key]["banDetail"]=="" ){
+               beta[key]["banDetail"]="현재 입국 조치 제한 없음";
+            }
+            if(  beta[key]["website"]=="" || ! beta[key]["website"]){
+               beta[key]["website"]="http://www.corona19travel.info/";
+            }
+            var colorB = beta[key]["color"];
+            if(colorB==0){
+              beta[key]["color"]="#7EC2F1";
+              beta[key]["banDetail"]="현재 입국 조치 제한 없음";
+            }
+            if(colorB==1){
+              beta[key]["color"]="#977085";
+            }
+            if(colorB==2){
+              beta[key]["color"]=" #8B99BC";
+            }
+            if(colorB==3){
+              beta[key]["color"]="#A44752";
+            }
+            if(colorB==4){
+              beta[key]["color"]=" #B01E1E";
+            }
+          }
+          var html = template.HTML(beta,gp,patientstr, stat, worldT, chinaDB,globePatients,koreaN, c_rate.c_out(cData["currency"]));
           res.send(html);
       });
 });
