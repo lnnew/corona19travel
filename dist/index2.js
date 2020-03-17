@@ -163,7 +163,7 @@ module.exports = {
          .content {padding: 3px;}
        </style>
        <div class="header">
-         <p>${patientstr}</p>
+         <p>${patientstr}<a href="/update_patient"><i class="fa fa-refresh"  style ="color:black;" aria-hidden="true"></i></a></p>
        </div>
 
        </div>
