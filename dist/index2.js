@@ -211,8 +211,8 @@ module.exports = {
         margin-right: auto;
        }
        #china {
-         width:16%;
-         height:16%;
+         width:20%;
+         height:20%;
        }
        #globe{
          width:20%;
