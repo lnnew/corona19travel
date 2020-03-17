@@ -18,6 +18,9 @@ $('.china_path').hover(function(e) {
  $('#info-box').css('display','none');
 });
 
+    $('.world_path').dblclick(function(e) {
+    window.open( $(this).data('web') ,"_self");
+  })
   $('.world_path').hover(function(e) {
     $('#info-box1').css('display','block');
     var name =  $(this).data('name');
