@@ -7,7 +7,7 @@ module.exports = {
       var nsum= n0+n12+n34;
        return `<!DOCTYPE html>
        <html>
-       <title>코로나19여행</title>
+       <title>코로나19 입국제한 정보</title>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
