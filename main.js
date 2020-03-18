@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
 var  http =require('http');
 setInterval(function() {
     http.get("http://corona19travel.herokuapp.com/patient_update");
-}, 600000); // every 10 minutes (600000)
+}, 6000); // every 10 minutes (600000)
 
 app.use(compression());
 app.use(session({
