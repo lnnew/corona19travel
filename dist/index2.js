@@ -2627,7 +2627,8 @@ module.exports = {
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 2020년 1월 28일부로 전 중국, 홍콩과 마카오에 여행경보 2단계(여행자제)를 발령하였습니다. <br>이번 발령은 중국 우한시에서 발생한 신종 코로나바이러스가 중국 전역으로 확산되고 있고, 확진환자 및 사망자 등 피해가 급증하고 있으며, 전염병 확산 방지를 위한 중국 정부의 대응조치 강화로 중국 내 이동 제약이 점차 심해지는 추세를 감안한 것입니다.</p><br>
         </div>
-        <div class = "info1">
+       
+         <h2 id ="t3" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>유럽</h2>
          <img src="/data/europe.JPG" id="t01" class="w3-image">
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 3월 16일(월)부로 서유럽 및 중유럽 지역 36개국(EU 회원국* 또는 쉥겐협약 가입국** 총 31개국과 그 외 5개 국가***)에 여행경보 2단계(황색경보, 여행자제)를 발령하였습니다.<br>여행경보 발령은 역내 이동이 상대적으로 자유로운 유럽 지역 내 코로나19 확진자가 급증 추세를 보임에 따라 우리 국민 감염 피해 노출에 대한 우려가 심화되고 있는 상황을 감안한 것입니다.</p><br>
