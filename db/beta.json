@@ -11,8 +11,8 @@
       "website": "https://www.canadainternational.gc.ca/korea-coree/index.aspx?lang=kor"
     },
     "US": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "한국 정규 비자업무를 중단, 기존 비자 무력화(단기 방문은 가능)",
       "website": "https://kr.usembassy.gov/ko/"
     },
     "MX": {
@@ -56,8 +56,8 @@
       "website": ""
     },
     "AG": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "입국 전 28일 이내 한국을 방문한 외국인 입국금지(3.17.)",
       "website": ""
     },
     "GP": {
@@ -116,8 +116,8 @@
       "website": ""
     },
     "CR": {
-      "color": 2,
-      "banDetail": "한국을 방문한 외국인 발열검사 실시 후 입국 허가(2.29)",
+      "color": 4,
+      "banDetail": "3.19 – 4.12 모든 외국인 입국금지(3.16)",
       "website": "http://overseas.mofa.go.kr/cr-ko/index.do"
     },
     "PA": {
@@ -261,13 +261,13 @@
       "website": "http://kr.china-embassy.org/kor/"
     },
     "TW": {
-      "color": 2,
-      "banDetail": "한국을 방문한 외국인 14일간 자가격리(2.25)",
+      "color": 4,
+      "banDetail": "3.19부터 모든 외국인 입국 금지",
       "website": "http://overseas.mofa.go.kr/tw-ko/index.do"
     },
     "MO": {
-      "color": 1,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 격리(2.26)",
+      "color": 4,
+      "banDetail": "3.18부터 모든 외국인 대상 입국 금지(3.17)",
       "website": ""
     },
     "HK": {
@@ -426,8 +426,8 @@
       "website": "http://overseas.mofa.go.kr/ae-ko/index.do"
     },
     "AM": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "한국에서 입국하는 모든 외국인 입국 금지",
       "website": ""
     },
     "AZ": {
@@ -621,8 +621,8 @@
       "website": ""
     },
     "NE": {
-      "color": 2,
-      "banDetail": "입국 전 한국을 방문한 외국인 14일간 자가 격리(3.10)",
+      "color": 4,
+      "banDetail": "3.19부터 2주간 국경 봉쇄",
       "website": ""
     },
     "NG": {
@@ -661,8 +661,8 @@
       "website": "http://overseas.mofa.go.kr/ga-ko/index.do"
     },
     "CM": {
-      "color": 2,
-      "banDetail": "사증 신청 시 음성 진단 결과서 필요(3.16)",
+      "color": 4,
+      "banDetail": "3.18부터 모든 국경 봉쇄(3.17)",
       "website": "http://overseas.mofa.go.kr/cm-ko/index.do"
     },
     "ST": {
@@ -681,8 +681,8 @@
       "website": ""
     },
     "LY": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "3.16부터 3주간 모든 외국인 입국 금지(3.14)",
       "website": ""
     },
     "MA": {
@@ -951,9 +951,9 @@
       "website": ""
     },
     "DE": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "color": 4,
+      "banDetail": "3.17부터 향후 30일간 비EU 회원국 국민 입국 금지(3.17)",
+      "website": "https://seoul.diplo.de/kr-ko"
     },
     "CH": {
       "color": 0,
@@ -1046,8 +1046,8 @@
       "website": ""
     },
     "TO": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "3.19부터 한국 방문한 모든 외국인 대상 입국 금지(3.18)",
       "website": ""
     },
     "TV": {
