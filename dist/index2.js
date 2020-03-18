@@ -2649,6 +2649,7 @@ module.exports = {
        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
        <P style="font-size:12px;" >DEVELOPER: HANKUK ACADEMY OF FOREIGN STUDIES 유지현, 정성원</p>
+        <P style="font-size:12px;" >CONTACT:010-4322-5758 | yoojihyun6933@gmail.com</p>
          <P style="font-size:12px;" >*사용시 주의: 여행 제한 정보는 대한민국 외교부 및 일본 정부 외교부가 출처입니다. 데이터 업데이트에 딜레이가 생길 수도 있으며, 업데이트 날짜를 참고하여 적절히 사용해주시기 바랍니다. 본 웹사이트의 데이터의 이용에 대한 책임은 전적으로 사용자 본인에게 있습니다. :)  </p>
        <i class="fa fa-facebook-official w3-hover-opacity"></i>
        </footer>
