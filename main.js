@@ -63,6 +63,9 @@ app.get('/china/china.js', function(req, res) {
 });
 var gp;
 app.get('/',function(req, res) {
+  res.redirect('/update_patient');
+});
+app.get('/home',function(req, res) {
   let rawdat1a = fs.readFileSync(path.join(__dirname + ('/china/chinaDB.json')));
   let chinaDB = JSON.parse(rawdat1a);
   let currency = fs.readFileSync(path.join(__dirname + ('/data/Patientdb.json')));
