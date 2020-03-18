@@ -240,7 +240,7 @@ router.get('/', function (request, response) {
   // Set some defaults
   db.defaults({ globe: {}, korea:{},currency:{}, last_update:""})
     .write();
-  response.redirect('/home');
+  response.redirect('/');
 });
 
 module.exports = router;
