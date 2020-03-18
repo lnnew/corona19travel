@@ -1060,11 +1060,6 @@
       "banDetail": "현재 입국 제한 없음",
       "website": "http://overseas.mofa.go.kr/pg-ko/index.do"
     },
-    "SD": {
-      "color": 4,
-      "banDetail": "3.16부터 모든 외국인 입국 금지",
-      "website": ""
-    },
     "FJ": {
       "color": 4,
       "banDetail": "3.7 이후 한국 방문한 외국인 입국 금지(3.6)",
