@@ -38,6 +38,9 @@ app.get('/dist/svgMap.js', function(req, res) {
 app.get('/data/italy.JPG', function(req, res) {
     res.sendFile(path.join(__dirname + ('/data/italy.JPG')));
 });
+app.get('/data/europe.JPG', function(req, res) {
+    res.sendFile(path.join(__dirname + ('/data/europe.JPG')));
+});
 app.get('/data/hongkong.JPG', function(req, res) {
     res.sendFile(path.join(__dirname + ('/data/hongkong.JPG')));
 });
