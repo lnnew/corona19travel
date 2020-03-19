@@ -41,8 +41,8 @@
       "website": ""
     },
     "DO": {
-      "color": 2,
-      "banDetail": "3.16부터 입국 전 14일 이내 한국 방문한 외국인 15일간 자가 격리",
+      "color": 4,
+      "banDetail": "3.19부터 15일간 국경 봉쇄(3.17)",
       "website": "http://overseas.mofa.go.kr/do-ko/index.do"
     },
     "PR": {
@@ -332,7 +332,7 @@
     },
     "NP": {
       "color": 4,
-      "banDetail": "3.10 이후 한국을 방문한 외국인 도착 비자발급 중단(3.3)",
+      "banDetail": "3.20부터 4.12 한국 방문한 외국인 입국 금지(3.18)",
       "website": "http://overseas.mofa.go.kr/np-ko/index.do"
     },
     "MV": {
@@ -361,9 +361,9 @@
       "website": "http://overseas.mofa.go.kr/in-ko/index.do"
     },
     "PK": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "color": 2,
+      "banDetail": "입국하는 모든 승객 음성 진단서 제출(3.17)",
+      "website": "http://overseas.mofa.go.kr/pk-ko/index.do"
     },
     "IR": {
       "color": 0,
@@ -421,8 +421,8 @@
       "website": ""
     },
     "AE": {
-      "color": 2,
-      "banDetail": "한국에서 입국하는 입국자 공항에서 PCR 실시",
+      "color": 4,
+      "banDetail": "3.19부터 한국인 입국 금지(3.18)",
       "website": "http://overseas.mofa.go.kr/ae-ko/index.do"
     },
     "AM": {
@@ -542,7 +542,7 @@
     },
     "BI": {
       "color": 1,
-      "banDetail": "한국을 방문한 외국인 14일 간 격리(3.5)",
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일 간 격리(3.5)",
       "website": ""
     },
     "RW": {
@@ -561,8 +561,8 @@
       "website": "http://overseas.mofa.go.kr/sd-ko/index.do"
     },
     "BJ": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 1,
+      "banDetail": "입국하는 모든 내외국인 14일 격리",
       "website": ""
     },
     "BF": {
@@ -576,8 +576,8 @@
       "website": ""
     },
     "TD": {
-      "color": 2,
-      "banDetail": "입국 전 한국을 방문한 외국인 코로나 검사 의무화(3.8)",
+      "color": 4,
+      "banDetail": "3.19부터 국제공항 봉쇄 내외국인 입국 금지",
       "website": ""
     },
     "CI": {
@@ -601,9 +601,9 @@
       "website": "http://overseas.mofa.go.kr/gh-ko/index.do"
     },
     "GW": {
-      "color": 0,
+      "color": 4,
       "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "website": "3.18부터 외국인 입국 금지(3.18)"
     },
     "LR": {
       "color": 4,
@@ -626,13 +626,13 @@
       "website": ""
     },
     "NG": {
-      "color": 2,
-      "banDetail": "한국 방문한 외국인 14일간 자가격리(2.27)",
+      "color": 4,
+      "banDetail": "3.20부터 4주간 한국을 방문한 외국인 입국 금지(3.18)",
       "website": "http://overseas.mofa.go.kr/ng-ko/index.do"
     },
     "SN": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 1,
+      "banDetail": "입국 전 25일 이내 한국 방문한 외국인 격리(3.18)",
       "website": ""
     },
     "SL": {
@@ -641,8 +641,8 @@
       "website": "http://www.sierra-leone.or.kr/ko/"
     },
     "TG": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 2,
+      "banDetail": "한국에서 입국하는 모든 외국인 14일 자가격리(3.16)",
       "website": ""
     },
     "CG": {
@@ -662,7 +662,7 @@
     },
     "CM": {
       "color": 4,
-      "banDetail": "3.18부터 모든 국경 봉쇄(3.17)",
+      "banDetail": "3.19부터 모든 국경 봉쇄(3.17)",
       "website": "http://overseas.mofa.go.kr/cm-ko/index.do"
     },
     "ST": {
@@ -671,8 +671,8 @@
       "website": ""
     },
     "DZ": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "모든 항공 여객 및 선박 중단(3.17)",
       "website": ""
     },
     "EG": {
@@ -741,8 +741,8 @@
       "website": "http://overseas.mofa.go.kr/mz-ko/index.do"
     },
     "NA": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "한국인 국민 입국 금지(3.17)",
       "website": ""
     },
     "ZA": {
@@ -771,9 +771,9 @@
       "website": ""
     },
     "ES": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "color": 4,
+      "banDetail": "육로를 통한 외국인 입국 금지(항공.해상 가능)",
+      "website": "http://overseas.mofa.go.kr/es-ko/index.do"
     },
     "SM": {
       "color": 0,
@@ -801,8 +801,8 @@
       "website": ""
     },
     "GR": {
-      "color": 2,
-      "banDetail": "입국하는 모든 내외국인 14일 자가격리(3.16)",
+      "color": 4,
+      "banDetail": "3.18부터 4.18 비EU국가 국민 입국 금지(3.18)",
       "website": "http://overseas.mofa.go.kr/gr-ko/index.do"
     },
     "BA": {
@@ -847,7 +847,7 @@
     },
     "DK": {
       "color": 4,
-      "banDetail": "3.16부터 4.13까지 모든 외국인 입국 금지(3.13)",
+      "banDetail": "3.14부터 4.13까지 모든 외국인 입국 금지(3.13)",
       "website": "https://sydkorea.um.dk/ko/"
     },
     "FI": {
@@ -861,9 +861,9 @@
       "website": "http://overseas.mofa.go.kr/no-ko/index.do"
     },
     "SE": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "color": 4,
+      "banDetail": "3.19부터 30일간 유럽경제지역 소속 아닌 외국인 입국 금지",
+      "website": "http://overseas.mofa.go.kr/se-ko/index.do"
     },
     "EE": {
       "color": 4,
@@ -991,8 +991,8 @@
       "website": ""
     },
     "NZ": {
-      "color": 2,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일간 자가격리(2.25)",
+      "color": 4,
+      "banDetail": "3.19부터 외국인 입국 금지(3.19)",
       "website": "https://www.mfat.govt.nz/ko/countries-and-regions/north-asia/republic-of-korea-south/new-zealand-e"
     },
     "NU": {
