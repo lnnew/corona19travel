@@ -586,8 +586,8 @@
       "website": "http://overseas.mofa.go.kr/ci-ko/index.do"
     },
     "GM": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 1,
+      "banDetail": "한국에서 입국하는 입국자 14일간 격리(3.17)",
       "website": ""
     },
     "GH": {
@@ -921,9 +921,9 @@
       "website": "http://overseas.mofa.go.kr/cz-ko/index.do"
     },
     "PL": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "color": 4,
+      "banDetail": "3.15부터 모든 외국인 입국금지(3.13)",
+      "website": "http://overseas.mofa.go.kr/pl-ko/index.do"
     },
     "HU": {
       "color": 4,
