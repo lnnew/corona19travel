@@ -31,6 +31,10 @@ app.use(session({
   saveUninitialized: true,
   store: new LokiStore()
 }));
+app.use('/robots.txt', function (req, res, next) {
+    res.type('text/plain')
+    res.send("User-agent: *\nAllow: /");
+});
 
 app.get('/dist/svgMap.js', function(req, res) {
     res.sendFile(path.join(__dirname + ('/dist/svgMap.js')));
