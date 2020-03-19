@@ -356,8 +356,8 @@
       "website": "http://overseas.mofa.go.kr/lk-ko/index.do"
     },
     "IN": {
-      "color": 2,
-      "banDetail": "3.3 이전 발급된 비자 무력화---신규비자 발급 필요",
+      "color": 4,
+      "banDetail": "3.3 이전 발급된 비자 무력화---신규비자 발급 중단(3.13)",
       "website": "http://overseas.mofa.go.kr/in-ko/index.do"
     },
     "PK": {
@@ -1018,6 +1018,11 @@
     "MP": {
       "color": 0,
       "banDetail": "현재 입국 제한 없음",
+      "website": ""
+    },
+    "AS": {
+      "color": 4,
+      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지",
       "website": ""
     },
     "WS": {
