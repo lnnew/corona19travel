@@ -368,12 +368,12 @@
     "IR": {
       "color": 0,
       "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "website": "http://overseas.mofa.go.kr/ir-ko/index.do"
     },
     "AF": {
       "color": 0,
       "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "website": "http://overseas.mofa.go.kr/af-ko/index.do"
     },
     "UZ": {
       "color": 4,
@@ -438,7 +438,7 @@
     "YE": {
       "color": 0,
       "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "website": "http://overseas.mofa.go.kr/ye-ko/index.do"
     },
     "OM": {
       "color": 4,
@@ -523,7 +523,7 @@
     "TZ": {
       "color": 0,
       "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "website": "http://overseas.mofa.go.kr/tz-ko/index.do"
     },
     "CF": {
       "color": 2,
@@ -576,7 +576,7 @@
       "website": ""
     },
     "TD": {
-      "color": 4,
+      "color": 4,  
       "banDetail": "3.19부터 국제공항 봉쇄 내외국인 입국 금지",
       "website": ""
     },
@@ -593,12 +593,12 @@
     "GH": {
       "color": 4,
       "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(3.16)",
-      "website": ""
+      "website": "http://overseas.mofa.go.kr/gh-ko/index.do"
     },
     "GN": {
       "color": 2,
       "banDetail": "입국 전 한국을 방문한 외국인 14일 자가격리(3.16)",
-      "website": "http://overseas.mofa.go.kr/gh-ko/index.do"
+      "website": ""
     },
     "GW": {
       "color": 4,
@@ -673,12 +673,12 @@
     "DZ": {
       "color": 4,
       "banDetail": "모든 항공 여객 및 선박 중단(3.17)",
-      "website": ""
+      "website": "http://overseas.mofa.go.kr/dz-ko/index.do"
     },
     "EG": {
       "color": 0,
       "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "website": "http://overseas.mofa.go.kr/eg-ko/index.do"
     },
     "LY": {
       "color": 4,
@@ -763,7 +763,7 @@
     "PT": {
       "color": 0,
       "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "website": "http://overseas.mofa.go.kr/pt-ko/index.do"
     },
     "MT": {
       "color": 2,
