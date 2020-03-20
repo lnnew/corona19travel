@@ -276,8 +276,8 @@
       "website": "http://overseas.mofa.go.kr/hk-ko/index.do"
     },
     "BN": {
-      "color": 2,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일간 자가격리(2.27)",
+      "color": 1,
+      "banDetail": "3.20부터 항공편으로 입국하는 모든 입국자 14일간 격리(3.19)",
       "website": "http://overseas.mofa.go.kr/bn-ko/index.do"
     },
     "ID": {
@@ -306,8 +306,8 @@
       "website": "http://overseas.mofa.go.kr/mm-ko/index.do"
     },
     "PH": {
-      "color": 3,
-      "banDetail": "대구.경북 방문한 외국인 입국 금지(2.26)",
+      "color": 4,
+      "banDetail": "3.22부터 모든 비자발급 중단, 모든 외국인 대상 입국금지(3.19)",
       "website": "http://overseas.mofa.go.kr/ph-ko/index.do"
     },
     "SG": {
@@ -536,8 +536,8 @@
       "website": "http://overseas.mofa.go.kr/cd-ko/index.do"
     },
     "UG": {
-      "color": 2,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일간 자가격리(2.27)",
+      "color": 4,
+      "banDetail": "모든 외국인 대상 사실상 입국 금지(3.20)",
       "website": "http://overseas.mofa.go.kr/ug-ko/index.do"
     },
     "BI": {
@@ -686,8 +686,8 @@
       "website": ""
     },
     "MA": {
-      "color": 2,
-      "banDetail": "한국을 방문한 외국인 입국심사---발열검사(2.29)",
+      "color": 4,
+      "banDetail": "3.17부터 국경봉쇄에 따른 모든 외국인 대상 입국금지",
       "website": "http://overseas.mofa.go.kr/ma-ko/index.do"
     },
     "TN": {
@@ -761,8 +761,8 @@
       "website": "http://overseas.mofa.go.kr/zw-ko/index.do"
     },
     "PT": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "3.19-4.2 비 EU회원국에서 오는 외국인 입국 금지(3.17)",
       "website": "http://overseas.mofa.go.kr/pt-ko/index.do"
     },
     "MT": {
@@ -821,8 +821,8 @@
       "website": ""
     },
     "HR": {
-      "color": 1,
-      "banDetail": "입국 전 14일 이내 한국 방문한 외국인 14일간 격리(2.29)",
+      "color": 4,
+      "banDetail": "3.19부터 30일간 비 EU회원국 및 비 쉥겐협약가입국에서 오는 외국인 입국금지(3.18)",
       "website": "http://overseas.mofa.go.kr/hr-ko/index.do"
     },
     "IT": {
@@ -946,8 +946,8 @@
       "website": ""
     },
     "NL": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "3.19부터 30일간 비EU 회원국 외국인 대상 입국금지(3.18)",
       "website": ""
     },
     "DE": {
@@ -956,8 +956,8 @@
       "website": "https://seoul.diplo.de/kr-ko"
     },
     "CH": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "한국 등 비 쉥겐협약국에서 오는 외국인 대상 입국금지(3.19)",
       "website": ""
     },
     "AD": {
@@ -971,8 +971,8 @@
       "website": ""
     },
     "AT": {
-      "color": 2,
-      "banDetail": "한국을 방문한 외국인 음성 판정서 필수(3.6)",
+      "color": 4,
+      "banDetail": "▸3.19-4.10 한국 등 비 쉥겐협약국에서 입국하는 모든 외국인 입국금지(3.19)",
       "website": "https://www.bmeia.gv.at/ko/oeb-seoul/"
     },
     "LI": {
