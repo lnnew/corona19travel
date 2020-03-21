@@ -21,8 +21,8 @@
       "website": "http://overseas.mofa.go.kr/mx-ko/index.do"
     },
     "CU": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "3.24부터 30일 간 모든 외국인 입국 금지(3.21)",
       "website": ""
     },
     "BS": {
@@ -92,7 +92,7 @@
     },
     "GT": {
       "color": 4,
-      "banDetail": "3.11부터 한국 방문한 외국인 입국 금지(3.12)",
+      "banDetail": "3.17. –3.31. 간 국경 봉쇄에 따른 모든 외국인 입국금지(3.16.)",
       "website": "http://overseas.mofa.go.kr/gt-ko/index.do"
     },
     "BZ": {
@@ -501,8 +501,8 @@
       "website": ""
     },
     "ET": {
-      "color": 2,
-      "banDetail": "한국을 방문한 외국인 14일간 자가격리---전화 모니타링(2.18)---건강신고서 작성(3.2)",
+      "color": 1,
+      "banDetail": "모든 외국민 대상 14일간 격리(3.20)",
       "website": "http://overseas.mofa.go.kr/et-ko/index.do"
     },
     "KE": {
@@ -566,8 +566,8 @@
       "website": ""
     },
     "BF": {
-      "color": 2,
-      "banDetail": "모든 외국인 발열검사 실시(3.5)",
+      "color": 4,
+      "banDetail": "3.21부터 2주간 국경 봉쇄로 모든 내외국인 입출국 금지(3.20)",
       "website": ""
     },
     "CV": {
@@ -1072,7 +1072,7 @@
     },
     "FJ": {
       "color": 4,
-      "banDetail": "3.7 이후 한국 방문한 외국인 입국 금지(3.6)",
+      "banDetail": "한국 여권 소지자의 입국 금지(3.21)",
       "website": "http://overseas.mofa.go.kr/fj-ko/index.do"
     },
     "PF": {
