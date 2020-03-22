@@ -332,6 +332,49 @@ module.exports = {
        <h2  class= "htag" style="margin-top:50px;"><i class="fa fa-map" style="color:red;"></i>입국제한 한눈에 보기<a href="/update_patient"><i class="fa fa-refresh"  style ="color:#1abc9c;" aria-hidden="true"></i></a></h2>
        <P style="font-size:12px;" align="center">*지도의 각 나라를 클릭하여 세부 정보를 볼 수 있습니다.</p>
        <P style="font-size:12px;"align="center" >*지도의 각 나라를 더블클릭하여 주한 대사관 페이지를 열 수 있습니다.</p>
+       <style>
+
+     form.example input[type=text] {
+     box-sizing: border-box;
+     border-radius:9px;
+       padding: 10px;
+       font-size: 12px;
+       border: 1px solid grey;
+       float: left;
+       width: 80%;
+       background: white;
+       margin-bottom:20px;
+     }
+
+     form.example button {
+      margin-bottom:20px;
+     border-radius:9px;
+     box-sizing: border-box;
+       float: left;
+       width: 20%;
+       padding: 10px;
+       background: #86DBD4;
+       color: white;
+       font-size: 12px;
+       border: 1px solid grey;
+       border-left: none;
+       cursor: pointer;
+     }
+
+     form.example button:hover {
+       background: #0b7dda;
+     }
+
+     form.example::after {
+       content: "";
+       clear: both;
+       display: table;
+     }
+     </style>
+     <form class="example"  style="margin:auto;max-width:300px">
+<input type="text" name="cname" placeholder="검색하고 싶은 나라 이름을 입력하세요..."id="myInput">
+  <button type="submit"  id="myBtn" ><i class="fa fa-search"></i></button>
+</form>
        <div class="w3-col mapSupport2">
          <div>
            <div class="w3-row w3-dark-grey ">
@@ -2602,7 +2645,7 @@ module.exports = {
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>마스크 300개 초과 반출 시 세관 신고를 하고 출국 전 확인을 받아야 해야합니다. 1천 개가 넘으면 정식 수출 신고를 해야합니다. 따라서 여행가서 몇 일간 사용할 마스크는 걱정하지 말고 챙길 셔도 됩니다.</p><br>
         </div>
-      
+
         <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>해외에서 의심 증상이 있을땐?</h2>
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>코로나19 전염병의 주요 의심 증상(37.5℃ 이상 발열, 기침, 폐렴, 호흡곤란 등 호흡기 증상) 발생 시 즉시 병원에 내원(마스크 착용)하시기 바라며, 해외에 있을시 반드시 대사관에 연락해야 합니다.</p><br>
@@ -2628,7 +2671,7 @@ module.exports = {
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 2020년 1월 28일부로 전 중국, 홍콩과 마카오에 여행경보 2단계(여행자제)를 발령하였습니다. <br>이번 발령은 중국 우한시에서 발생한 신종 코로나바이러스가 중국 전역으로 확산되고 있고, 확진환자 및 사망자 등 피해가 급증하고 있으며, 전염병 확산 방지를 위한 중국 정부의 대응조치 강화로 중국 내 이동 제약이 점차 심해지는 추세를 감안한 것입니다.</p><br>
         </div>
-       
+
          <h2 id ="t3" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>유럽</h2>
          <img src="/data/europe.JPG" id="t01" class="w3-image">
         <div class = "info1">
