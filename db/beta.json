@@ -602,8 +602,8 @@
     },
     "GW": {
       "color": 4,
-      "banDetail": "현재 입국 제한 없음",
-      "website": "3.18부터 외국인 입국 금지(3.18)"
+      "banDetail": "3.18부터 외국인 입국 금지(3.18",
+      "website": ""
     },
     "LR": {
       "color": 4,
@@ -1076,8 +1076,8 @@
       "website": "http://overseas.mofa.go.kr/fj-ko/index.do"
     },
     "PF": {
-      "color": "1",
-      "banDetail": "",
+      "color": "2",
+      "banDetail": "1.1. 이후 한국 방문한 입국한 외국인 검역설문지 제출,",
       "website": ""
     }
   },
