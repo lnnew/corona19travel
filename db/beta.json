@@ -271,13 +271,13 @@
       "website": ""
     },
     "HK": {
-      "color": 2,
-      "banDetail": "3.17일부터 입국 전 14일 이내 한국을 방문한 외국인 14일 자가 격리(3.17)",
+      "color": 4,
+      "banDetail": "3.25부터 14일간 홍콩 비거주자 입국 금지",
       "website": "http://overseas.mofa.go.kr/hk-ko/index.do"
     },
     "BN": {
-      "color": 1,
-      "banDetail": "3.20부터 항공편으로 입국하는 모든 입국자 14일간 격리(3.19)",
+      "color": 4,
+      "banDetail": "3.24.부터 모든 외국인 입국 및 환승 금지(3.23)",
       "website": "http://overseas.mofa.go.kr/bn-ko/index.do"
     },
     "ID": {
@@ -326,8 +326,8 @@
       "website": "http://overseas.mofa.go.kr/tl-ko/index.do"
     },
     "VN": {
-      "color": 1,
-      "banDetail": "한국을 방문한 외국인 14일 격리(2.29)",
+      "color": 4,
+      "banDetail": "3.22부터 모든 외국인 대상 입국 금지(3.21)",
       "website": "http://overseas.mofa.go.kr/vn-ko/index.do"
     },
     "NP": {
@@ -396,8 +396,8 @@
       "website": "http://overseas.mofa.go.kr/tj-ko/index.do"
     },
     "TM": {
-      "color": 2,
-      "banDetail": "모든 외국인 입국 후 최대 24일 격리(2.28)",
+      "color": 4,
+      "banDetail": "3.20-4.20 모든 외국인 대상 출입국 금지(3.19)",
       "website": "http://overseas.mofa.go.kr/tm-ko/index.do"
     },
     "LB": {
@@ -546,8 +546,8 @@
       "website": ""
     },
     "RW": {
-      "color": 2,
-      "banDetail": "입국 전 한국을 방문한 외국인 문지, 발열 검사(3.8)",
+      "color": 4,
+      "banDetail": "3.21부터 2주간 국경 봉쇄에 따라 모든 외국인 입국 금지(3.21)",
       "website": "http://overseas.mofa.go.kr/rw-ko/index.do"
     },
     "SS": {
@@ -586,8 +586,8 @@
       "website": "http://overseas.mofa.go.kr/ci-ko/index.do"
     },
     "GM": {
-      "color": 1,
-      "banDetail": "한국에서 입국하는 입국자 14일간 격리(3.17)",
+      "color": 4,
+      "banDetail": "사실상 모든 외국인 대상 입국금지(3.21)",
       "website": ""
     },
     "GH": {
@@ -641,13 +641,13 @@
       "website": "http://www.sierra-leone.or.kr/ko/"
     },
     "TG": {
-      "color": 2,
-      "banDetail": "한국에서 입국하는 모든 외국인 14일 자가격리(3.16)",
+      "color": 4,
+      "banDetail": "3.20부터 2주간 모든 여행객 대상 육로 국경 봉쇄",
       "website": ""
     },
     "CG": {
       "color": 2,
-      "banDetail": "한국을 방문한 외국인 발열검사 실시(3.6)",
+      "banDetail": "3.22부터 국경 봉쇄(3.21)",
       "website": ""
     },
     "GQ": {
@@ -726,8 +726,8 @@
       "website": "http://overseas.mofa.go.kr/mg-ko/index.do"
     },
     "MW": {
-      "color": 2,
-      "banDetail": "한국을 방문한 외국인 14일간 자가격리(2.28)",
+      "color": 4,
+      "banDetail": "한국을 방문한 외국인 입국 금지(3.20)",
       "website": ""
     },
     "MU": {
@@ -826,9 +826,9 @@
       "website": "http://overseas.mofa.go.kr/hr-ko/index.do"
     },
     "IT": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "color": 4,
+      "banDetail": "관광 목적으로 입국한 외국인 대상 입국금지(3.17)",
+      "website": "http://overseas.mofa.go.kr/it-ko/index.do"
     },
     "IS": {
       "color": 2,
@@ -886,8 +886,8 @@
       "website": "http://overseas.mofa.go.kr/ru-ko/index.do"
     },
     "RO": {
-      "color": 1,
-      "banDetail": "대구.청도 방문한 외국인 입국 후 14일 격리(3.2)",
+      "color": 4,
+      "banDetail": "3.23부터 모든 외국인 입국 금지(3.21)",
       "website": "http://overseas.mofa.go.kr/ro-ko/index.do"
     },
     "MD": {
