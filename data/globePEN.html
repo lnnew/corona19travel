@@ -1,0 +1,3501 @@
+<style>
+    table, td {
+    	color: #000;
+    	font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif
+    }
+
+    /* end basic styling                                 */
+
+    /* define height and width of scrollable area. Add 16px to width for scrollbar          */
+    div.tableContainer {
+    	clear: both;
+    	border: 1px solid #963;
+    	height: 285px;
+    	overflow: auto;
+    	width: 900px
+    }
+
+    /* Reset overflow value to hidden for all non-IE browsers. */
+    html>body div.tableContainer {
+    	overflow: hidden;
+    	width: 900px
+    }
+
+    /* define width of table. IE browsers only                 */
+    div.tableContainer table {
+    	float: left;
+    	/* width: 740px */
+    }
+
+    /* define width of table. Add 16px to width for scrollbar.           */
+    /* All other non-IE browsers.                                        */
+    html>body div.tableContainer table {
+    	/* width: 756px */
+    }
+
+    /* set table header to a fixed position. WinIE 6.x only                                       */
+    /* In WinIE 6.x, any element with a position property set to relative and is a child of       */
+    /* an element that has an overflow property set, the relative value translates into fixed.    */
+    /* Ex: parent element DIV with a class of tableContainer has an overflow property set to auto */
+
+    thead.fixedHeader tr {
+    	position: relative;
+    }
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    #customers td {
+      width: 50%;
+    }
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+    #customers tr:hover {background-color: #ddd;}
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #1abc9c;
+      color: white;
+    }
+    /* set THEAD element to have block level attributes. All other non-IE browsers            */
+    /* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+
+    /* make the TH elements pretty */
+    thead.fixedHeader th {
+    	background: #C96;
+    	border-left: 1px solid #EB8;
+    	border-right: 1px solid #B74;
+    	border-top: 1px solid #EB8;
+    	font-weight: normal;
+    	padding: 4px 3px;
+    	text-align: left
+    }
+
+    html>body tbody.scrollContent {
+    	display: block;
+    	height: 262px;
+    	overflow: auto;
+    	width: 100%
+    }
+
+    html>body thead.fixedHeader {
+    	display: table;
+    	overflow: auto;
+    	width: 100%
+    }
+
+    /* make TD elements pretty. Provide alternating classes for striping the table */
+    /* http://www.alistapart.com/articles/zebratables/                             */
+    tbody.scrollContent td, tbody.scrollContent tr.normalRow td {
+    	background: #FFF;
+    	border-bottom: none;
+    	border-left: none;
+    	border-right: 1px solid #CCC;
+    	border-top: 1px solid #DDD;
+    	padding: 2px 3px 3px 4px
+    }
+
+
+
+    tbody.scrollContent tr.alternateRow td {
+
+    	background: #EEE;
+    	border-bottom: none;
+    	border-left: none;
+    	border-right: 1px solid #CCC;
+    	border-top: 1px solid #DDD;
+    	padding: 2px 3px 3px 4px
+    }
+        </style>
+    <table id="customers" align="center" class="scrollTable">
+								<h2 align="center"   id ="koreamap" class= "htag" style="margin-top:50px;"><i class="fa fa-th-list" style="color:#1abc9c"></i>Global Statistics consist of Country, Confirmed Cases (Deceased)</h2>
+								<colgroup>
+									<col style="width: 29%">
+									<col style="width: 29%">
+									<col style="width: 42%">
+								</colgroup>
+								<thead class="fixedHeader">
+									<tr>
+										<th colspan="2" scope="col">Country</th>
+										<th scope="col">Confirmed Cases (Deceased)</th>
+									</tr>
+								</thead>
+								<tbody class="scrollContent">
+								
+									
+										
+											
+											
+												
+													
+														<tr>
+															<th rowspan="27" scope="row">Asia</th>
+															<td class="w_bold">China</td>
+															<td>81,171
+															
+														(Deceased 3,277)
+														</td>
+														</tr>
+													
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Hong Kong</td><td>356
+														
+														(Deceased 4)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Taiwan</td><td>195
+														
+														(Deceased 2)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Macau</td><td>25
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Japan</td><td>1,128
+														
+														(Deceased 42)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Singapore</td><td>455
+														
+														(Deceased 2)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Thailand</td><td>721
+														
+														(Deceased 1)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Malaysia</td><td>1,306
+														
+														(Deceased 10)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Vietnam</td><td>113
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">India</td><td>415
+														
+														(Deceased 7)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Philippines</td><td>380
+														
+														(Deceased 25)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Cambodia</td><td>84
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Nepal</td><td>1
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Russia</td><td>438
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Sri Lanka</td><td>82
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Afghanistan</td><td>40
+														
+														(Deceased 1)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Pakistan</td><td>784
+														
+														(Deceased 5)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Indonesia</td><td>514
+														
+														(Deceased 48)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Bhutan</td><td>2
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Maldives</td><td>13
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Bangladesh</td><td>27
+														
+														(Deceased 2)
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Brunei</td><td>88
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Mongolia</td><td>10
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Kazakhstan</td><td>60
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Uzbekistan</td><td>46
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">Kyrgyzstan</td><td>14
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr>
+														<td class="w_bold">East Timor</td><td>1
+														
+														</td>
+														</tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+														<tr>
+															<th rowspan="16" scope="row">Middle Ease</th>
+															<td class="w_bold">Iran</td>
+															<td>23,049
+															
+															(Deceased 1,812)
+															
+															</td>
+														</tr>
+													
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Kuwait</td><td>189
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Bahrain</td><td>339
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">United Arab Emirates</td><td>198
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Iraq</td><td>266
+														
+														(Deceased 23)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Oman</td><td>66
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Lebanon</td><td>267
+														
+														(Deceased 4)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Israel</td><td>1,071
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Egypt</td><td>327
+														
+														(Deceased 14)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Algeria</td><td>201
+														
+														(Deceased 17)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Qatar</td><td>494
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Jordan</td><td>112
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Tunisia</td><td>89
+														
+														(Deceased 3)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Saudi Arabia</td><td>562
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Morocco</td><td>134
+														
+														(Deceased 4)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Syria</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+														<tr>
+															<th rowspan="32" scope="row">America</th>
+															<td class="w_bold">United States of America</td>
+															<td>43,214
+															
+														(Deceased 533)
+														</td>
+														</tr>
+													
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Canada</td><td>1,384
+														
+														(Deceased 19)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Brazil</td><td>904
+														
+														(Deceased 11)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Mexico</td><td>251
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Ecuador</td><td>532
+														
+														(Deceased 7)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Dominican Republic</td><td>72
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Argentina</td><td>225
+														
+														(Deceased 4)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Chile</td><td>632
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Columbia</td><td>196
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Peru</td><td>318
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Costa Rica</td><td>117
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Paraguay</td><td>22
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Panama</td><td>245
+														
+														(Deceased 3)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Bolivia</td><td>24
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Jamaica</td><td>19
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Honduras</td><td>26
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Saint Vincent and the Grenadines</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Cuba</td><td>16
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Guyana</td><td>5
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Venezuela</td><td>70
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Antigua and Barbuda</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Trinidad and Tobago</td><td>50
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Uruguay</td><td>135
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Saint Lucia</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">surname</td><td>4
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Guatemala</td><td>18
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Bahamas</td><td>4
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Elsalvador</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Barbados</td><td>5
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Nicaragua</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Haiti</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Grenada</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+														<tr>
+															<th rowspan="48" scope="row">Europe</th>
+															<td class="w_bold">Italy</td>
+															<td>63,927
+															
+														(Deceased 6,077)
+														</td>
+														</tr>
+													
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Germany</td><td>29,056
+														
+														(Deceased 123)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">France</td><td>19,856
+														
+														(Deceased 860)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">United Kingdom</td><td>6,650
+														
+														(Deceased 335)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Spain</td><td>33,089
+														
+														(Deceased 2,182)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Austria</td><td>3,631
+														
+														(Deceased 16)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Croatia</td><td>235
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Finland</td><td>626
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Sweden</td><td>1,906
+														
+														(Deceased 21)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Switzerland</td><td>8,060
+														
+														(Deceased 66)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Belgium</td><td>3,401
+														
+														(Deceased 75)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Denmark</td><td>1,395
+														
+														(Deceased 13)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Estonia</td><td>326
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Georgia</td><td>54
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Greece</td><td>624
+														
+														(Deceased 15)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">North Macedonia</td><td>114
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Norway</td><td>2,132
+														
+														(Deceased 7)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Romania</td><td>433
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Netherlands</td><td>4,204
+														
+														(Deceased 179)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Belarus</td><td>76
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Lithuania</td><td>143
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">San Marino</td><td>151
+														
+														(Deceased 20)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Azerbaijan</td><td>65
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Iceland</td><td>568
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Monaco</td><td>23
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Luxemburg</td><td>798
+														
+														(Deceased 8)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Armenia</td><td>190
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Ireland</td><td>906
+														
+														(Deceased 4)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Czech Republic</td><td>1,165
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Portugal</td><td>1,600
+														
+														(Deceased 14)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Latvia</td><td>139
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Andorra</td><td>113
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Poland</td><td>634
+														
+														(Deceased 7)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Ukraine</td><td>47
+														
+														(Deceased 3)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Hungary</td><td>167
+														
+														(Deceased 7)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Bosnia and Herzegovina</td><td>125
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Slovenia</td><td>414
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Liechtenstein</td><td>46
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Serbia</td><td>188
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Slovakia</td><td>185
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Bulgaria</td><td>185
+														
+														(Deceased 3)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Malta</td><td>90
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Moldova</td><td>94
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Albania</td><td>89
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Cyprus</td><td>95
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Turkey</td><td>1,236
+														
+														(Deceased 30)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Montegro</td><td>21
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Kosovo</td><td>31
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+														<tr>
+															<th rowspan="4" scope="row">Oceania</th>
+															<td class="w_bold">Australia</td>
+															<td>1,396
+															
+														(Deceased 7)
+														</td>
+														</tr>
+													
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">New Zealand</td><td>102
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Fiji</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Papua New Guinea</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+														<tr>
+															<th rowspan="39" scope="row">Africa</th>
+															<td class="w_bold">Nigeria</td>
+															<td>22
+															</td>
+														</tr>
+													
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Senegal</td><td>67
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Cameroon</td><td>40
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Republic of South Africa</td><td>274
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Togo</td><td>16
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Burkina Faso</td><td>75
+														
+														(Deceased 3)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Congo</td><td>30
+														
+														(Deceased 2)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">C�te d´Ivoire</td><td>26
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Sudan</td><td>2
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Ethiopia</td><td>11
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Gabon</td><td>6
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Ghana</td><td>24
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Guinea</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Kenya</td><td>15
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Namibia</td><td>3
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Central African Republic</td><td>4
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Congo</td><td>4
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Equatorial Guinea</td><td>6
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Swatini</td><td>4
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Mauritania</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Rwanda</td><td>17
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Seychelles</td><td>7
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Benin</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Liberia</td><td>3
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Tanzania</td><td>12
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Djibouti</td><td>3
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Mauritius</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Gambia</td><td>3
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Zambia</td><td>12
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Chad</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Niger</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Somalia</td><td>3
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Cape Verde</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Zimbabwe</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Madagascar</td><td>12
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Angola</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Eritrea</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Uganda</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Mozambique</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+														<tr>
+															<th rowspan="27" scope="row">Others</th>
+															<td class="w_bold">Diamond Princess</td>
+															<td>712
+															
+														(Deceased 7)
+														</td>
+														</tr>
+													
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Palestine</td><td>59
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Gibraltar</td><td>15
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Saint Martin</td><td>5
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Saint Barthelemy</td><td>3
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Vatican</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Martinique</td><td>32
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Guiana</td><td>18
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Faroe Islands</td><td>115
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Guernsey</td><td>17
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Polynesia</td><td>17
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Jersey Island</td><td>15
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">French Reunion</td><td>64
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Guadeloupe</td><td>56
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Cayman Islands</td><td>3
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Curacao</td><td>3
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Mayotte</td><td>14
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Puerto Rico</td><td>23
+														
+														(Deceased 1)
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Guam</td><td>27
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">U.S. Virgin Islands</td><td>6
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Aruba</td><td>8
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Bermuda</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">SintMaarten</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Montserrat</td><td>1
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">New Caledonia l.</td><td>5
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Greenland</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+													
+													
+														<tr><td class="w_bold">Isle of Man</td><td>2
+														</td></tr>
+													
+												 
+											
+											
+										
+										<tr>
+											<th colspan="2" scope="row">Total</th>
+											<td class="w_bold">357,080(Deceased 16,006)</td>
+										</tr>
+								</tbody>
+								</table>
