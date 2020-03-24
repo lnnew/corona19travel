@@ -374,7 +374,7 @@ module.exports = {
      </style>
      <form class="example"  style="margin:auto;max-width:300px">
 <input type="text" name="cname" placeholder="Search countries by name..."id="myInput">
-  <button type="submit"  id="myB1tn" ><i class="fa fa-search"></i></button>
+  <button type="submit"  id="myBtn" ><i class="fa fa-search"></i></button>
 </form>
        <div class="w3-col mapSupport2">
          <div>
