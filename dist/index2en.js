@@ -148,8 +148,8 @@ module.exports = {
         <a href="#coronainfo" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-file-text" style="color:yellow;"></i>COVID-19?</a>
        <a href="#qna1"  class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="	fa fa-check-square"  style="color:#1abc9c;"></i>Q&A</a>
        <a href="#t0" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-flag-o"></i>Policies of Korea</a>
-             <a href="http://corona19travel.info/en/" class="w3-bar-item w3-button w3-red" style="width:100%; opacity:0.7;" ><i class="	fa fa-globe" style="color:black"></i>> ENGLISH</a>
-       </div>
+             <a href="http://corona19travel.info/" class="w3-bar-item w3-button  w3-blue" style="width:100%; opacity:0.7;" ><i class="	fa fa-globe" style="color:black"></i>> 한국어</a>      
+</div>
        </div>
 
        <!-- First Parallax Image with Logo Text -->
