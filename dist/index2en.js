@@ -168,7 +168,7 @@ module.exports = {
          .content {padding: 3px;}
        </style>
        <div class="header">
-         <p>${patientstr}<a href="/update_patient"><i class="fa fa-refresh"  style ="color:black;" aria-hidden="true"></i></a></p>
+         <p>${patientstr}<a href="/update_patientEN"><i class="fa fa-refresh"  style ="color:black;" aria-hidden="true"></i></a></p>
        </div>
 
        </div>
@@ -330,7 +330,7 @@ module.exports = {
        <div id ="1eye" class="w3-container w3-padding-small  w3-center" style="width:${100*n0/nsum}%; margin-bottom:50px; background-color:#7EC2F1;">${parseInt(100*n0/nsum)}%</div>
        </div>
        <div>
-       <h2  class= "htag" style="margin-top:50px;"><i class="fa fa-map" style="color:red;"></i>입국제한 한눈에 보기<a href="/update_patient"><i class="fa fa-refresh"  style ="color:#1abc9c;" aria-hidden="true"></i></a></h2>
+       <h2  class= "htag" style="margin-top:50px;"><i class="fa fa-map" style="color:red;"></i>입국제한 한눈에 보기<a href="/update_patientEN"><i class="fa fa-refresh"  style ="color:#1abc9c;" aria-hidden="true"></i></a></h2>
        <P style="font-size:12px;" align="center">*You can open detailed information by clicking each country.</p>
        <P style="font-size:12px;"align="center" >*You can go to website of ambassador of each country by double-clicking its territory.</p>
        <style>
