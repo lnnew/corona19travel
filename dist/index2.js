@@ -240,9 +240,13 @@ module.exports = {
        <div class=" paddi" >
        </div>
        <div class="row">
-        <div class="column" style ="  width: 15%;">
+         <div class="column" style ="  width: 7%;">
         <p></p>
         </div>
+        <div class="column" style ="  width: 8%;">
+        <a href="http://corona19travel.info/en/" class="w3-bar-item w3-button w3-hide-small w3-red" style="width:100%; opacity:0.7; margin:20px;" ><i class="	fa fa-globe" style="color:black"></i>> ENGLISH</a>
+        <a href="http://corona19travel.info/" class="w3-bar-item w3-button w3-hide-small w3-blue" style="width:100%; opacity:0.7; margin:20px;" ><i class="	fa fa-globe" style="color:black"></i>> 한국어</a>
+</div>
           <a href="#koreamap"  >
         <div class="column">
           <div class="card" id ="korea">
