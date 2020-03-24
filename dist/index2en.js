@@ -168,7 +168,7 @@ module.exports = {
          .content {padding: 3px;}
        </style>
        <div class="header">
-         <p>${patientstr}<a href="/update_patientEN"><i class="fa fa-refresh"  style ="color:black;" aria-hidden="true"></i></a></p>
+         <p>${patientstr}<a href="/update_patient"><i class="fa fa-refresh"  style ="color:black;" aria-hidden="true"></i></a></p>
        </div>
 
        </div>
@@ -248,8 +248,8 @@ module.exports = {
           <div class="card" id ="korea">
           <img class="flag" id="globe"  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTEu%0D%0AMjY2IDUxMS4yNjYiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Y2lyY2xlIGN4PSIyNTUuNjE2%0D%0AIiBjeT0iMjU1LjYzMyIgcj0iMjU1LjYxNiIgZGF0YS1vcmlnaW5hbD0iIzY1QjFFRiIgY2xhc3M9%0D%0AImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzY5QkFGQiIgZmlsbD0iZ3JlZW4iIHN0eWxl%0D%0APSImIzEwOyAgICBmaWxsOiAjZjVmNWY1OyYjMTA7ICAgIHN0cm9rZS13aWR0aDogMTsmIzEwOyAg%0D%0AICBzdHJva2U6ICM3Nzc7JiMxMDsiLz48cGF0aCBkPSJNMTMxLjM5MiA0NzAuMTI5Yy0uMDQ4LjA5%0D%0ANi0uMTEyLjE2LS4xNi4yNTYuMzg0LjA5Ni43NTIuMjI0IDEuMTM2LjMwNGwtLjk3Ni0uNTZ6TTEx%0D%0ANS4zMTIgMTA5Ljg1N2wtLjUxMi0xLjA0YzQuMjcyLS42NCA0LjU2LTMuNjQ4IDcuODA4LTQuNzUy%0D%0AIDMuNjk2LTEuMjE2IDIuNDMyLjExMiA2LjA2NCAwIDIuOTQ0LS4xMjggNC43MzYgMi4wMTYgOC4w%0D%0AOTYuNDQ4LS44MTYgMS40NC0yLjE0NCAyLjQzMi0zLjQ3MiAzLjQwOC0yLjc2OCAxLjk2OC01LjYg%0D%0AMy45ODQtOC44OTYgNC43NTItMy4yOTYuNzUyLTcuMTY4LS4wNDgtOS4wODgtMi44MTZ6IiBkYXRh%0D%0ALW9yaWdpbmFsPSIjRTlFRkY0IiBkYXRhLW9sZF9jb2xvcj0iI2ZmY2YzZiIgZmlsbD0icmVkIiBz%0D%0AdHlsZT0iJiMxMDsgICAgZmlsbDogIzc3NzsmIzEwOyIvPjxwYXRoIGQ9Ik0xNjYuNDQ4IDMzNy42%0D%0AOTdjLS4wNjQgMi4yNTYtMS4zOTIgNC4yMjQtMi41NDQgNi4xMjgtNS4xMzYgOC4zODQtOC4yNTYg%0D%0AMTguMDk2LTguOTQ0IDI3LjkzNi0uNjg4IDkuNDI0LS4yNzIgMjEuMDQtOC40OCAyNS42OC00LjY4%0D%0AOCAyLjYwOC0xMS4yOCAyLjE0NC0xNC40IDYuNTQ0LS45NzYgMS4zMjgtMS40NCAzLjAwOC0xLjkw%0D%0ANCA0LjU3Ni0yLjAxNiA3LjM0NC00LjA0OCAxNC42ODgtNi4wNjQgMjIuMDMyYTMxOC4zNjIgMzE4%0D%0ALjM2MiAwIDAgMS03Ljg1Ni0uOGMzLjA3Mi45NzYgNS4yIDUuMTM2IDMuMzYgNy45ODQtMi45NDQt%0D%0AMS41NTItNi44MTYuMjg4LTguNDQ4IDMuMjQ4LTEuNTUyIDIuOTQ0LTEuMzI4IDYuNTI4LS40NjQg%0D%0AOS43NzYgMi42NzIgOS42IDEwLjg4IDE3LjM0NCAyMC41NDQgMTkuNjQ4LTEuNjggMy4xODQtNi44%0D%0AMTYgMS43OTItOS45NTItLjMzNi0yMi4zODQtMTUuMTM2LTM5LjI4LTM4LjE5Mi00Ni45OTItNjQu%0D%0AMDk2LTIuNzItOS4xMzYtNC40NjQtMTguODQ4LTkuNzkyLTI2LjcwNC00LjQ0OC02LjY0LTExLjE2%0D%0AOC0xMS41MDQtMTUuNjE2LTE4LjE0NC02LjI0LTkuNTM2LTcuNDA4LTIxLjkwNC0xNC42NC0zMC42%0D%0AMjQtNC4wNDgtNC45NzYtMTAuMzA0LTExLjA4OC02LjcyLTE2LjQxNiAxLjQ0LTIuMTkyIDQuNTEy%0D%0ALTQuMjcyIDMuMjk2LTYuNTkyLS40LS43NTItMS4yMTYtMS4yMTYtMS44NTYtMS44NTYtMi40MzIt%0D%0AMi42MDgtLjc1Mi02LjcwNC40NjQtMTAuMDY0IDIuMDE2LTUuODQgMi4wMTYtMTIuMDggMS4xNTIt%0D%0AMTguMzItNi4wOC01LjQ0LTEwLjg4LTEyLjE5Mi0xMy44ODgtMTkuNzc2LTEuNzkyLTQuNjI0LTQu%0D%0AMTc2LTEwLjQtOS4xMzYtMTAuNDY0LTEuMjgtMy41ODQtMi42MDgtNy4xNjgtMy44ODgtMTAuNzUy%0D%0ALS40NjQgMS4yOC0xLjcyOCAyLjA4LTMuMTIgMi4yNTZDNC40IDE3OS45ODUgMjguMDE2IDEyNi44%0D%0AMzMgNjQuNzY4IDg1LjY0OWMuODE2LS4zNTIgMS42MTYtLjgxNiAyLjQzMi0xLjI4IDguNzItNS4w%0D%0AODggMTUuNjY0LTEyLjcyIDI0LjA5Ni0xOC4yNzIgMS43MjgtMS4xNTIgMy42OTYtMi4yNTYgNS44%0D%0ANC0yLjAzMiAyLjA4LjE3NiA0LjA0OCAyLjMwNCAzLjI5NiA0LjI3Mi0uMjg4LjgxNi0uOTc2IDEu%0D%0ANDU2LTEuNjggMS45NjhBMTc4LjMxMyAxNzguMzEzIDAgMCAxIDY2LjU2IDkyLjEyOWMtMS4zNzYu%0D%0ANjg4LTIuODMyIDEuNTA0LTMuNDU2IDIuODk2LTEuMTY4IDIuMzY4LjggNS4zMTIgMy4yOTYgNi4x%0D%0ANzYgMi40OC44NjQgNS4yNjQuMzUyIDcuODA4LS4yMjQtMi4xNDQgMy4wNTYtMi43ODQgNy4xNjgt%0D%0AMS42OCAxMC43NTIgMi4zNjguMjI0IDMuMTItMy4wMDggMy44MjQtNS4yNjQgMi44OC04Ljk2IDE3%0D%0ALjE2OC0xMi42MDggMTYuMjQtMjIuMDQ4IDMuODcyIDIuMDE2IDcuODA4LTIuNDk2IDEwLjE3Ni02%0D%0ALjE5MiAyLjM2OC0zLjc2IDcuNjMyLTcuNDU2IDEwLjUyOC00LjE2LjE2IDEuODQuMzg0IDMuNjk2%0D%0ALjU2IDUuNTUyIDUuMDg4LTEuMjggMTAuMjQtMi42MDggMTUuMzI4LTMuODg4LTIuODk2IDIuMDMy%0D%0ALTMuODcyIDYuMzY4LTIuMjA4IDkuNDg4IDEuNjggMy4xMiA1Ljg0IDQuNjg4IDkuMTM2IDMuNDA4%0D%0ALS4wNDggMi43Mi0yLjQ4IDQuOC00LjY4OCA2LjQxNi01LjYgNC4yMjQtMTEuNjE2IDguNTYtMTgu%0D%0AMTQ0IDEwLjY0bDEuNTA0IDMuMTJjLS4xNi4wNjQtLjMzNi4xMjgtLjUxMi4xMjgtNC4xNi40LTgu%0D%0ANTYtMi41OTItMTMuMDA4LTIuMDE2LTIuNzIuMzUyLTYuMDY0LjM1Mi03LjYzMiAzLjEyLS4yMjQu%0D%0AMzUyLTEuMiA1LjItLjUxMiA0LjggMi40MzItMS4zOTIgNC44NDgtMi43ODQgNy4yMzItNC4xNi43%0D%0AMzYgMS45NjguOTEyIDQuMTYuNTEyIDYuMzA0IDIuOTQ0LS4yODggNi4wMTYuMzM2IDguNjI0IDEu%0D%0AOTA0LTIuNzIgNi4zMDQtOS43MTIgMTAuNTI4LTE2LjU5MiAxMC0uMDY0LTIuMDgtLjE3Ni00LjE2%0D%0ALS4yNC02LjI0LTUuNjY0LS40NjQtMTAuMjg4IDQuNC0xMy4xMiA5LjI2NC0yLjg4IDQuOTEyLTUu%0D%0AMDcyIDEwLjUyOC05LjgyNCAxMy42NDgtMi44OCAxLjk2OC02LjQxNiAyLjcyLTkuNTM2IDQuMzM2%0D%0ALTMuMDU2IDEuNjgtNS44ODggNC44NjQtNS4yNDggOC4yNzIuMjg4IDEuNjE2IDEuMzI4IDMuMTIg%0D%0AMS4yOCA0LjgtLjE3NiAzLjEyLTMuODA4IDQuNTc2LTYuMjQgNi41OTItNC4xNiAzLjQ3Mi01LjIg%0D%0AOS44NC05LjY0OCAxMi44OTYtMy4yMzIgMi4yNTYtNy41MiAyLjIwOC0xMS4yOCAzLjM2LTMuNzYg%0D%0AMS4xNTItNy41MiA0LjkxMi02IDguNTYtMS44NTYuNjQtNC4xMTItLjc1Mi00LjI4OC0yLjcyLTYu%0D%0ANjQgMTMuMDcyLTExLjAyNCAyNy4yOTYtMTIuODE2IDQxLjg3MiAzLjI5NiAyLjMwNCA2LjY0LTIu%0D%0AOTYgNy4yOC02Ljk0NC42ODgtMy45ODQgNC4xNi05LjIgNy4zOTItNi44MzItLjc1MiA1LjcyOC0x%0D%0ALjUwNCAxMS4zOTItMi4yNCAxNy4xMi0uMTc2IDEuMTA0LS4yODggMi4yNTYuMjQgMy4yMzIuNjQg%0D%0AMS4yMTYgMi4wMTYgMS43MjggMy4wNzIgMi41OTIgMi45NDQgMi41NDQgMi41NDQgNy4wNTYgMi43%0D%0AMiAxMC45MjguMTc2IDQuNzM2IDEuNzQ0IDkuMzYgNC4yMjQgMTMuNDA4LS4yNC0uODE2LS40LTEu%0D%0ANjE2LS41NzYtMi40MzIgNC41MTIuNTc2IDkuMi0uODggMTIuNjA4LTMuODg4IDEuNzkyLTEuNjE2%0D%0AIDMuMjk2LTMuNjk2IDUuNTUyLTQuNTEyIDIuMzItLjg2NCA0Ljg2NC0uMjQgNy4yMzIuNCA3LjM0%0D%0ANCAyLjAxNiAxNS4xNTIgNC4yNzIgMjAuMDY0IDEwLjA0OCAyLjQ4IDIuOTQ0IDQuMDQ4IDYuNjU2%0D%0AIDcuMDA4IDkuMDcyIDYuNzA0IDUuNjY0IDE4LjA0OCAzLjE2OCAyNC4xNzYgOS40NzIgNC45MTIg%0D%0ANS4wODggNCAxMy4yOTYgMi42NzIgMjAuMjg4LTMuMzYtMS44NC03Ljg1NiAyLjc4NC01Ljg4OCA2%0D%0ALjA4IDEuNzkyLTEuOTY4IDMuODcyLTQuMDQ4IDYuNDgtNC4wNDggMi42NTYtLjA2NCA0Ljk3NiAz%0D%0ALjU4NCAzLjAwOCA1LjI2NCA0LjYyNC01LjkwNCAxNS45NTItMy40NzIgMTcuNzQ0IDMuODcyIDYu%0D%0ANDguNDY0IDEzLjAwOC45MTIgMTkuNDg4IDEuNDQtMS4yNDggOS41MDQgMTguNjU2IDEwLjA2NCAx%0D%0AOC4yNTYgMTkuNjE2ek0xMjcuMDQgNzAuMTkzYy0yLjQ5NiAxLjIzMi01LjkzNi0uMTYtNi44NjQt%0D%0AMi43ODQtLjk0NC0yLjYyNC44MzItNS44NzIgMy41NTItNi40OTYgMS43MTItLjQgNC4wOTYtLjIw%0D%0AOCA0LjYyNC0xLjg4OC4xNi0uNTEyLjA2NC0xLjA3Mi4wNjQtMS42LS4wNjQtMy4xNjggMi43Njgt%0D%0ANS43OTIgNS44MjQtNi41OTIgMy4wNTYtLjc4NCA2LjI4OC0uMTc2IDkuMzkyLjQzMmExMS42NTEg%0D%0AMTEuNjUxIDAgMCAxIC44OTYgNy40MjRjLTIuMTI4LjA5Ni00LjI1Ni4xNzYtNi4zODQuMjcyLjE5%0D%0AMiAzLjUzNi0uMTYgNy45ODQtMy40NCA5LjI5Ni0yLjk0NCAxLjE2OC02Ljc4NC0xLjAwOC05LjIz%0D%0AMi45NzZNMTYwLjE3NiAzNC44ODFjNS44MDgtMi43ODQgMTAuNzItNy4xNjggMTYuNDQ4LTEwLjEx%0D%0AMiA5Ljg1Ni01LjA1NiAyMS4zNi01LjUwNCAzMi40MzItNS44NTZsNzUuNi0yLjM1MmMtNS44NCAz%0D%0ALjItMTEuNjggNi40MTYtMTcuNTM2IDkuNjE2LTQuNzY4IDIuNjI0LTEwLjE5MiA1LjMxMi0xNS40%0D%0AMjQgMy44MjQtLjExMiA0LjIwOCAzLjcxMiA4LjExMiA3LjkzNiA4LjA4LTEwLjM1MiA2LjQtMjQu%0D%0ANzItLjE0NC0zNS42NDggNS4yMzItNC41NzYgMi4yNTYtOC4yNzIgNi41MTItMTMuMzEyIDcuMzEy%0D%0ALTIuOTEyLjQ2NC01LjkzNi0uMzItOC44MzIuMzItNC44NDggMS4wNTYtNy45MDQgNS42NDgtMTEu%0D%0ANDg4IDkuMDcyLTQuMTI4IDMuOTUyLTEwLjE5MiA2LjY1Ni0xNS41ODQgNC43NjgtNS4zOTItMS44%0D%0AODgtOC4yMDgtOS45MDQtMy44ODgtMTMuNjQ4IDIuMTI4LTEuODQgNS4xNjgtMi4xNDQgNy42OC0z%0D%0ALjQ0IDIuNTEyLTEuMjggNC40OTYtNC43MiAyLjYwOC02LjgxNi0uODE2LS45MTItMi4xNi0xLjI2%0D%0ANC0yLjkxMi0yLjI0LS44MTYtMS4wNTYtLjczNi0yLjU2LTEuNDA4LTMuNzEyLTIuNTYtNC40OTYt%0D%0AOS42OCAxLjU1Mi0xNC41MjgtLjI1Nk0yMzYuNzA0IDU2LjE0NWMzLjQwOC0uNzg0IDYuMzY4LTIu%0D%0AOCA5LjU1Mi00LjI3MnM2Ljk3Ni0yLjMzNiAxMC4wOTYtLjc4NGMuOTI4IDIuMzItMS43NDQgNC40%0D%0AMzItNC4wOTYgNS4yNjRhMjguNjQ4IDI4LjY0OCAwIDAgMS0xNC4xMjggMS4yMzJNNDQyLjczNiA4%0D%0AMS41NjlhOC4xMzcgOC4xMzcgMCAwIDEtMi44OTYtLjE3NmMtNC4zMzYtLjkyOC03LjYzMi00LjI3%0D%0AMi0xMS4zNDQtNi43MDQtOC41Ni01LjY2NC0yMC4yNC02LjQtMjkuNDg4LTEuNzc2IDIuMTkyLTMu%0D%0AMTg0IDMuMjk2LTcuMTIgMy4wNTYtMTAuOTkybC0xLjMyOC40NjRjLTE1LjE1Mi04Ljc4NC0zMi45%0D%0AMTItMTcuOTA0LTQ5LjQ0LTEyLTMuODI0IDEuMzkyLTcuMjggMy40NzItMTEuMTUyIDQuOC00LjEx%0D%0AMiAxLjQ0LTguNjcyIDIuMDMyLTEyLjE5MiA0LjU3Ni0zLjU4NCAyLjU0NC01LjQ4OCA4LjE2LTIu%0D%0ANDE2IDExLjIxNiAyLjYwOCAyLjYwOCA2Ljc2OCAxLjkwNCAxMC40MTYgMi4yNTYgMy41ODQuMzUy%0D%0AIDcuNjk2IDMuOTIgNS43MjggNi45OTItMTUuODQgNy40MDgtMzEuNzI4IDE0Ljg4LTQ3LjU2OCAy%0D%0AMi4zNTIgNy4yOCAyLjM2OCAxMi4wOTYgMTAuNjI0IDEwLjUyOCAxOC4xNDQtNS4zMjguOTI4LTEw%0D%0ALjQ2NC0yLjMwNC0xNS44NC0yLjY1Ni03LjgwOC0uNC0xNS4yNjQgNi40OC0xNS40MjQgMTQuMjg4%0D%0ALS4yMjQgNy44MDggNi45NDQgMTUuMDI0IDE0Ljc1MiAxNC45MTIgNS44NC0uMDY0IDExLjU2OC0z%0D%0ALjU4NCAxNy4yMzItMi4wOTYuMjI0LTUuMzI4IDMuODcyLTkuODQgNy42MTYtMTMuNjQ4IDcuMjgt%0D%0ANy4yOTYgMTcuNjgtMTMuODg4IDI3LjQwOC0xMC4zMDQgMy4xODQgMS4xNTIgNS45MDQgMy4yOTYg%0D%0AOC41NiA1LjQyNCA1Ljg0IDQuNjI0IDExLjY4IDkuMjk2IDE3LjUzNiAxMy45ODQgMS44NTYtMS45%0D%0AMDQgMy42OTYtMy44MjQgNS41NTItNS42NjQgMy4xODQgMy4zNiA2LjM2OCA2LjcwNCA5LjYgMTAu%0D%0AMTEyIDEuNjE2LTEuMTA0IDMuMjk2LTIuMTQ0IDQuOTEyLTMuMjQ4IDEuMTUyIDMuMDA4IDIuMzY4%0D%0AIDUuOTUyIDMuNTM2IDguOTYuNDY0LTMuMjk2Ljg2NC02LjUyOCAxLjI2NC05Ljc3NiAzLjgyNC4x%0D%0AMTIgNy44NzIuMjI0IDExLjMyOC0xLjUwNCAzLjQ3Mi0xLjY4IDYuMDE2LTUuODQgNC41Ni05LjQy%0D%0ANC0uNzUyLTEuOTA0LTIuNTQ0LTMuNDA4LTIuODk2LTUuNDQtLjc1Mi00LjA0OCA1LjAyNC02Ljgx%0D%0ANiA4Ljc4NC00Ljk3NiAzLjY5NiAxLjc5MiA1LjU1MiA2LjAxNiA3LjEyIDkuODg4Ljg2NC0zLjkz%0D%0ANiAxLjY2NC03LjgwOCAyLjU0NC0xMS43NDRhOTIuODkxIDkyLjg5MSAwIDAgMCAxNS4zMTIgMjYu%0D%0AMjA4Yy0xMS44NTYtMi4yNTYtMjQuMzUyLS45Ni0zNS40NCAzLjYgMy41MzYgNC45NzYgOS42IDcu%0D%0AOTIgMTUuNjggNy42OCAyLjcyLS4wNjQgNS43MjgtLjY4OCA3LjgwOCAxLjA0IDEuNTY4IDEuMzI4%0D%0AIDEuOTY4IDMuNDcyIDIuMjU2IDUuNDQuOTI4IDUuNTUyIDEuODU2IDExLjA0IDIuNzIgMTYuNTI4%0D%0ALTYuMjU2LTUuMTM2LTE1LjI2NC00LjU2LTIzLjQyNC00LjcyLTguMTYtLjIyNC0xNy42OTYtMi40%0D%0AOC0yMC43MDQtMTAuMDQ4LTMuMjMyIDMuNjQ4LTQuNjcyIDguODQ4LTMuNzQ0IDEzLjcxMi04LjQ0%0D%0AOC0yLjAxNi0xOC4xNi01LjI0OC0yMC41OTItMTMuNTg0LTYuNTkyIDIuNDMyLTE0LjgtMS43NzYt%0D%0AMTYuNTkyLTguNTQ0LS42NC0yLjM2OC0uODE2LTUuMjY0LTIuODk2LTYuNTI4LTEuMjY0LS43NTIt%0D%0AMi44OTYtLjY0LTQuNC0uNDY0LTEyLjU0NCAxLjQ1Ni0yNS4wNCAyLjg0OC0zNy41MiA0LjMwNC02%0D%0ALjgxNi44MTYtMTMuODcyIDEuNjMyLTE5Ljg4OCA0Ljk3Ni02LjAxNiAzLjI5Ni0xMC44IDkuNzc2%0D%0ALTEwLjExMiAxNi42MDgtMTEuNTA0IDYuODMyLTIxLjI2NCAxNi43Mi0yNy44NTYgMjguMzUyLTIu%0D%0AMDggMy41ODQtMy44NzIgNy42OTYtMy4wNTYgMTEuNzQ0LjU3NiAzLjEyIDIuNjU2IDUuNzc2IDMu%0D%0AMjk2IDguODQ4IDEuMTA0IDUuMjY0LTEuOTA0IDEwLjM1Mi0zLjE2OCAxNS41NTItMy41ODQgMTQu%0D%0AOCA3LjY0OCAyOC43MzYgMTguMDY0IDM5LjkzNiA0LjkxMiA1LjIgMTAuNTkyIDEwLjg2NCAxNy43%0D%0ANiAxMS4xNTIgNC40NDguMTc2IDguNjcyLTEuNzkyIDEyLjgzMi0zLjQyNCAxMS45MDQtNC42ODgg%0D%0AMjQuODY0LTYuODMyIDM3LjYzMi02LjMyLTIuODk2IDIuMjU2LjExMiA3LjE2OCAzLjcxMiA3Ljky%0D%0AIDMuNTg0Ljc1MiA3LjQ1Ni0uNDE2IDEwLjkyOC44IDcuOTIgMi44MzIgNi44MzIgMTQuNDQ4IDMu%0D%0AMjQ4IDIyLjAzMiAxLjc5Mi0uMzUyIDMuNjQ4LS43MDQgNS40ODgtMS4wNGE5NDcuMzA3IDk0Ny4z%0D%0AMDcgMCAwIDEtMi45NDQgNy41NjhjMTAuODY0IDEuMzc2IDE0Ljk3NiAxNS42NjQgMTIuNDQ4IDI2%0D%0ALjM1Mi0yLjQ4IDEwLjcwNC04LjgzMiAyMC41MjgtOS4wMDggMzEuNTItLjA0OCA2LjAxNiAxLjc5%0D%0AMiAxMS44NTYgMy42NDggMTcuNTY4IDQuNjQgMTQuNTEyIDkuMjY0IDI5LjAyNCAxMy45MDQgNDMu%0D%0ANTg0IDEyLjk2IDEuNTUyIDIwLjQtMTQuOTI4IDMyLjQzMi0yMC4wOCA0LjUxMi0xLjk2OCA5Ljgy%0D%0ANC0yLjM2OCAxMy4zNi01LjcyOCAzLjQwOC0zLjIzMiAyLjMwNC0xMC44MTYtMi4wOC0xMC44MTYg%0D%0ANS45NTItLjY0IDExLjA0LTYuMDggMTEuMjE2LTEyLjA5Ni4wNjQtMS42OC0uMTc2LTMuMzYuMDQ4%0D%0ALTUuMDI0LjQtMi4zNjggMS45MDQtNC40NDggMy4zNDQtNi40OCA5LjE4NC0xMy4xODQgMTUuMTM2%0D%0ALTI4LjI4OCAyMS4wODgtNDMuMiAxLjU1Mi00IDMuMTItNy45MiA0LjY3Mi0xMS45MiA1Ljg4OC0x%0D%0ANC44NjQgMTEuNzI4LTI5LjY2NCAxNy42MTYtNDQuNTI4IDIuMzA0LTUuODQgNC42MjQtMTEuNjE2%0D%0AIDYuOTI4LTE3LjQ3Mi0zLjE4NCA1LjI2NC0xMS41MDQgNC41NzYtMTYuMjU2LjY0LTQuOC0zLjky%0D%0ALTcuMjk2LTkuODg4LTExLjA1Ni0xNC44LTMuMTg0LTQuMjI0LTcuNDcyLTcuOTY4LTguOTc2LTEz%0D%0ALjEyLS44NjQtMi45NDQtLjcwNC02LjEyOC0xLjIxNi05LjItMS4xNjgtNi42NTYtNS41NTItMTIu%0D%0AMTkyLTguNTYtMTguMjA4cy00LjU3Ni0xMy44MDgtLjM1Mi0xOS4wODhjMTIuMTYgMjEuMjE2IDIz%0D%0ALjIxNiA0My4wNTYgMzMuMjE2IDY1LjQ0IDEuMTA0LTMuNDcyIDMuNjQ4LTYuNDggNi44OC04LjE2%0D%0AIDIuMzY4LTEuMjggNS4wMjQtMS43OTIgNy41Mi0yLjgzMiA2LjU5Mi0yLjg5NiAxMS4xNTItOS44%0D%0AODggMTEuMTUyLTE3LjA1Ni0uMDY0LTcuMTY4LTQuNjI0LTE0LjE2LTExLjI4LTE2Ljk5Mi0zLjI5%0D%0ANi0xLjM5Mi03LjA1Ni0xLjg0LTEwLjE3Ni0zLjc2LTMuMTItMS44NC01LjM3Ni02LjA2NC0zLjQw%0D%0AOC05LjEzNiAxLjg0LTIuODk2IDYuMzA0LTIuODMyIDkuMzYtMS4yMTYgMy4wNzIgMS42OCA1LjMy%0D%0AOCA0LjUxMiA4LjIwOCA2LjQxNiAyLjA4IDEuMzkyIDQuNTEyIDIuMzA0IDYuNzY4IDMuNTg0IDEy%0D%0ALjIwOCA2Ljk5MiAxNS4yMTYgMjIuODk2IDE3Ljc3NiAzNi43NjggMS4zOTIgNy40NTYgMi45NiAx%0D%0ANC44NjQgNC44MTYgMjIuMTQ0LjA2NC0xLjU2OC4wNDgtMy4xODQuMDQ4LTQuNzM2LS4wNjQtNjcu%0D%0AMjMyLTI2LjA2NC0xMjguMzM2LTY4LjUyOC0xNzMuOTM2em0yMy40MDggODRjLTEuNjgtLjExMi0z%0D%0ALjIzMi0xLjIxNi00LjU3Ni0yLjI1Ni0yLjE5Mi0xLjcyOC00LjQtMy43Ni01LjA0LTYuNDgtLjc1%0D%0AMi0zLjIzMi44LTYuOTQ0LS45MjgtOS44MjQtLjgxNi0xLjM5Mi0yLjI1Ni0yLjI1Ni0zLjQ3Mi0z%0D%0ALjIzMi0zLjE4NC0yLjU0NC01LjUwNC02LjE5Mi02LjM2OC0xMC4xMTItLjc1Mi0zLjQ3Mi4zMzYt%0D%0AOC4wOTYgMy44NzItOC42NzIgMS42OC0uMjg4IDMuNTIuNjQgNC4yNzIgMi4xOTJsLTIuMzY4IDEu%0D%0AMjhjMy45ODQuNDY0IDUuODQgNi40OCAyLjc4NCA5LjA3Mi0uNC40LS45MjguNzUyLS45MjggMS4z%0D%0AMjggMCAuMzUyLjIyNC42ODguNTI4LjkyOCAyLjQ4IDIuNzIgNi4xOTIgMy42OTYgOS40MjQgNS40%0D%0AMjQgMy4yMzIgMS42OCA2LjQxNiA0LjggNS45MDQgOC4zODQtMS4wNC40LTIuMDE2Ljc1Mi0zLjA1%0D%0ANiAxLjE1Mi0xLjEwNCAxLjEwNC0uMjI0IDMuMDcyLjkyOCA0LjE2czIuNjU2IDIuMTkyIDIuNzIg%0D%0AMy44MDhjMCAxLjc0NC0xLjk2OCAyLjk2LTMuNjk2IDIuODQ4ek00NjcuODA4IDM0My40NTdsLTQu%0D%0AMTc2IDIuOTZjMS40NTYgNS4xMi0xLjQ1NiAxMS4xMi02LjQgMTMuMTItMi42MDggMS4wNTYtNi4w%0D%0AOCAxLjUyLTYuOTYgNC4xOTItLjczNiAyLjI3MiAxLjAyNCA0LjU3Ni
           AxLjI2NCA2Ljk0NC4zODQg%0D%0AMy45MzYtMy4yOTYgNi44OC01Ljk1MiA5LjgwOHMtNC4wNjQgOC40MzItLjUyOCAxMC4xOTJjLjgx%0D%0ANi40MTYgMS43Ni40OTYgMi42NzIuNTc2IDMuODQuMzM2IDguMDQ4LjQ0OCAxMS4xODQtMS43OTIg%0D%0AOC45OTItNi40MTYuNDQ4LTIzLjgyNCA5LjMyOC0zMC40MTYgMS4yNjQtLjkyOCAyLjg0OC0xLjYg%0D%0AMy41MzYtMy4wMDggMi4wOTYtNC4xNDQtNS42MzItOC4yNTYtMy45NjgtMTIuNTc2eiIgZGF0YS1v%0D%0AcmlnaW5hbD0iI0U5RUZGNCIgZGF0YS1vbGRfY29sb3I9IiNmZmNmM2YiIGZpbGw9InJlZCIgc3R5%0D%0AbGU9IiYjMTA7ICAgIGZpbGw6ICM3Nzc7JiMxMDsiLz48L3N2Zz4=" >
-            <h2 style="color:black;">전 세계</h2>
-            <p  style="color:red;">한국인 대상 여행 금지 조치 바로가기</p>
+            <h2 style="color:black;">World Map</h2>
+            <p  style="color:red;">Travel ban on Koreans</p>
           </div>
         </div>
         </a>
@@ -260,8 +260,8 @@ module.exports = {
         <div class="column">
           <div class="card">
           <img class="flag"  id="china" src="https://upload.wikimedia.org/wikipedia/commons/9/91/China_Blank_Map_with_Province_Names.svg" >
-            <h2 style="color:black;" >중국</h2>
-            <p  style="color:red;">한국인 대상 여행 금지 조치 바로가기</p>
+            <h2 style="color:black;" >China Map</h2>
+            <p  style="color:red;">Travel ban on Koreans</p>
           </div>
         </div>
         </a>
@@ -330,7 +330,7 @@ module.exports = {
        <div id ="1eye" class="w3-container w3-padding-small  w3-center" style="width:${100*n0/nsum}%; margin-bottom:50px; background-color:#7EC2F1;">${parseInt(100*n0/nsum)}%</div>
        </div>
        <div>
-       <h2  class= "htag" style="margin-top:50px;"><i class="fa fa-map" style="color:red;"></i>입국제한 한눈에 보기<a href="/update_patientEN"><i class="fa fa-refresh"  style ="color:#1abc9c;" aria-hidden="true"></i></a></h2>
+       <h2  class= "htag" style="margin-top:50px;"><i class="fa fa-map" style="color:red;"></i>Current travel bans<a href="/update_patient"><i class="fa fa-refresh"  style ="color:#1abc9c;" aria-hidden="true"></i></a></h2>
        <P style="font-size:12px;" align="center">*You can open detailed information by clicking each country.</p>
        <P style="font-size:12px;"align="center" >*You can go to website of ambassador of each country by double-clicking its territory.</p>
        <style>
@@ -373,29 +373,29 @@ module.exports = {
      }
      </style>
      <form class="example"  style="margin:auto;max-width:300px">
-<input type="text" name="cname" placeholder="Search countries by name..."id="myInput">
+<input type="text" name="cname" placeholder="Search countries you want to know..."id="myInput">
   <button type="submit"  id="myBtn" ><i class="fa fa-search"></i></button>
 </form>
        <div class="w3-col mapSupport2">
          <div>
            <div class="w3-row w3-dark-grey ">
              <div class="w3-col w3-center wc">
-              <h3 style="font-size:2vw;">4군</h3>
+              <h3 style="font-size:2vw;">Degree 4</h3>
               <span class="dot" style=" background-color: #B01E1E;"></span>
              </div>
 
               <div class="w3-col w3-center wc">
-               <h3 style="font-size:2vw;">3군</h3>
+               <h3 style="font-size:2vw;">Degree 3</h3>
                 <span class="dot"style=" background-color: #A44752;"></span>
               </div>
 
               <div class="w3-col w3-center wc" >
-                <h3 style="font-size:2vw;">2군</h3>
+                <h3 style="font-size:2vw;">Degree 2</h3>
                 <span class="dot"style=" background-color: #977085;"></span>
                </div>
 
               <div class="w3-col w3-center wc">
-               <h3 style="font-size:2vw;">1군</h3>
+               <h3 style="font-size:2vw;">Degree 1</h3>
                 <span class="dot"style=" background-color: #8B99BC;"></span>
               </div>
            </div>
@@ -408,27 +408,27 @@ module.exports = {
          <div class="w3-card-4 w3-dark-grey banner">
 
           <div class="w3-container w3-center " style="margin-top:5px;">
-            <h3 style="font-size:1vw;">4군</h3>
+            <h3 style="font-size:1vw;">Degree 4</h3>
             <span class="dot" style=" background-color: #B01E1E;"></span>
-            <div class="hide-small	"><p style="font-size:1vw;">한국전역 입국제한<br>도착 비자 중단</p> </div>
+            <div class="hide-small	"><p style="font-size:1vw;">Traval ban on whole Korean regions<br>Halt Visa services</p> </div>
           </div>
 
             <div class="w3-container w3-center" style="margin-top:5px;">
-             <h3 style="font-size:1vw;">3군</h3>
+             <h3 style="font-size:1vw;">Degree 3</h3>
               <span class="dot"style=" background-color: #A44752;"></span>
-              <div class="hide-small	"><p style="font-size:1vw;">한국 일부 지역 입국제한<br></p> </div>
+              <div class="hide-small	"><p style="font-size:1vw;">Travel ban on some regions in Korea<br></p> </div>
             </div>
 
             <div class="w3-container w3-center" style="margin-top:5px;">
-              <h3 style="font-size:1vw;">2군</h3>
+              <h3 style="font-size:1vw;">Degree 2</h3>
               <span class="dot"style=" background-color: #977085;"></span>
-              <div class="hide-small	"><p style="font-size:1vw;">입국 가능<br>격리 조치</p> </div>
+              <div class="hide-small	"><p style="font-size:1vw;">Entry permitted<br>Quarantine</p> </div>
              </div>
 
             <div class="w3-container w3-center">
-             <h3 style="font-size:1vw;">1군</h3>
+             <h3 style="font-size:1vw;">Degree 1</h3>
               <span class="dot"style=" background-color: #8B99BC;"></span>
-              <div class="hide-small	"><p style="font-size:1vw;">입국 가능<br>자가격리 및 검역강화</p> </div>
+              <div class="hide-small	"><p style="font-size:1vw;">Entry permitted<br>Self isolation, monitering</p> </div>
             </div>
           </div>
 
@@ -2306,7 +2306,7 @@ module.exports = {
 
        </div>
        </div>
-       <p id = "up" class="w3-large w3-center w3-padding-16">최종 업데이트(외교부 최종 발표): ${worldT}</p>
+       <p id = "up" class="w3-large w3-center w3-padding-16">Final Update(Final update from MOFA): ${worldT}</p>
 
        <div id="info-box"></div>
 
@@ -2368,62 +2368,62 @@ module.exports = {
              font-family: arial;
            }
          </style>
-       <h2 id ="chinamap" class= "htag" ><i class="fa fa-plane" style="color:red;"></i>  한국인 대상 입국 제한 조치</h2>
-        <p align="center">*하늘색은 입국 미통제 성입니다.</p>
+       <h2 id ="chinamap" class= "htag" ><i class="fa fa-plane" style="color:red;"></i>  Travel ban on Koreans</h2>
+        <p align="center">*Sky blue regions have no traval ban.</p>
        <div class="w3-col mapSupport2">
          <div>
            <div class="w3-row w3-dark-grey ">
              <div class="w3-col w3-center wc">
-              <h3 style="font-size:2vw;">4군</h3>
+              <h3 style="font-size:2vw;">Degree 4</h3>
               <span class="dot" style=" background-color: #B01E1E;"></span>
              </div>
 
               <div class="w3-col w3-center wc">
-               <h3 style="font-size:2vw;">3군</h3>
+               <h3 style="font-size:2vw;">Degree 3</h3>
                 <span class="dot"style=" background-color: #A44752;"></span>
               </div>
 
               <div class="w3-col w3-center wc" >
-                <h3 style="font-size:2vw;">2군</h3>
+                <h3 style="font-size:2vw;">Degree 2</h3>
                 <span class="dot"style=" background-color: #977085;"></span>
                </div>
 
               <div class="w3-col w3-center wc">
-               <h3 style="font-size:2vw;">1군</h3>
+               <h3 style="font-size:2vw;">Degree 1</h3>
                 <span class="dot"style=" background-color: #8B99BC;"></span>
               </div>
            </div>
 
          </div>
        </div>
-       <p align="center">*클릭하면 상세 정보를 볼 수 있습니다.</p>
+       <p align="center">*Click for specific information.</p>
        <div class="w3-row">
          <div class="w3-col mapSupport">
            <div>
            <div class="w3-card-4 w3-dark-grey banner">
 
             <div class="w3-container w3-center " style="margin-top:5px;">
-              <h3 style="font-size:1vw;">4군</h3>
+              <h3 style="font-size:1vw;">Degree 4</h3>
               <span class="dot" style=" background-color: #B01E1E;"></span>
-              <div class="hide-small	"><p style="font-size:1vw;">한국전역 입국제한<br>도착 비자 중단</p> </div>
+              <div class="hide-small	"><p style="font-size:1vw;">Travel ban on whole Korean regions<br>Halt Visa service</p> </div>
             </div>
 
               <div class="w3-container w3-center" style="margin-top:5px;">
-               <h3 style="font-size:1vw;">3군</h3>
+               <h3 style="font-size:1vw;">Degree 3</h3>
                 <span class="dot"style=" background-color: #A44752;"></span>
-                <div class="hide-small	"><p style="font-size:1vw;">한국 일부 지역 입국제한<br></p> </div>
+                <div class="hide-small	"><p style="font-size:1vw;">Travel ban on some regions in Korea<br></p> </div>
               </div>
 
               <div class="w3-container w3-center" style="margin-top:5px;">
-                <h3 style="font-size:1vw;">2군</h3>
+                <h3 style="font-size:1vw;">Degree 2</h3>
                 <span class="dot"style=" background-color: #977085;"></span>
-                <div class="hide-small	"><p style="font-size:1vw;">입국 가능<br>격리 조치</p> </div>
+                <div class="hide-small	"><p style="font-size:1vw;">Entry permitted<br>Quarantine</p> </div>
                </div>
 
               <div class="w3-container w3-center">
-               <h3 style="font-size:1vw;">1군</h3>
+               <h3 style="font-size:1vw;">Degree 1</h3>
                 <span class="dot"style=" background-color: #8B99BC;"></span>
-                <div class="hide-small	"><p style="font-size:1vw;">입국 가능<br>자가격리 및 검역강화</p> </div>
+                <div class="hide-small	"><p style="font-size:1vw;">Entry permitted<br>Self isolation, monitering</p> </div>
               </div>
             </div>
 
@@ -2526,19 +2526,19 @@ module.exports = {
        <div id= "tabler" class="w3-row w3-center w3-dark-grey w3-padding-16">
        <div class="w3-quarter w3-section">
        <span class="w3-xlarge">${globePatients.cn}</span><br>
-       중국 확진자 수${worldT}
+       confirmed cases China${worldT}
        </div>
        <div class="w3-quarter w3-section">
-       <span class="w3-xlarge">${koreaN}명</span><br>
-       한국 확진자 수
+       <span class="w3-xlarge">${koreaN}</span><br>
+       confirmed cases in Korea
        </div>
        <div class="w3-quarter w3-section">
        <span class="w3-xlarge">${n34}</span><br>
-       한국인 대상 고강도 입국 제한 조치 국가 수
+       Countries with Degree 3 or 4 travel ban on Korea
        </div>
        <div class="w3-quarter w3-section">
        <span class="w3-xlarge">${n12}</span><br>
-       한국인 대상 입국 일부 제한 국가 수
+       Countries with Degree 1 or 2 travel ban on Korea
        </div>
 
        </div>
@@ -2554,12 +2554,12 @@ module.exports = {
        <div class="w3-content w3-container w3-padding-64" id="portfolio">
             <h2 class="htag"></h2>
        <br class= "htag" id ="currency">
-       <h2  ><i class="fa fa-money" style="color:blue;"></i>  주요 국가 실시간 환율</h2>
+       <h2  ><i class="fa fa-money" style="color:blue;"></i>  Currency information</h2>
        ${c_rate}
        <h2 class="htag"></h2>
             <br  id ="coronainfo">
 
-       <h2 ><i class="fa fa-list-ol" style="color:blue;"></i> 코로나 정보</h2>
+       <h2 ><i class="fa fa-list-ol" style="color:blue;"></i> Covid-19 information</h2>
        <style>
 .button7 {
   background-color: #4CAF50; /* Green */
@@ -2626,59 +2626,59 @@ module.exports = {
 
 
        <div class = "info1">
-       <br><p class="i1"><i class="fa fa-warning" style="color:#1abc9c"></i>코로나19 바이러스의 전파경로는 비말(침방울) 및 호흡기 분비물(콧물, 가래 등)과의 접촉입니다.</p><br>
-<p class="i1"><i class="fa fa-warning" style="color:#1abc9c"></i>바이러스에 감염된 사람이 기침, 재채기를 했을 때 공기 중으로 날아간 비말이 다른 사람의 호흡기로 들어가거나, 손에 묻은 바이러스가 눈·코·입 등을 만질 때 점막을 통해 바이러스가 침투하여 전염이 됩니다.</p><br>
-<p class="i1"><i class="fa fa-warning" style="color:#1abc9c"></i>타인과 최소 1M의 거리를 유지해야 하고 사람이 많이 다니는 장소는 가급적 피해야 하고 기침 예절을 잘 지켜야합니다.</p><br>
+       <br><p class="i1"><i class="fa fa-warning" style="color:#1abc9c"></i>Covid-19 spreads by contacting with Saliva and respiratory secretions (nose, phlegm, etc.).</p><br>
+<p class="i1"><i class="fa fa-warning" style="color:#1abc9c"></i>When a person who has the virus coughs, the secretion flies into the air and enters another person's respiratory system. Also the virus can penetrate through the mucous membrane and spread, when one touches eyes, nose, and mouth with their hands.</p><br>
+<p class="i1"><i class="fa fa-warning" style="color:#1abc9c"></i>Keep at least 1 meter away from others, avoid crowded places as much as possible, and keep in mind of your cough etiquette.</p><br>
        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
        <div class="w3-row-padding w3-center">
 
        <button class="w3-button w3-padding-large w3-light-grey" onclick="window.location.href = 'http://ncov.mohw.go.kr/';" style="margin-top:64px">LOAD MORE</button>
         <h1 id ="qna1" class= "htag" > Q&A</h1>
-        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>업데이트는 언제 하는거죠?</h2>
+        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>When do you update?</h2>
         <div class = "info1">
-        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>저희 웹사이트는 매일 외교부의 발표 자료를 참고하여 오후 11시 기준으로 업데이트 됩니다.</p><br>
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>Our website updates every 11pm according t othe information provided by MOFA.</p><br>
         </div>
-        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>여행을 가지 말아야 할까요?</h2>
+        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>Should I cancel all travels?</h2>
         <div class = "info1">
-        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>세계 보건 기구는 여행 무조건 취소할 필요는 없다고 합니다. 다만 개인 위생 관리는 철저히 할것을 권장하고 있으며 유증상시에는 여행을 자제해야 합니다. 또한 잦은 입국 기준 변화와 항공편의 변동이 있으므로 여행하기 전 꼭 확인해야 합니다.</p><br>
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>WHO states that it is not necessary to cancel flights. However, you should always take care of your own health and check whether the flight is canceled or not. (There are frequent changes these days)</p><br>
         </div>
-        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>출국 할 때 마스크는 최대 몇장 들고 나갈 수 있나요?</h2>
+        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>How many masks can I take when I travel?(Going out from Korea)</h2>
         <div class = "info1">
-        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>마스크 300개 초과 반출 시 세관 신고를 하고 출국 전 확인을 받아야 해야합니다. 1천 개가 넘으면 정식 수출 신고를 해야합니다. 따라서 여행가서 몇 일간 사용할 마스크는 걱정하지 말고 챙길 셔도 됩니다.</p><br>
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>If more than 300 masks are shipped out, you must report to the customs and get confirmation before leaving the country. If there are more than 1,000, you have to file a formal export declaration. You don't have to worry about the masks you're going to use for a few days.</p><br>
         </div>
 
-        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>해외에서 의심 증상이 있을땐?</h2>
+        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>What if I have symptoms when I am aboard?</h2>
         <div class = "info1">
-        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>코로나19 전염병의 주요 의심 증상(37.5℃ 이상 발열, 기침, 폐렴, 호흡곤란 등 호흡기 증상) 발생 시 즉시 병원에 내원(마스크 착용)하시기 바라며, 해외에 있을시 반드시 대사관에 연락해야 합니다.</p><br>
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>If there are suspected symptoms of the Covid-19 (37.5°C or higher, coughing, pneumonia, breathing difficulties, etc.) immediately visit the hospital (mask on) and make sure to contact the embassy when you are abroad.</p><br>
         </div>
 
         </div>
        </div>
        </div>\
-        <h2 id ="t0" class= "htag" >한국의 여행 정책 영향</h2>
-        <h2 id ="t1" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>이탈리아</h2>
+        <h2 id ="t0" class= "htag" >Effect on Korean traveling policy</h2>
+        <h2 id ="t1" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>Italy</h2>
         <img src="/data/italy.JPG" id="t01" class="w3-image">
         <div class = "info1">
-        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 3월 11일(수)부로 이탈리아 전역[기존의 여행경보 2단계(황색경보, 여행자제) 발령 지역* 제외]에 대한 여행경보 1단계(남색경보, 여행유의)를 추가 발령하였습니다. <br>여행경보 추가 발령은 이탈리아 내 코로나19 확진자가 전국적으로 확산되고 있고 전국적인 이동제한령이 내려지는 등 여행경보 미발령 지역 우리 국민의 감염 피해 노출이 우려되는 상황임을 감안한 것입니다.</p><br>
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>MOFA issued additional level 1 travel warning for all parts of Italy (excluding areas where previous level 2 travel warning (yellow warning) is issued on March 11. <br>The additional issuance of the travel alert is based on the concern that Koreans in the areas could be exposed to infection, since the increase of Covid-19 confirmed cases in Italy and a nationwide travel restriction.</p><br>
         </div>
-        <h2 id ="t2" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>일본</h2>
+        <h2 id ="t2" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>Japan</h2>
         <img src="/data/japan.JPG" id="t01" class="w3-image">
         <div class = "info1">
-        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 3월 9일(월)부로 일본 전 지역(이미 여행경보 3단계(적색경보, 철수권고)가 발령중인 후쿠시마 원전 반경 30km 이내 및 일본 정부 지정 피난지시지역 제외)에 대한 여행경보를 현행 1단계(남색경보, 여행유의)에서 2단계(황색경보, 여행자제)로 상향 조정하였습니다. <br>여행경보 상향 조정은 최근 일본 내 불투명한 감염상황과 취약한 대응을 두고 국제사회로부터 여러 의문이 제기되고 있는 가운데 코로나19 감염 확산 지속에 따른 우리 국민 감염 피해 노출이 한층 우려되는 상황임을 감안한 것입니다.</p><br>
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>MOFA raised travel alert for all areas of Japan (with the exception of the 30km radius of the Fukushima nuclear power plant, which is already issued with a three-stage red warning) and the Japanese government-designated evacuation zone) from the current stage to level two (with an yellow warning). <br>The upward revision of the travel warning is in consideration of the growing concern over the recent unclear infection situation and weak response in Japan.</p><br>
         </div>
-        <h2 id ="t3" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>중국 및 홍콩</h2>
+        <h2 id ="t3" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>China and Hong Kong</h2>
         <img src="/data/china.JPG" id="t01" class="w3-image">
         <img src="/data/hongkong.JPG" id="t01" class="w3-image">
         <div class = "info1">
-        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 2020년 1월 28일부로 전 중국, 홍콩과 마카오에 여행경보 2단계(여행자제)를 발령하였습니다. <br>이번 발령은 중국 우한시에서 발생한 신종 코로나바이러스가 중국 전역으로 확산되고 있고, 확진환자 및 사망자 등 피해가 급증하고 있으며, 전염병 확산 방지를 위한 중국 정부의 대응조치 강화로 중국 내 이동 제약이 점차 심해지는 추세를 감안한 것입니다.</p><br>
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>MOFA issued a travel warning for all China, Hong Kong and Macau in January 28. <br>The new Covid-19 outbreaks in Wuhan, China, is spreading across China. Confirmed patients and deaths are increasing rapidly, and the Chinese government is putting restrictions on movement in China.</p><br>
         </div>
 
-         <h2 id ="t3" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>유럽</h2>
+         <h2 id ="t3" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>Europe</h2>
          <img src="/data/europe.JPG" id="t01" class="w3-image">
         <div class = "info1">
-        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 3월 16일(월)부로 서유럽 및 중유럽 지역 36개국(EU 회원국* 또는 쉥겐협약 가입국** 총 31개국과 그 외 5개 국가***)에 여행경보 2단계(황색경보, 여행자제)를 발령하였습니다.<br>여행경보 발령은 역내 이동이 상대적으로 자유로운 유럽 지역 내 코로나19 확진자가 급증 추세를 보임에 따라 우리 국민 감염 피해 노출에 대한 우려가 심화되고 있는 상황을 감안한 것입니다.</p><br>
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>MOFA issued a second stage of travel alert (yellow warning, travel system) for 36 countries in Western Europe and 31 countries in Central Europe and five other countries.<br>The issuance of a travel warning is in light of the growing concern over the exposure of Koreans to infection as the Covid-19 confirmed cases in Europe, where regional movement is relatively free, have been on the rise.</p><br>
         </div>
-        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>자료 및 이미지 출처</p>
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>Copyrights</p>
         <button class="w3-button w3-padding-large w3-light-grey" onclick="window.location.href = 'http://www.mofa.go.kr/www/index.do';" style="margin-top:0px">대한민국 외교부</button>  </div><br><br><br>
 
        <!-- Modal for full size images on click-->
@@ -2693,9 +2693,9 @@ module.exports = {
        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
-       <P style="font-size:12px;" >DEVELOPER: HANKUK ACADEMY OF FOREIGN STUDIES 유지현, 정성원</p>
+       <P style="font-size:12px;" >DEVELOPER: HANKUK ACADEMY OF FOREIGN STUDIES Jihyun Yoo, Seongwon Chung</p>
         <P style="font-size:12px;" >CONTACT:010-4322-5758 | yoojihyun6933@gmail.com</p>
-         <P style="font-size:12px;" >*사용시 주의: 여행 제한 정보는 대한민국 외교부 및 일본 정부 외교부가 출처입니다. 데이터 업데이트에 딜레이가 생길 수도 있으며, 업데이트 날짜를 참고하여 적절히 사용해주시기 바랍니다. 본 웹사이트의 데이터의 이용에 대한 책임은 전적으로 사용자 본인에게 있습니다. :)  </p>
+         <P style="font-size:12px;" >*Caution: Travel restrictions are from the Ministry of Foreign Affairs of Korea. Data updates may be delayed, and please refer to the update date for proper use. You are solely responsible for the use of the data on this website. :)  </p>
        <i class="fa fa-facebook-official w3-hover-opacity"></i>
        </footer>
 
