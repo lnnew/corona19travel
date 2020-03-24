@@ -148,6 +148,7 @@ module.exports = {
         <a href="#coronainfo" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-file-text" style="color:yellow;"></i>코로나 정보</a>
        <a href="#qna1"  class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="	fa fa-check-square"  style="color:#1abc9c;"></i></i>Q&A</a>
        <a href="#t0" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-flag-o"></i>한국의 정책</a>
+              <a href="http://corona19travel.info/en/" class="w3-bar-item w3-button w3-red" style="width:100%; opacity:0.7;" ><i class="	fa fa-globe" style="color:black"></i>> ENGLISH</a>
        </div>
        </div>
 
