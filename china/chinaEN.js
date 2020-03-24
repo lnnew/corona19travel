@@ -511,7 +511,7 @@ function swap(json){
   return ret;
 }
 var revEN = swap(encindex);
-$("#myB1tn").click(function(){
+$("#myBtn").click(function(){
         var str = $("#myInput").val();
         var cid = revEN[str];
 
