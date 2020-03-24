@@ -503,18 +503,26 @@ var encindex ={
   ZW: 'Zimbabwe'
 };
 
+function swap(json){
+  var ret = {};
+  for(var key in json){
+    ret[json[key]] = key;
+  }
+  return ret;
+}
+var revEN = swap(encindex);
 $("#myBtn").click(function(){
         var str = $("#myInput").val();
-        var cid = cindex[str];
+        var cid = revEN[str];
 
         if (cid ==undefined) {
-          alert("검색하신 나라의 이름을 찾을 수 없습니다. 띄어쓰기 또는 정식 명칭을 확인해 주세요.");
-        } else if(str=="중국"){
-           alert(`중국은 아래의 성별 세부 입국 제한 조치를 참고해주시기 바랍니다.`);
+          alert("Can't find such country name. Please spell or Capitalize correctly (ex: United States). ");
+        } else if(str=="China"){
+           alert(`Please check the page on 'Entry Restriction of China' below.`);
         } else{
           var name =  $('#'+cid ).data('name');
           var banDetail= $('#'+cid ).data('ban');
-         alert(`현재 ${str}는 \'${banDetail}\'의 조치가 시행 중입니다.`);
+         alert(`Currently, in ${str}, \'${banDetail}\' is in effect.`);
         }
 
 
@@ -528,7 +536,7 @@ $('.china_path').hover(function(e) {
 
    var html = `<h2>${name}</h2><hr style=" border-width: 4px;">
    <div>
-   <br><p style= "font-size : 10px;">현재 조치:${banDetail}</p></div>`;
+   <br><p style= "font-size : 10px;">Current Policy:${banDetail}</p></div>`;
 
    $('#info-box').html(html);
 
@@ -552,7 +560,7 @@ $('.china_path').hover(function(e) {
     var banDetail=$(this).data('ban');
     var html = `<h2>${name}</h2><hr style=" border-width: 4px;">
     <div>
-    <br><p style= "font-size : 10px;">현재 조치:${banDetail}</p></div>`;
+    <br><p style= "font-size : 10px;">Current Policy:${banDetail}</p></div>`;
     $('#info-box1').html(html);
 
   });
