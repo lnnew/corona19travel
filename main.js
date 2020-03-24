@@ -128,11 +128,11 @@ app.get('/',function(req, res) {
 app.get('/EN/',function(req, res) {
   let rawdat1a = fs.readFileSync(path.join(__dirname + ('/china/chinaDB.json')));
   let chinaDB = JSON.parse(rawdat1a);
-  let currency = fs.readFileSync(path.join(__dirname + ('/data/Patientdb.json')));
+  let currency = fs.readFileSync(path.join(__dirname + ('/data/PatientdbEN.json')));
   let cData = JSON.parse(currency);
   var patientstr= "|";
   var globePatients = cData.globe;
-  var koreaN = cData.korea["확진환자"];
+  var koreaN = cData.korea[  "Confirmed Cases"];
   for(var i in cData.korea) {
     patientstr+=i+":"+String(cData.korea[i])+"  "
   }
@@ -143,7 +143,7 @@ app.get('/EN/',function(req, res) {
   let beta =JSON.parse(r1awdata);
   let worldT = a["last_update"];
   let stat = a[1];
-      fs.readFile(path.join(__dirname + ('/data/globeP.html')), function read(err, data) {
+      fs.readFile(path.join(__dirname + ('/data/globePEN.html')), function read(err, data) {
           if (err) {
               throw err;
           }
@@ -181,6 +181,8 @@ app.get('/EN/',function(req, res) {
 
 var updatePRouter = require('./routes/PatientUpdate.js');
 app.use('/update_patient', updatePRouter);
+var updatePRouter = require('./routes/PatientUpdateEN.js');
+app.use('/update_patientEN', updatePRouter);
 
 var authRouter = require('./routes/auth.js')(passport);
 app.use('/wjdtjddnjsdbwlgushafs', authRouter);
