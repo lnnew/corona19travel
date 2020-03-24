@@ -1,0 +1,1109 @@
+{
+  "AD": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "AE": {
+    "color": 4,
+    "banDetail": "No entrance for Koreans from 3.19 (3.18)",
+    "website": ""
+  },
+  "AF": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "AG": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 28 days before enterance are not allowed to enter(3.17)",
+    "website": ""
+  },
+  "AI": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "AL": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea (2.28)",
+    "website": ""
+  },
+  "AM": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea before entrance",
+    "website": ""
+  },
+  "AO": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea from 2.29",
+    "website": "http://overseas.mofa.go.kr/ao-ko/index.do"
+  },
+  "AR": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 15 days from 3.16 (3.15)",
+    "website": ""
+  },
+  "AT": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners from non-schengen countries (3.19)",
+    "website": "https://www.bmeia.gv.at/ko/oeb-seoul/"
+  },
+  "AU": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter (3.5)",
+    "website": "https://southkorea.embassy.gov.au/seolkorean/home.html"
+  },
+  "AZ": {
+    "color": 1,
+    "banDetail": "Quarantine foreigners who visited Korea within 14 days before enterance(3.16)",
+    "website": "http://overseas.mofa.go.kr/az-ko/index.do"
+  },
+  "BA": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea (3.12)",
+    "website": ""
+  },
+  "BB": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea within 14 days before enterance",
+    "website": ""
+  },
+  "BD": {
+    "color": 4,
+    "banDetail": "Halt visa service to Korean(3.4)",
+    "website": "http://overseas.mofa.go.kr/bd-ko/index.do"
+  },
+  "BE": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "BF": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 2 weeks from 3.21 (3.20)",
+    "website": ""
+  },
+  "BG": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea (3.16)",
+    "website": "http://overseas.mofa.go.kr/bg-ko/index.do"
+  },
+  "BH": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.21)",
+    "website": "http://overseas.mofa.go.kr/bh-ko/index.do"
+  },
+  "BI": {
+    "color": 1,
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea within 14 days before enterance (3.5)",
+    "website": ""
+  },
+  "BJ": {
+    "color": 1,
+    "banDetail": "14 days of Quarantine to all travelers",
+    "website": ""
+  },
+  "BN": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.24",
+    "website": "http://overseas.mofa.go.kr/bn-ko/index.do"
+  },
+  "BO": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 20 days before enterance are not allowed to enter(3.16)",
+    "website": ""
+  },
+  "BR": {
+    "color": 2,
+    "banDetail": "7 days of Self Isolation recommanded to all travelers(3.14)",
+    "website": ""
+  },
+  "BS": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 20 days before enterance are not allowed to enter(3.5)",
+    "website": ""
+  },
+  "BT": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 2 weeks from 3.6 (3.6)",
+    "website": ""
+  },
+  "BW": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea from 3.18 (3.16)",
+    "website": ""
+  },
+  "BY": {
+    "color": 1,
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea (3.5)",
+    "website": "http://overseas.mofa.go.kr/by-ko/index.do"
+  },
+  "BZ": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 30 days before enterance are not allowed to enter(3.15)",
+    "website": ""
+  },
+  "CA": {
+    "color": 4,
+    "banDetail": "All foreigners except Americans are prohibited from entering (3.18)",
+    "website": ""
+  },
+  "CD": {
+    "color": 2,
+    "banDetail": [
+      "Heat check to all foreigners who Visited Korea Before Entry",
+      "monitering (3.2)"
+    ],
+    "website": "http://overseas.mofa.go.kr/cd-ko/index.do"
+  },
+  "CF": {
+    "color": 2,
+    "banDetail": "self isolation recommanded to foreigners who visited Korea (3.6)",
+    "website": ""
+  },
+  "CG": {
+    "color": 2,
+    "banDetail": "No foreigner entrance allowed from 3.22(3.21)",
+    "website": ""
+  },
+  "CH": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners from non-schengen countries (3.19)",
+    "website": ""
+  },
+  "CI": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea from 3.16 (3.16)",
+    "website": ""
+  },
+  "CK": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter (2.27)",
+    "website": ""
+  },
+  "CL": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.18",
+    "website": ""
+  },
+  "CM": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.19 (3.17)",
+    "website": ""
+  },
+  "CN": {
+    "color": 3,
+    "banDetail": "More details in China map",
+    "website": "http://kr.china-embassy.org/kor/"
+  },
+  "CO": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.16 (3.15)",
+    "website": "http://overseas.mofa.go.kr/co-ko/index.do"
+  },
+  "CR": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.19 to 4.12 (3.16)",
+    "website": "http://overseas.mofa.go.kr/cr-ko/index.do"
+  },
+  "CU": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 30 days from 3.24 (3.21)",
+    "website": ""
+  },
+  "CV": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "CY": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.15 (3.13)",
+    "website": ""
+  },
+  "CZ": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.16 (3.13)",
+    "website": ""
+  },
+  "DE": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners from non-EU member states(3.17)",
+    "website": ""
+  },
+  "DJ": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "DK": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.14 to 4.13 (3.13)",
+    "website": "https://sydkorea.um.dk/ko/"
+  },
+  "DM": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "DO": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 15 days starting from 3.19 (3.17)",
+    "website": ""
+  },
+  "DZ": {
+    "color": 4,
+    "banDetail": [
+      "Every Flight",
+      "Over sea travel canceled(3.17)"
+    ],
+    "website": ""
+  },
+  "EC": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed starting from 3.15 (3.14)",
+    "website": "http://overseas.mofa.go.kr/ec-ko/index.do"
+  },
+  "EE": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.17 (3.16)",
+    "website": ""
+  },
+  "EG": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "EH": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "ER": {
+    "color": 1,
+    "banDetail": "Quarantine foreigners who visited Korea(3.11)",
+    "website": ""
+  },
+  "ES": {
+    "color": 4,
+    "banDetail": [
+      "No entrance from overland (flight",
+      "over sea possible)"
+    ],
+    "website": ""
+  },
+  "ET": {
+    "color": 1,
+    "banDetail": "Quarantine all foreigners for 14 days(3.20)",
+    "website": "http://overseas.mofa.go.kr/et-ko/index.do"
+  },
+  "FI": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.19 to 4.13 (3.18)",
+    "website": ""
+  },
+  "FJ": {
+    "color": 4,
+    "banDetail": "No entry for Korean Passport holders(3.21",
+    "website": "http://overseas.mofa.go.kr/fj-ko/index.do"
+  },
+  "FK": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "FM": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter (2.24)",
+    "website": ""
+  },
+  "FR": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners from non-EU member states(3.14)",
+    "website": ""
+  },
+  "GA": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea from 3.9",
+    "website": "http://overseas.mofa.go.kr/ga-ko/index.do"
+  },
+  "GB": {
+    "color": 2,
+    "banDetail": "self isolation to foreigners who visited Korea after 2.19 (2.25)",
+    "website": "http://overseas.mofa.go.kr/gb-ko/index.do"
+  },
+  "GD": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(3.10)",
+    "website": ""
+  },
+  "GF": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "GH": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea (3.16)",
+    "website": ""
+  },
+  "GL": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "GM": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.21",
+    "website": ""
+  },
+  "GN": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea(3.16)",
+    "website": ""
+  },
+  "GP": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "GQ": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea(2.26)",
+    "website": "http://overseas.mofa.go.kr/gq-ko/index.do"
+  },
+  "GR": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners from non-EU member states starting 3.18 to 4.18 (3.17)",
+    "website": ""
+  },
+  "GS": {
+    "color": 2,
+    "banDetail": [
+      "Heat check to foreigners who visited Korea before entry",
+      "monitering (2.28)"
+    ],
+    "website": "http://overseas.mofa.go.kr/ge-ko/index.do"
+  },
+  "GT": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.17 to 3.31 (3.16)",
+    "website": ""
+  },
+  "GU": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "GW": {
+    "color": 4,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "GY": {
+    "color": 2,
+    "banDetail": [
+      "Heat check to Foreigners who Visited Korea Before Entry",
+      "monitering (3.12)"
+    ],
+    "website": ""
+  },
+  "HK": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.25",
+    "website": "http://overseas.mofa.go.kr/hk-ko/index.do"
+  },
+  "HN": {
+    "color": 4,
+    "banDetail": "No entrance for Koreans (3.12)",
+    "website": "http://overseas.mofa.go.kr/hn-ko/index.do"
+  },
+  "HR": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners from non-EU member states and non-schengen countries (3.18)",
+    "website": "http://overseas.mofa.go.kr/hr-ko/index.do"
+  },
+  "HT": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(3.9)",
+    "website": ""
+  },
+  "HU": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.16 (3.13)",
+    "website": ""
+  },
+  "ID": {
+    "color": 3,
+    "banDetail": "Foreigners who visited 대구.청도 within 14 days before enterance are not allowed to enter(2.28)",
+    "website": "http://overseas.mofa.go.kr/id-ko/index.do"
+  },
+  "IE": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "IL": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.24)",
+    "website": "https://embassies.gov.il/seoul/Pages/default.aspx"
+  },
+  "IN": {
+    "color": 4,
+    "banDetail": [
+      "Visa before 3.3 is neutralized",
+      "Stop additional visa service(3.13)"
+    ],
+    "website": "http://overseas.mofa.go.kr/in-ko/index.do"
+  },
+  "IQ": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.25)",
+    "website": "http://overseas.mofa.go.kr/iq-ko/index.do"
+  },
+  "IR": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "IS": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea (2.26)",
+    "website": ""
+  },
+  "IT": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for tourism starting from 3.17",
+    "website": ""
+  },
+  "JM": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.27)",
+    "website": "http://overseas.mofa.go.kr/jm-ko/index.do"
+  },
+  "JO": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.23)",
+    "website": "http://overseas.mofa.go.kr/jo-ko/index.do"
+  },
+  "JP": {
+    "color": 4,
+    "banDetail": [
+      "Foreigners who visited 대구",
+      "청도 within 14 days before enterance are not allowed to enter",
+      "Stop visa",
+      "quarantine"
+    ],
+    "website": "https://www.kr.emb-japan.go.jp/itprtop_ko/index.html"
+  },
+  "KE": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea (3.15)",
+    "website": "http://overseas.mofa.go.kr/ke-ko/index.do"
+  },
+  "KG": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea before entrance (3.1)",
+    "website": "http://overseas.mofa.go.kr/kg-ko/index.do"
+  },
+  "KH": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "KI": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter (2.11)",
+    "website": ""
+  },
+  "KN": {
+    "color": 1,
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea within before enterance",
+    "website": ""
+  },
+  "KP": {
+    "color": 0,
+    "banDetail": "No Korean entry allowed",
+    "website": ""
+  },
+  "KR": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "KW": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.25)",
+    "website": "http://overseas.mofa.go.kr/kw-ko/index.do"
+  },
+  "KY": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "KZ": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea before entrance from 3.8 (3.5)",
+    "website": "http://overseas.mofa.go.kr/kz-ko/index.do"
+  },
+  "LA": {
+    "color": 2,
+    "banDetail": "Health application required to all foreigners who visited Korea(2.27)",
+    "website": "http://overseas.mofa.go.kr/la-ko/index.do"
+  },
+  "LB": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea before entrance (2.28)",
+    "website": "http://overseas.mofa.go.kr/lb-ko/index.do"
+  },
+  "LC": {
+    "color": 1,
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea(2.26)",
+    "website": ""
+  },
+  "LI": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "LK": {
+    "color": 4,
+    "banDetail": [
+      "No entry for Koreans",
+      "Stop visa (3.15)"
+    ],
+    "website": "http://overseas.mofa.go.kr/lk-ko/index.do"
+  },
+  "LR": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea from 3.16",
+    "website": ""
+  },
+  "LS": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "LT": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.16",
+    "website": ""
+  },
+  "LU": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "LV": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.17 to 4.14 (3.14)",
+    "website": ""
+  },
+  "LY": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 3 weeks from 3.16 (3.14)",
+    "website": ""
+  },
+  "MA": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.17",
+    "website": "http://overseas.mofa.go.kr/ma-ko/index.do"
+  },
+  "MC": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "MD": {
+    "color": 4,
+    "banDetail": "No entrence for Koreans(3.10)",
+    "website": ""
+  },
+  "ME": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed (3.15)",
+    "website": ""
+  },
+  "MG": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14days before enterance are not allowed to enter (2.28)",
+    "website": "http://overseas.mofa.go.kr/mg-ko/index.do"
+  },
+  "MH": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea from 12.31 (2.28)",
+    "website": ""
+  },
+  "MK": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter (3.13)",
+    "website": ""
+  },
+  "ML": {
+    "color": 2,
+    "banDetail": "self isolation to foreigners who visited Korea (3.3)",
+    "website": ""
+  },
+  "MM": {
+    "color": 3,
+    "banDetail": "Foreigners who visited 대구.청도 not allowed to enter(3.6)",
+    "website": "http://overseas.mofa.go.kr/mm-ko/index.do"
+  },
+  "MN": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.26)",
+    "website": "http://overseas.mofa.go.kr/mn-ko/index.do"
+  },
+  "MO": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.18 (3.17)",
+    "website": ""
+  },
+  "MP": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "MQ": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "MR": {
+    "color": 1,
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea(3.3)",
+    "website": ""
+  },
+  "MS": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "MT": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea (3.4)",
+    "website": ""
+  },
+  "MU": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14days before enterance are not allowed to enter (2.24)",
+    "website": ""
+  },
+  "MV": {
+    "color": 3,
+    "banDetail": "Foreigners who visited 대구.청도 within 14 days before enterance are not allowed to enter(3.2)",
+    "website": ""
+  },
+  "MW": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea before enterance are not allowed to enter (3.20)",
+    "website": ""
+  },
+  "MX": {
+    "color": 2,
+    "banDetail": "Conduct medical examination on travelars who visited Korea (2.28)",
+    "website": "http://overseas.mofa.go.kr/mx-ko/index.do"
+  },
+  "MY": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.18 to 3.31 (3.16)",
+    "website": "http://overseas.mofa.go.kr/my-ko/index.do"
+  },
+  "MZ": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea (3.3)",
+    "website": "http://overseas.mofa.go.kr/mz-ko/index.do"
+  },
+  "NA": {
+    "color": 4,
+    "banDetail": "No entry for all Koreans(3.17)",
+    "website": ""
+  },
+  "NE": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 2 weeks from 3.19",
+    "website": ""
+  },
+  "NG": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea from 3.20 (3.16)",
+    "website": "http://overseas.mofa.go.kr/ng-ko/index.do"
+  },
+  "NI": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "NL": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners from non-EU member states(3.19)",
+    "website": ""
+  },
+  "NO": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.16",
+    "website": ""
+  },
+  "NP": {
+    "color": 4,
+    "banDetail": "(3.20-4.12) No entrance for all foreigners who visited Korea (3.18)",
+    "website": "http://overseas.mofa.go.kr/np-ko/index.do"
+  },
+  "NR": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 21 days before enterance are not allowed to enter (3.3)",
+    "website": ""
+  },
+  "NU": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter (3.13)",
+    "website": ""
+  },
+  "NZ": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.15 (3.13)",
+    "website": "https://www.mfat.govt.nz/ko/countries-and-regions/north-asia/republic-of-korea-south/new-zealand-e"
+  },
+  "OM": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(3.8)",
+    "website": "http://overseas.mofa.go.kr/om-ko/index.do"
+  },
+  "PA": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.16 (3.15)",
+    "website": "http://overseas.mofa.go.kr/pa-ko/index.do"
+  },
+  "PE": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 15 days from 3.17 (3.15)",
+    "website": ""
+  },
+  "PF": {
+    "color": 2,
+    "banDetail": "Health application required to all foreigners who visited Korea",
+    "website": ""
+  },
+  "PG": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter (3.15)",
+    "website": ""
+  },
+  "PH": {
+    "color": 4,
+    "banDetail": [
+      "Halt visa service",
+      "No foreigner entrance allowed from 3.19"
+    ],
+    "website": "http://overseas.mofa.go.kr/ph-ko/index.do"
+  },
+  "PK": {
+    "color": 2,
+    "banDetail": "All travelers must prove negetive on Covid-19 test(3.17)",
+    "website": ""
+  },
+  "PL": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.15 (3.13)",
+    "website": ""
+  },
+  "PR": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "PS": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.26)",
+    "website": "http://overseas.mofa.go.kr/ps-ko/index.do"
+  },
+  "PT": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners from non-EU member states(3.17)",
+    "website": ""
+  },
+  "PW": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "PY": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed starting from 3.16 to 3.30 (3.16)",
+    "website": "http://overseas.mofa.go.kr/py-ko/index.do"
+  },
+  "QA": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within a month before enterance are not allowed to enter(2.21)",
+    "website": "http://overseas.mofa.go.kr/qa-ko/index.do"
+  },
+  "RO": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.23",
+    "website": "http://overseas.mofa.go.kr/ro-ko/index.do"
+  },
+  "RS": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed (3.15)",
+    "website": "http://overseas.mofa.go.kr/rs-ko/index.do"
+  },
+  "RU": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.18",
+    "website": "http://overseas.mofa.go.kr/ru-ko/index.do"
+  },
+  "RW": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.21 for 2 weeks",
+    "website": ""
+  },
+  "SA": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(3.8)",
+    "website": "http://overseas.mofa.go.kr/sa-ko/index.do"
+  },
+  "SB": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.25)",
+    "website": ""
+  },
+  "SC": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.25)",
+    "website": ""
+  },
+  "SD": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.16",
+    "website": ""
+  },
+  "SE": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners from non-EU member states(3.19)",
+    "website": ""
+  },
+  "SG": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(3.5)",
+    "website": "http://overseas.mofa.go.kr/sg-ko/index.do"
+  },
+  "SI": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "SK": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed",
+    "website": ""
+  },
+  "SL": {
+    "color": 1,
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea from 3.16 (3.14)",
+    "website": ""
+  },
+  "SM": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "SN": {
+    "color": 1,
+    "banDetail": "Quarantine foreigners who visited Korea within 25 days before enterance (3.5)",
+    "website": ""
+  },
+  "SO": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "SR": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.14",
+    "website": ""
+  },
+  "SS": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea within (3.6)",
+    "website": ""
+  },
+  "ST": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea (3.4)",
+    "website": ""
+  },
+  "SV": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 30 days before enterance are not allowed to enter(2.26)",
+    "website": "http://overseas.mofa.go.kr/sv-ko/index.do"
+  },
+  "SY": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "SZ": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "TC": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "TD": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.19",
+    "website": ""
+  },
+  "TG": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.20 for 2 weeks",
+    "website": ""
+  },
+  "TH": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea (2.23)",
+    "website": "http://www.thaiembassy.org/seoul/ko/"
+  },
+  "TJ": {
+    "color": 2,
+    "banDetail": "Quarantine foreigners who visited Korea(2.25)",
+    "website": "http://overseas.mofa.go.kr/tj-ko/index.do"
+  },
+  "TL": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 4 weeks before enterance are not allowed to enter(3.5)",
+    "website": ""
+  },
+  "TM": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.20 to 4.20",
+    "website": "http://overseas.mofa.go.kr/tm-ko/index.do"
+  },
+  "TN": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(3.15)",
+    "website": "http://overseas.mofa.go.kr/tn-ko/index.do"
+  },
+  "TO": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea from 3.19 (3.18)",
+    "website": ""
+  },
+  "TR": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea before entrance(3.1)",
+    "website": "http://overseas.mofa.go.kr/tr-ko/index.do"
+  },
+  "TT": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.27)",
+    "website": "http://overseas.mofa.go.kr/tt-ko/index.do"
+  },
+  "TV": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter (2.24)",
+    "website": ""
+  },
+  "TW": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.19",
+    "website": "http://overseas.mofa.go.kr/tw-ko/index.do"
+  },
+  "TZ": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "UA": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 2 weeks from 3.15 (3.13)",
+    "website": ""
+  },
+  "UG": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed (3.20)",
+    "website": "http://overseas.mofa.go.kr/ug-ko/index.do"
+  },
+  "US": {
+    "color": 4,
+    "banDetail": "Halt regular visa services in Korea (90 days short visit is possible)",
+    "website": "https://kr.usembassy.gov/ko/"
+  },
+  "UY": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea(3.13)",
+    "website": ""
+  },
+  "UZ": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.16",
+    "website": "http://overseas.mofa.go.kr/uz-ko/index.do"
+  },
+  "VA": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "VC": {
+    "color": 1,
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea within 14 days before enterance",
+    "website": ""
+  },
+  "VE": {
+    "color": 2,
+    "banDetail": [
+      "Heat check to Foreigners who Visited Korea Before Entry",
+      "monitering (2.27)"
+    ],
+    "website": "http://overseas.mofa.go.kr/ve-ko/index.do"
+  },
+  "VG": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "VI": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "VN": {
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.22(3.21)",
+    "website": "http://overseas.mofa.go.kr/vn-ko/index.do"
+  },
+  "VU": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter (2.28)",
+    "website": "http://www.searoadvmsl.com/front/phtml/sub01_05.php"
+  },
+  "WS": {
+    "color": 4,
+    "banDetail": "Foreigners who visited Korea within 14 days before enterance are not allowed to enter(2.19)",
+    "website": ""
+  },
+  "YE": {
+    "color": 0,
+    "banDetail": "No entry ban at this point ",
+    "website": ""
+  },
+  "ZA": {
+    "color": 4,
+    "banDetail": "No entrance for all foreigners who visited Korea from 3.18 (3.15)",
+    "website": ""
+  },
+  "ZM": {
+    "color": 2,
+    "banDetail": "14 days of self isolation to foreigners who visited Korea (2.26)",
+    "website": ""
+  },
+  "ZW": {
+    "color": 2,
+    "banDetail": "Covid-19 testing to all foreigners who visited Korea",
+    "website": "http://overseas.mofa.go.kr/zw-ko/index.do"
+  }
+}
