@@ -1,0 +1,46 @@
+{
+  "last_update": "2020.3.24  21:22:0",
+  "globe": {
+    "us": "ordan112\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Deceased 1)",
+    "cn": "Asia\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChina\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t81,171\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Deceased 3,277)",
+    "jp": "Japan1,128\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Deceased 42)"
+  },
+  "korea": {
+    "Confirmed Cases": "9,037",
+    "Released from Quarantine": "3,507",
+    "Quarantined": "5,410",
+    "Deceased": "120"
+  },
+  "currency": {
+    "통화명": [
+      "매매기준율",
+      "전일대비",
+      "등락률"
+    ],
+    "미국": [
+      "USD",
+      "1,240.00",
+      "전일대비하락33.00",
+      "-2.59%"
+    ],
+    "일본": [
+      "JPY",
+      "100",
+      "1,122.68",
+      "전일대비하락27.90",
+      "-2.42%"
+    ],
+    "유럽연합": [
+      "EUR",
+      "1,348.69",
+      "전일대비하락9.86",
+      "-0.73%"
+    ],
+    "중국": [
+      "CNY",
+      "175.41",
+      "전일대비하락2.62",
+      "-1.47%"
+    ]
+  }
+}
