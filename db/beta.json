@@ -291,8 +291,8 @@
       "website": ""
     },
     "LA": {
-      "color": 2,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 검역신고서 작성 의무화(2.27)",
+      "color": 4,
+      "banDetail": "3.20부터 비자 발급중단",
       "website": "http://overseas.mofa.go.kr/la-ko/index.do"
     },
     "MY": {
@@ -521,8 +521,8 @@
       "website": ""
     },
     "TZ": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 1,
+      "banDetail": "한국을 방문한 외국인 14일간 격리(3.23)",
       "website": "http://overseas.mofa.go.kr/tz-ko/index.do"
     },
     "CF": {
@@ -551,8 +551,8 @@
       "website": "http://overseas.mofa.go.kr/rw-ko/index.do"
     },
     "SS": {
-      "color": 2,
-      "banDetail": "입국 전 한국을 방문한 외국인 14일간 자가 격리(3.6)",
+      "color": 4,
+      "banDetail": "3.24부터 모든 외국인 입국 금지(3.23)",
       "website": ""
     },
       "SD": {
@@ -831,8 +831,8 @@
       "website": "http://overseas.mofa.go.kr/it-ko/index.do"
     },
     "IS": {
-      "color": 2,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 자가격리(2.26)",
+      "color": 4,
+      "banDetail": "3.20-4.17 모든 외국인 입국 금지(3.20)",
       "website": ""
     },
     "GB": {
@@ -936,14 +936,14 @@
       "website": "https://kr.ambafrance.org/-%ED%95%9C%EA%B5%AD%EC%96%B4-"
     },
     "LU": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "3.18부터 모든 외국인 입국 금지",
       "website": ""
     },
     "BE": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
-      "website": ""
+      "color": 4,
+      "banDetail": "3.18부터 모든 외국인 입국 금지",
+      "website": "https://republicofkorea.diplomatie.belgium.be/ko"
     },
     "NL": {
       "color": 4,
