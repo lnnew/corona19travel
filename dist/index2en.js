@@ -2661,6 +2661,11 @@ module.exports = {
        </div>
        </div>\
         <h2 id ="t0" class= "htag" >Effect on Korean traveling policy</h2>
+         <h2 id ="t2" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>All Nations</h2>
+        <img src="/data/globeTravel.JPG" id="t01" class="w3-image">
+        <div class = "info1">
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>MOFA issued a "special travel warning"  for all overseas trips to countries and regions on March 23. Special travel warning will be automatically end on April 23 if there is no extention.<br>During this period, travel abroad should be canceled or postponed. Our nationals staying abroad should pay special attention to their safety, such as implementing "social distance" to prevent exposure to Covid-19 infection.<br>The issuance of this special travel warning is based on the fact that the Covid-19 is rapidly spreading throughout the world as the World Health Organization declared Pandemic. International ban on entry increased because of the number of patients is growing. MOFA wishes no koreans to be quarantined or isolated in this situation.</p><br>
+        </div>
         <h2 id ="t1" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>Italy</h2>
         <img src="/data/italy.JPG" id="t01" class="w3-image">
         <div class = "info1">
