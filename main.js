@@ -55,6 +55,9 @@ app.get('/data/japan.JPG', function(req, res) {
 app.get('/data/china.JPG', function(req, res) {
     res.sendFile(path.join(__dirname + ('/data/china.JPG')));
 });
+app.get('/data/globeTravel.JPG', function(req, res) {
+    res.sendFile(path.join(__dirname + ('/data/globeTravel.JPG')));
+});
 app.get('/data/banner.jpg', function(req, res) {
     res.sendFile(path.join(__dirname + ('/data/banner.jpg')));
 });
