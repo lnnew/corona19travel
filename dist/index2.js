@@ -14,6 +14,8 @@ module.exports = {
 <meta name="Keywords" content="코로나 19, 코로나19 한국인 입국제한, 여행제한, 입국, 입국금지 ">
 <meta content="코로나 19, 코로나19 한국인 입국제한, 여행제한, 입국, 입국금지" property="og:description">
 <meta content="http://corona19travel.info/" property="og:url">
+<meta content="코로나 19 입국제한" property="og:title">
+<meta content="website" property="og:type">
 <meta name="naver-site-verification" content="bede0aa79365c616a5a4151bef0b056506dde42a" />
 <meta name="google-site-verification" content="DFiv7pr-ZhbzR3wOJy4ZZoNkNhxnWNlq1z24y7k4JK4" />
        <meta name="viewport" content="width=device-width, initial-scale=1">
