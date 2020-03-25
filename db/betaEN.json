@@ -31,12 +31,12 @@
   },
   "AM": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea before entrance",
+    "banDetail": "No entrance to all foreigners who visited Korea before entrance",
     "website": ""
   },
   "AO": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea from 2.29",
+    "banDetail": "No entrance to all foreigners who visited Korea from 2.29",
     "website": "http://overseas.mofa.go.kr/ao-ko/index.do"
   },
   "AR": {
@@ -46,7 +46,7 @@
   },
   "AT": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners from non-schengen countries (3.19)",
+    "banDetail": "No entrance to all foreigners from non-schengen countries (3.19)",
     "website": "https://www.bmeia.gv.at/ko/oeb-seoul/"
   },
   "AU": {
@@ -61,7 +61,7 @@
   },
   "BA": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea (3.12)",
+    "banDetail": "No entrance to all foreigners who visited Korea (3.12)",
     "website": ""
   },
   "BB": {
@@ -75,8 +75,8 @@
     "website": "http://overseas.mofa.go.kr/bd-ko/index.do"
   },
   "BE": {
-    "color": 0,
-    "banDetail": "No entry ban at this point ",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 30 days from 3.18",
     "website": ""
   },
   "BF": {
@@ -86,7 +86,7 @@
   },
   "BG": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea (3.16)",
+    "banDetail": "No entrance to all foreigners who visited Korea (3.16)",
     "website": "http://overseas.mofa.go.kr/bg-ko/index.do"
   },
   "BH": {
@@ -115,8 +115,8 @@
     "website": ""
   },
   "BR": {
-    "color": 2,
-    "banDetail": "7 days of Self Isolation recommanded to all travelers(3.14)",
+    "color": 4,
+    "banDetail": "No entrance to all foreigners who visited Korea from 3.23",
     "website": ""
   },
   "BS": {
@@ -131,7 +131,7 @@
   },
   "BW": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea from 3.18 (3.16)",
+    "banDetail": "No entrance to all foreigners who visited Korea from 3.18 (3.16)",
     "website": ""
   },
   "BY": {
@@ -163,18 +163,18 @@
     "website": ""
   },
   "CG": {
-    "color": 2,
+    "color": 4,
     "banDetail": "No foreigner entrance allowed from 3.22(3.21)",
     "website": ""
   },
   "CH": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners from non-schengen countries (3.19)",
+    "banDetail": "No entrance to all foreigners from non-schengen countries (3.19)",
     "website": ""
   },
   "CI": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea from 3.16 (3.16)",
+    "banDetail": "No entrance to all foreigners who visited Korea from 3.16 (3.16)",
     "website": ""
   },
   "CK": {
@@ -193,7 +193,7 @@
     "website": ""
   },
   "CN": {
-    "color": 3,
+    "color": 1,
     "banDetail": "More details in China map",
     "website": "http://kr.china-embassy.org/kor/"
   },
@@ -229,7 +229,7 @@
   },
   "DE": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners from non-EU member states(3.17)",
+    "banDetail": "No entrance to all foreigners from non-EU member states(3.17)",
     "website": ""
   },
   "DJ": {
@@ -320,12 +320,12 @@
   },
   "FR": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners from non-EU member states(3.14)",
+    "banDetail": "No entrance to all foreigners from non-EU member states(3.14)",
     "website": ""
   },
   "GA": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea from 3.9",
+    "banDetail": "No entrance to all foreigners who visited Korea from 3.9",
     "website": "http://overseas.mofa.go.kr/ga-ko/index.do"
   },
   "GB": {
@@ -345,7 +345,7 @@
   },
   "GH": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea (3.16)",
+    "banDetail": "No entrance to all foreigners who visited Korea (3.16)",
     "website": ""
   },
   "GL": {
@@ -370,12 +370,12 @@
   },
   "GQ": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea(2.26)",
+    "banDetail": "No entrance to all foreigners who visited Korea(2.26)",
     "website": "http://overseas.mofa.go.kr/gq-ko/index.do"
   },
   "GR": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners from non-EU member states starting 3.18 to 4.18 (3.17)",
+    "banDetail": "No entrance to all foreigners from non-EU member states starting 3.18 to 4.18 (3.17)",
     "website": ""
   },
   "GS": {
@@ -416,12 +416,12 @@
   },
   "HN": {
     "color": 4,
-    "banDetail": "No entrance for Koreans (3.12)",
+    "banDetail": "No entrance to Koreans (3.12)",
     "website": "http://overseas.mofa.go.kr/hn-ko/index.do"
   },
   "HR": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners from non-EU member states and non-schengen countries (3.18)",
+    "banDetail": "No entrance to all foreigners from non-EU member states and non-schengen countries (3.18)",
     "website": "http://overseas.mofa.go.kr/hr-ko/index.do"
   },
   "HT": {
@@ -468,8 +468,8 @@
     "website": ""
   },
   "IS": {
-    "color": 2,
-    "banDetail": "14 days of self isolation to foreigners who visited Korea (2.26)",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.20 to 4.17",
     "website": ""
   },
   "IT": {
@@ -499,12 +499,12 @@
   },
   "KE": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea (3.15)",
+    "banDetail": "No entrance to all foreigners who visited Korea (3.15)",
     "website": "http://overseas.mofa.go.kr/ke-ko/index.do"
   },
   "KG": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea before entrance (3.1)",
+    "banDetail": "No entrance to all foreigners who visited Korea before entrance (3.1)",
     "website": "http://overseas.mofa.go.kr/kg-ko/index.do"
   },
   "KH": {
@@ -544,22 +544,22 @@
   },
   "KZ": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea before entrance from 3.8 (3.5)",
+    "banDetail": "No entrance to all foreigners who visited Korea before entrance from 3.8 (3.5)",
     "website": "http://overseas.mofa.go.kr/kz-ko/index.do"
   },
   "LA": {
-    "color": 2,
-    "banDetail": "Health application required to all foreigners who visited Korea(2.27)",
+    "color": 4,
+    "banDetail": "Halt visa service(3.20)",
     "website": "http://overseas.mofa.go.kr/la-ko/index.do"
   },
   "LB": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea before entrance (2.28)",
+    "banDetail": "No entrance to all foreigners who visited Korea before entrance (2.28)",
     "website": "http://overseas.mofa.go.kr/lb-ko/index.do"
   },
   "LC": {
-    "color": 1,
-    "banDetail": "14 days of Quarantine to foreigners who visited Korea(2.26)",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.23 to 4.5",
     "website": ""
   },
   "LI": {
@@ -577,7 +577,7 @@
   },
   "LR": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea from 3.16",
+    "banDetail": "No entrance to all foreigners who visited Korea from 3.16",
     "website": ""
   },
   "LS": {
@@ -591,8 +591,8 @@
     "website": ""
   },
   "LU": {
-    "color": 0,
-    "banDetail": "No entry ban at this point ",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed for 30 days from 3.18",
     "website": ""
   },
   "LV": {
@@ -632,7 +632,7 @@
   },
   "MH": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea from 12.31 (2.28)",
+    "banDetail": "No entrance to all foreigners who visited Korea from 12.31 (2.28)",
     "website": ""
   },
   "MK": {
@@ -727,7 +727,7 @@
   },
   "NG": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea from 3.20 (3.16)",
+    "banDetail": "No entrance to all foreigners who visited Korea from 3.20 (3.16)",
     "website": "http://overseas.mofa.go.kr/ng-ko/index.do"
   },
   "NI": {
@@ -737,7 +737,7 @@
   },
   "NL": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners from non-EU member states(3.19)",
+    "banDetail": "No entrance to all foreigners from non-EU member states(3.19)",
     "website": ""
   },
   "NO": {
@@ -747,7 +747,7 @@
   },
   "NP": {
     "color": 4,
-    "banDetail": "(3.20-4.12) No entrance for all foreigners who visited Korea (3.18)",
+    "banDetail": "(3.20-4.12) No entrance to all foreigners who visited Korea (3.18)",
     "website": "http://overseas.mofa.go.kr/np-ko/index.do"
   },
   "NR": {
@@ -820,7 +820,7 @@
   },
   "PT": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners from non-EU member states(3.17)",
+    "banDetail": "No entrance to all foreigners from non-EU member states(3.17)",
     "website": ""
   },
   "PW": {
@@ -880,7 +880,7 @@
   },
   "SE": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners from non-EU member states(3.19)",
+    "banDetail": "No entrance to all foreigners from non-EU member states(3.19)",
     "website": ""
   },
   "SG": {
@@ -924,13 +924,13 @@
     "website": ""
   },
   "SS": {
-    "color": 2,
-    "banDetail": "14 days of self isolation to foreigners who visited Korea within (3.6)",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.24",
     "website": ""
   },
   "ST": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea (3.4)",
+    "banDetail": "No entrance to all foreigners who visited Korea (3.4)",
     "website": ""
   },
   "SV": {
@@ -990,12 +990,12 @@
   },
   "TO": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea from 3.19 (3.18)",
+    "banDetail": "No entrance to all foreigners who visited Korea from 3.19 (3.18)",
     "website": ""
   },
   "TR": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea before entrance(3.1)",
+    "banDetail": "No entrance to all foreigners who visited Korea before entrance(3.1)",
     "website": "http://overseas.mofa.go.kr/tr-ko/index.do"
   },
   "TT": {
@@ -1014,8 +1014,8 @@
     "website": "http://overseas.mofa.go.kr/tw-ko/index.do"
   },
   "TZ": {
-    "color": 0,
-    "banDetail": "No entry ban at this point ",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.23",
     "website": ""
   },
   "UA": {
@@ -1093,7 +1093,7 @@
   },
   "ZA": {
     "color": 4,
-    "banDetail": "No entrance for all foreigners who visited Korea from 3.18 (3.15)",
+    "banDetail": "No entrance to all foreigners who visited Korea from 3.18 (3.15)",
     "website": ""
   },
   "ZM": {
