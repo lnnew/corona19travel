@@ -2656,7 +2656,10 @@ module.exports = {
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>마스크 300개 초과 반출 시 세관 신고를 하고 출국 전 확인을 받아야 해야합니다. 1천 개가 넘으면 정식 수출 신고를 해야합니다. 따라서 여행가서 몇 일간 사용할 마스크는 걱정하지 말고 챙길 셔도 됩니다.</p><br>
         </div>
-
+        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>지도를 크게 보려면?</h2>
+        <div class = "info1">
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>PC를 통해 접속하시거나 Google을 통해 corona19travel.info에 접속하시면 지도를 확대해서 보실 수 있습니다</p><br>
+        </div>
         <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>해외에서 의심 증상이 있을땐?</h2>
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>코로나19 전염병의 주요 의심 증상(37.5℃ 이상 발열, 기침, 폐렴, 호흡곤란 등 호흡기 증상) 발생 시 즉시 병원에 내원(마스크 착용)하시기 바라며, 해외에 있을시 반드시 대사관에 연락해야 합니다.</p><br>
