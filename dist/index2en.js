@@ -2651,7 +2651,10 @@ module.exports = {
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>If more than 300 masks are shipped out, you must report to the customs and get confirmation before leaving the country. If there are more than 1,000, you have to file a formal export declaration. You don't have to worry about the masks you're going to use for a few days.</p><br>
         </div>
-
+        <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>How can we see the map more specifically?</h2>
+        <div class = "info1">
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>You can enlarge the map by accessing with PC or Googling "corona19travel.info" with mobile phone</p><br>
+        </div>
         <h2 id ="qna" class= "htag"style="margin-top:50px;" ><i class="fa fa-question" style="color:blue;"></i>What if I have symptoms when I am aboard?</h2>
         <div class = "info1">
         <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>If there are suspected symptoms of the Covid-19 (37.5°C or higher, coughing, pneumonia, breathing difficulties, etc.) immediately visit the hospital (mask on) and make sure to contact the embassy when you are abroad.</p><br>
