@@ -186,8 +186,8 @@
       "website": "http://overseas.mofa.go.kr/co-ko/index.do"
     },
     "BR": {
-      "color": 2,
-      "banDetail": "입국하는 모든 내외국인 7일 자가격리 권고(3.14)",
+      "color": 4,
+      "banDetail": "한국을 방문한 외국인 입국금지 (3.20)",
       "website": "http://overseas.mofa.go.kr/br-ko/index.do"
     },
     "PY": {
@@ -646,7 +646,7 @@
       "website": ""
     },
     "CG": {
-      "color": 2,
+      "color": 4,
       "banDetail": "3.22부터 국경 봉쇄(3.21)",
       "website": ""
     },
