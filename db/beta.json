@@ -71,8 +71,8 @@
       "website": ""
     },
     "LC": {
-      "color": 1,
-      "banDetail": "한국을 방문한 외국인 14일 격리(2.26)",
+      "color": 4,
+      "banDetail": "3.23-4.5 모든 외국인 입국금지(3.23)",
       "website": ""
     },
     "VC": {
@@ -256,7 +256,7 @@
       "website": "http://overseas.mofa.go.kr/mn-ko/index.do"
     },
     "CN": {
-      "color": 3,
+      "color": 1,
       "banDetail": "중국 지도 참고",
       "website": "http://kr.china-embassy.org/kor/"
     },
