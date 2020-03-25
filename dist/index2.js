@@ -2661,6 +2661,13 @@ module.exports = {
        </div>
        </div>\
         <h2 id ="t0" class= "htag" >한국의 여행 정책 영향</h2>
+ <h2 id ="t1" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>전세계</h2>
+        <img src="/data/globeTravel.JPG" id="t01" class="w3-image">
+        <div class = "info1">
+        <p class="i1"><i class="fa fa-check-square-o" style="color:#1abc9c"></i>외교부는 3월 23일(월)부로 우리 국민의 전 국가·지역 해외여행에 대하여 “특별여행주의보”를 발령하였습니다. 특별여행주의보는 별도 연장조치가 없는 한 4월 23일(목)부로 자동 해제됩니다.<br>동 기간 중 해외여행을 계획하고 계신 우리 국민께서는 여행을 취소하거나 연기하여 주시고, 해외에 체류 중인 우리 국민께서는 코로나19 감염 피해에 노출되지 않도록 철저한 위생수칙 준수와 함께 국내에서 시행하는 수준으로 “사회적 거리두기”를 실천하는 등 신변안전에 특별히 유의하여 주시기 바랍니다.<br>이번 특별여행주의보 발령은 2.28.(금) 공지한 여행주의보에 이어 최근 △WHO의 팬데믹 선언 등 코로나19의 전 세계적인 급속한 확산, △전 세계 대상 입국금지 국가의 대폭 확대, △해외 유입 환자의 증가, △항공편 두절 속출 상황에서 우리 국민의 해외 감염 및 해외여행 중 고립․격리 예방을 위한 조치가 긴요함을 감안한 것입니다.</p><br>
+        </div>
+
+
         <h2 id ="t1" class= "htag" style="margin-top:50px;"><i class="fa fa-plane" style="color:#1abc9c;"></i>이탈리아</h2>
         <img src="/data/italy.JPG" id="t01" class="w3-image">
         <div class = "info1">
