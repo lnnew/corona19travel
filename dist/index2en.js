@@ -11,6 +11,11 @@ module.exports = {
        <title>COVID-19 Entry Restrictions</title>
        <meta charset="UTF-8">
 <meta name="description" content="This Website contains information on current entry restrictions against Koreans and foreigners in Korea.">
+<meta name="Keywords" content="COVID-19, Korean Entry Restriction, Travel Restriction, Ban">
+<meta content="COVID-19, Korean Entry Restriction, Travel Restriction, Ban" property="og:description">
+<meta content="http://corona19travel.info/en/" property="og:url">
+<meta content="COVID-19 Entry Restrictions" property="og:title">
+<meta content="website" property="og:type">
 <meta name="naver-site-verification" content="bede0aa79365c616a5a4151bef0b056506dde42a" />
 <meta name="google-site-verification" content="DFiv7pr-ZhbzR3wOJy4ZZoNkNhxnWNlq1z24y7k4JK4" />
        <meta name="viewport" content="width=device-width, initial-scale=1">
