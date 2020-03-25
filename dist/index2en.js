@@ -2538,7 +2538,7 @@ module.exports = {
        confirmed cases in Korea
        </div>
        <div class="w3-quarter w3-section">
-       <span class="w3-xlarge">${n34}</span><br>
+       <span class="w3-xlarge">${n34+1}</span><br>
        Countries with Degree 3 or 4 travel ban on Korea
        </div>
        <div class="w3-quarter w3-section">
