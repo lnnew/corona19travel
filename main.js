@@ -126,7 +126,7 @@ app.get('/',function(req, res) {
       });
 });
 app.get('/EN/',function(req, res) {
-  let rawdat1a = fs.readFileSync(path.join(__dirname + ('/china/chinaDB.json')));
+  let rawdat1a = fs.readFileSync(path.join(__dirname + ('/china/chinaDBEN.json')));
   let chinaDB = JSON.parse(rawdat1a);
   let currency = fs.readFileSync(path.join(__dirname + ('/data/PatientdbEN.json')));
   let cData = JSON.parse(currency);
