@@ -2543,7 +2543,7 @@ module.exports = {
        한국 확진자 수
        </div>
        <div class="w3-quarter w3-section">
-       <span class="w3-xlarge">${n34}</span><br>
+       <span class="w3-xlarge">${n34+1}</span><br>
        한국인 대상 고강도 입국 제한 조치 국가 수
        </div>
        <div class="w3-quarter w3-section">
