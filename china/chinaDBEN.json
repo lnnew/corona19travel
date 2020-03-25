@@ -1,0 +1,130 @@
+{
+  "산둥성": {
+    "color": "#A44752",
+    "banDetail": "At least 7 days of quarantine to all travalers(3.6)"
+  },
+  "허난성": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to foreigners who visited Korea(3.5)"
+  },
+  "랴오닝성": {
+    "color": "#8B99BC",
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea within 14 days before enterance(2.25)"
+  },
+  "헤이룽장성": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to all travalers(3.5)"
+  },
+  "광둥성": {
+    "color": "#8B99BC",
+    "banDetail": "14 days of self isolation to all travalers(3.6)"
+  },
+  "푸젠성": {
+    "color": "#A44752",
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea within 14 days before enterance"
+  },
+  "후난성": {
+    "color": "#8B99BC",
+    "banDetail": "14 days of self isolation to all travalers who visited Korea(3.4)"
+  },
+  "하이난성": {
+    "color": "#A44752",
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea within 14 days before enterance(3.3)"
+  },
+  "광시좡족자치구": {
+    "color": "#A44752",
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea within 14 days before enterance(3.8)"
+  },
+  "상하이시": {
+    "color": "#A44752",
+    "banDetail": "14 days of Quarantine to foreigners who visited 대구,청도 within 14 days before enterance(3.3)"
+  },
+  "장쑤성": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to foreigners who visited Korea(3.5)"
+  },
+  "저장성": {
+    "color": "#8B99BC",
+    "banDetail": "14 days of self isolation to all travalers who visited Korea(2.26)"
+  },
+  "쓰촨성": {
+    "color": "#8B99BC",
+    "banDetail": "14 days of self isolation to all travalers who visited Korea(3.1)"
+  },
+  "충칭시": {
+    "color": "#8B99BC",
+    "banDetail": "14 days of self isolation to all travalers who visited Korea(3.1)"
+  },
+  "원난성": {
+    "color": "#A44752",
+    "banDetail": "14 days of Quarantine to foreigners who visited Korea within 14 days before enterance(3.3)"
+  },
+  "구이저우성": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to foreigners who visited Korea(3.3)"
+  },
+  "산시성": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to foreigners who visited Korea(3.3)"
+  },
+  "간쑤성": {
+    "color": "#8B99BC",
+    "banDetail": "14 days of self isolation to all travalers who visited Korea"
+  },
+  "베이징시": {
+    "color": "#8B99BC",
+    "banDetail": "14 days of self isolation to all travalers who visited Korea"
+  },
+  "텐진시": {
+    "color": "#8B99BC",
+    "banDetail": "14 days of self isolation to all travalers who visited Korea"
+  },
+  "지린성": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to foreigners who visited Korea(3.1)"
+  },
+  "칭하이성": {
+    "color": "#7EC2F1",
+    "banDetail": "No entry ban at this point"
+  },
+  "안후이성": {
+    "color": "#7EC2F1",
+    "banDetail": "No entry ban at this point"
+  },
+  "서장자치구": {
+    "color": "#7EC2F1",
+    "banDetail": "No entry ban at this point"
+  },
+  "신장현": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to all travalers"
+  },
+  "닝샤후이족자치구": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to foreigners who visited Korea(3.16)"
+  },
+  "산시": {
+    "color": "#7EC2F1",
+    "banDetail": "No entry ban at this point"
+  },
+  "후베이성": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to all travalers(3.17)"
+  },
+  "허베이성": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to foreigners who visited Korea(3.15)"
+  },
+  "장시성": {
+    "color": "#7EC2F1",
+    "banDetail": "No entry ban at this point"
+  },
+  "네이멍구자치구": {
+    "color": "#A44752",
+    "banDetail": "14 days of quarantine to foreigners who visited Korea(3.15)"
+  },
+  "시사군도": {
+    "color": "#7EC2F1",
+    "banDetail": "No entry ban at this point"
+  }
+}
