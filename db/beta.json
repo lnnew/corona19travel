@@ -221,8 +221,8 @@
       "website": "http://overseas.mofa.go.kr/ar-ko/index.do"
     },
     "UY": {
-      "color": 2,
-      "banDetail": "한국을 방문한 외국인 14일간 자가격리(3.13)",
+      "color": 4,
+      "banDetail": "4.13까지 모든 외국인 입국금지(3.24)",
       "website": "http://overseas.mofa.go.kr/uy-ko/index.do"
     },
     "FK": {
@@ -316,8 +316,8 @@
       "website": "http://overseas.mofa.go.kr/sg-ko/index.do"
     },
     "TH": {
-      "color": 2,
-      "banDetail": "한국을 방문한 외국인 14일간 자가격리(2.23)",
+      "color": 4,
+      "banDetail": "3.26-4.30 모든 육․해․공 경로를 통해 입국 금지 (3.25)",
       "website": "http://www.thaiembassy.org/seoul/ko/"
     },
     "TL": {
@@ -531,8 +531,8 @@
       "website": ""
     },
     "CD": {
-      "color": 2,
-      "banDetail": "한국을 방문한 외국인 발열 검사 실시---검역신고서 작성(3.2)",
+      "color": 4,
+      "banDetail": "모든 외국인 입국금지(3.24)",
       "website": "http://overseas.mofa.go.kr/cd-ko/index.do"
     },
     "UG": {
@@ -796,8 +796,8 @@
       "website": ""
     },
     "SI": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 2,
+      "banDetail": "3.25부터 육로를 통해 입국하는 외국인의 경우 코로나19 음성확인서 제출 필요",
       "website": ""
     },
     "GR": {
