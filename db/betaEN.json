@@ -150,11 +150,8 @@
     "website": ""
   },
   "CD": {
-    "color": 2,
-    "banDetail": [
-      "Heat check to all foreigners who Visited Korea Before Entry",
-      "monitering (3.2)"
-    ],
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.24"
     "website": "http://overseas.mofa.go.kr/cd-ko/index.do"
   },
   "CF": {
@@ -889,8 +886,8 @@
     "website": "http://overseas.mofa.go.kr/sg-ko/index.do"
   },
   "SI": {
-    "color": 0,
-    "banDetail": "No entry ban at this point ",
+    "color": 2,
+    "banDetail": "All foreigners must prove negetive on the Covid-19 test",
     "website": ""
   },
   "SK": {
@@ -964,8 +961,8 @@
     "website": ""
   },
   "TH": {
-    "color": 2,
-    "banDetail": "14 days of self isolation to foreigners who visited Korea (2.23)",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.26 to 4.30",
     "website": "http://www.thaiembassy.org/seoul/ko/"
   },
   "TJ": {
@@ -1034,8 +1031,8 @@
     "website": "https://kr.usembassy.gov/ko/"
   },
   "UY": {
-    "color": 2,
-    "banDetail": "14 days of self isolation to foreigners who visited Korea(3.13)",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed until 4.13(3.24)",
     "website": ""
   },
   "UZ": {
