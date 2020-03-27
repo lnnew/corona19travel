@@ -2401,7 +2401,7 @@ module.exports = {
 
          </div>
        </div>
-       <p align="center">*Click for specific information.</p>
+       <p align="center">*The following information needs to be checked as the situation in China is likely to be shift(currently no entry allowed).</p>
        <div class="w3-row">
          <div class="w3-col mapSupport">
            <div>
