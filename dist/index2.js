@@ -2406,7 +2406,7 @@ module.exports = {
 
          </div>
        </div>
-       <p align="center">*클릭하면 상세 정보를 볼 수 있습니다.</p>
+       <p align="center">*아래 내용은 중국 상황의 변동가능성이 있음에 따라 출국 시 사전에 확인 필요(현재는 입국 금지)</p>
        <div class="w3-row">
          <div class="w3-col mapSupport">
            <div>
