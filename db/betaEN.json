@@ -505,9 +505,9 @@
     "website": "http://overseas.mofa.go.kr/kg-ko/index.do"
   },
   "KH": {
-    "color": 0,
+    "color": 4,
     "banDetail": "No entry ban at this point ",
-    "website": ""
+    "website": "No foreigner entrance allowed from 3.30"
   },
   "KI": {
     "color": 4,
@@ -688,8 +688,8 @@
     "website": ""
   },
   "MV": {
-    "color": 3,
-    "banDetail": "Foreigners who visited 대구.청도 within 14 days before enterance are not allowed to enter(3.2)",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.27",
     "website": ""
   },
   "MW": {
