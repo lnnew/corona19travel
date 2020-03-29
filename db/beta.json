@@ -286,8 +286,8 @@
       "website": "http://overseas.mofa.go.kr/id-ko/index.do"
     },
     "KH": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 4,
+      "banDetail": "3.30부터 모든 외국인 입국제한",
       "website": ""
     },
     "LA": {
@@ -336,8 +336,8 @@
       "website": "http://overseas.mofa.go.kr/np-ko/index.do"
     },
     "MV": {
-      "color": 3,
-      "banDetail": "입국 전 14일 이내 대구.경북.경남.부산 방문한 외국인 입국 금지(3.2)",
+      "color": 4,
+      "banDetail": "3.27부터 도착비자 발급 전면중단",
       "website": ""
     },
     "BD": {
