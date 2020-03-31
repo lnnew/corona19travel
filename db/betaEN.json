@@ -251,10 +251,7 @@
   },
   "DZ": {
     "color": 4,
-    "banDetail": [
-      "Every Flight",
-      "Over sea travel canceled(3.17)"
-    ],
+    "banDetail":   "Every Flight; Over sea travel canceled(3.17)",
     "website": ""
   },
   "EC": {
@@ -284,10 +281,8 @@
   },
   "ES": {
     "color": 4,
-    "banDetail": [
-      "No entrance from overland (flight",
-      "over sea possible)"
-    ],
+    "banDetail":
+      "No entrance from overland flight; over sea possible)",
     "website": ""
   },
   "ET": {
@@ -377,10 +372,9 @@
   },
   "GS": {
     "color": 2,
-    "banDetail": [
-      "Heat check to foreigners who visited Korea before entry",
-      "monitering (2.28)"
-    ],
+    "banDetail":
+      "Heat check to foreigners who visited Korea before entry; monitering (2.28)"
+    ,
     "website": "http://overseas.mofa.go.kr/ge-ko/index.do"
   },
   "GT": {
@@ -400,10 +394,8 @@
   },
   "GY": {
     "color": 2,
-    "banDetail": [
-      "Heat check to Foreigners who Visited Korea Before Entry",
-      "monitering (3.12)"
-    ],
+    "banDetail":
+      "Heat check to Foreigners who Visited Korea Before Entry; monitering (3.12)",
     "website": ""
   },
   "HK": {
@@ -448,10 +440,8 @@
   },
   "IN": {
     "color": 4,
-    "banDetail": [
-      "Visa before 3.3 is neutralized",
-      "Stop additional visa service(3.13)"
-    ],
+    "banDetail":
+      "Visa before 3.3 is neutralized; Stop additional visa service(3.13)",
     "website": "http://overseas.mofa.go.kr/in-ko/index.do"
   },
   "IQ": {
@@ -486,12 +476,8 @@
   },
   "JP": {
     "color": 4,
-    "banDetail": [
-      "Foreigners who visited 대구",
-      "청도 within 14 days before enterance are not allowed to enter",
-      "Stop visa",
-      "quarantine"
-    ],
+    "banDetail":
+      "Foreigners who visited 대구; 청도 within 14 days before enterance are not allowed to enter; Stop visa; quarantine",
     "website": "https://www.kr.emb-japan.go.jp/itprtop_ko/index.html"
   },
   "KE": {
@@ -566,10 +552,8 @@
   },
   "LK": {
     "color": 4,
-    "banDetail": [
-      "No entry for Koreans",
-      "Stop visa (3.15)"
-    ],
+    "banDetail":
+      "No entry for Koreans; Stop visa (3.15)",
     "website": "http://overseas.mofa.go.kr/lk-ko/index.do"
   },
   "LR": {
@@ -789,10 +773,8 @@
   },
   "PH": {
     "color": 4,
-    "banDetail": [
-      "Halt visa service",
-      "No foreigner entrance allowed from 3.19"
-    ],
+    "banDetail":
+      "Halt visa service;No foreigner entrance allowed from 3.19",
     "website": "http://overseas.mofa.go.kr/ph-ko/index.do"
   },
   "PK": {
@@ -1052,10 +1034,7 @@
   },
   "VE": {
     "color": 2,
-    "banDetail": [
-      "Heat check to Foreigners who Visited Korea Before Entry",
-      "monitering (2.27)"
-    ],
+    "banDetail":  "Heat check to Foreigners who Visited Korea Before Entry; monitering (2.27)",
     "website": "http://overseas.mofa.go.kr/ve-ko/index.do"
   },
   "VG": {
