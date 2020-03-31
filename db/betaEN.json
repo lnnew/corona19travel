@@ -6,7 +6,7 @@
   },
   "AE": {
     "color": 4,
-    "banDetail": "No entrance for Koreans from 3.19 (3.18)",
+    "banDetail": "No entrance to Koreans from 3.19 (3.18)",
     "website": ""
   },
   "AF": {
@@ -151,7 +151,10 @@
   },
   "CD": {
     "color": 4,
-    "banDetail": "No foreigner entrance allowed from 3.24"
+    "banDetail": [
+      "Heat check to all foreigners who Visited Korea Before Entry",
+      "monitering (3.2)"
+    ],
     "website": "http://overseas.mofa.go.kr/cd-ko/index.do"
   },
   "CF": {
@@ -191,7 +194,7 @@
   },
   "CN": {
     "color": 4,
-    "banDetail": "No foreigner entrance allowed from 3.28, More details in China map",
+    "banDetail": "More details in China map",
     "website": "http://kr.china-embassy.org/kor/"
   },
   "CO": {
@@ -302,7 +305,7 @@
   },
   "FJ": {
     "color": 4,
-    "banDetail": "No entry for Korean Passport holders(3.21",
+    "banDetail": "No entry to Korean Passport holders(3.21",
     "website": "http://overseas.mofa.go.kr/fj-ko/index.do"
   },
   "FK": {
@@ -505,8 +508,8 @@
     "website": "http://overseas.mofa.go.kr/kg-ko/index.do"
   },
   "KH": {
-    "color": 0,
-    "banDetail": "No entry ban at this point ",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.30",
     "website": ""
   },
   "KI": {
@@ -614,7 +617,7 @@
   },
   "MD": {
     "color": 4,
-    "banDetail": "No entrence for Koreans(3.10)",
+    "banDetail": "No entrence to Koreans(3.10)",
     "website": ""
   },
   "ME": {
@@ -688,8 +691,8 @@
     "website": ""
   },
   "MV": {
-    "color": 3,
-    "banDetail": "Foreigners who visited 대구.청도 within 14 days before enterance are not allowed to enter(3.2)",
+    "color": 4,
+    "banDetail": "No foreigner entrance allowed from 3.27",
     "website": ""
   },
   "MW": {
@@ -714,7 +717,7 @@
   },
   "NA": {
     "color": 4,
-    "banDetail": "No entry for all Koreans(3.17)",
+    "banDetail": "No entry to all Koreans(3.17)",
     "website": ""
   },
   "NE": {
@@ -744,7 +747,7 @@
   },
   "NP": {
     "color": 4,
-    "banDetail": "(3.20-4.12) No entrance to all foreigners who visited Korea (3.18)",
+    "banDetail": "(3.20-4.12) No entrance for all foreigners who visited Korea (3.18)",
     "website": "http://overseas.mofa.go.kr/np-ko/index.do"
   },
   "NR": {
