@@ -16,6 +16,7 @@ module.exports = {
 <meta content="http://corona19travel.info/" property="og:url">
 <meta content="코로나 19 입국제한" property="og:title">
 <meta content="website" property="og:type">
+<script data-ad-client="ca-pub-8496668213357229" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <meta name="naver-site-verification" content="bede0aa79365c616a5a4151bef0b056506dde42a" />
 <meta name="google-site-verification" content="DFiv7pr-ZhbzR3wOJy4ZZoNkNhxnWNlq1z24y7k4JK4" />
        <meta name="viewport" content="width=device-width, initial-scale=1">
