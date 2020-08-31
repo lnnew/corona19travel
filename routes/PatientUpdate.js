@@ -46,29 +46,16 @@ router.get('/', function (request, response) {
       db.set('last_update',  datevalues[0]+"."+datevalues[1]+"."+datevalues[2]+"  "+datevalues[3]+":"+datevalues[4]+":"+datevalues[5] )
         .write();
   JSDOM.fromURL("http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=11&ncvContSeq=&contSeq=&board_id=&gubun=").then(dom => {
-    var rawData = dom.window.document.getElementsByClassName('num')[0].querySelectorAll("tr");
+    var rawData = dom.window.document.getElementsByClassName('ca_value'); //[0].querySelectorAll("li")
+    db.set('korea.'+"확진환자",   rawData[0].textContent.trim() )
+      .write();
+      db.set('korea.'+"격리해제",   rawData[2].textContent.trim() )
+        .write();
+      db.set('korea.'+"격리중",   rawData[4].textContent.trim() )
+        .write();
+        db.set('korea.'+"사망",   rawData[6].textContent.trim() )
+          .write();
 
-    var defs = rawData[0].textContent.trim().split("\n");
-    var nums = rawData[1].textContent.trim().split("\n");
-    for (var  i = 0; i<defs.length; i++) {
-      defs[i]= defs[i].trim();
-      if(defs[i]=="확진환자") {
-        db.set('korea.'+defs[i],   nums[i].trim() )
-          .write();
-      }
-      if(defs[i]=="격리해제") {
-        db.set('korea.'+defs[i],   nums[i].trim() )
-          .write();
-      }
-      if(defs[i]=="격리중") {
-        db.set('korea.'+defs[i],   nums[i].trim() )
-          .write();
-      }
-      if(defs[i]=="사망") {
-        db.set('korea.'+defs[i],   nums[i].trim() )
-          .write();
-      }
-    }
 
     const KPdata= dom.window.document.getElementsByClassName('num')[0].innerHTML;
     var kphtml = `<table>`+KPdata+'	</table>';
@@ -97,8 +84,10 @@ router.get('/', function (request, response) {
     cn = rawData[1].textContent,
     jp = rawData[5].textContent
     if(us.indexOf("미국")==-1 || cn.indexOf("중국")==-1|| jp.indexOf("일본")==-1) {
+
     for ( var i =0; i<rawData.length;i++) {
         if(rawData[i].textContent.indexOf("미국")!=-1) {
+
             us = rawData[i].textContent;
         }
         if(rawData[i].textContent.indexOf("중국")!=-1) {
@@ -111,6 +100,7 @@ router.get('/', function (request, response) {
     }
     db.set('globe.us', us.slice(us.indexOf("미국")+"미국".length ,us.length).trim())
       .write();
+      console.log(cn.slice(cn.indexOf("중국")+"중국".length ,cn.length).trim());
       db.set('globe.cn', cn.slice(cn.indexOf("중국")+"중국".length ,cn.length).trim())
         .write();
         db.set('globe.jp', jp.slice(jp.indexOf("일본")+"일본".length ,jp.length).trim())
