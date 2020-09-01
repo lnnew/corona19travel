@@ -280,6 +280,12 @@ module.exports = {
         </div>
        </div>
        </div>
+   <div align ="center">
+       <script src="https://ads-partners.coupang.com/g.js"></script>
+       <script>
+           new PartnersCoupang.G({"id":314443,"subId":null});
+       </script>
+       </div>
        <style>
 
          .dot {
