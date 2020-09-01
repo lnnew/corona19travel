@@ -3,11 +3,11 @@ const fs = require("fs");
 const FileSync = require('lowdb/adapters/FileSync');
 const adapter = new FileSync('data/PatientdbEN.json');
 const adapter2 = new FileSync('./db/beta.json');
-let rawdata = fs.readFileSync('./db/beta.json');
+let enDat = fs.readFileSync('./db/beta.json');
 
 const db = low(adapter);
 const db2= low(adapter2);
-let beta = JSON.parse(rawdata)[0];
+let beta = JSON.parse(enDat)[0];
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
@@ -46,66 +46,52 @@ router.get('/', function (request, response) {
       db.set('last_update',  datevalues[0]+"."+datevalues[1]+"."+datevalues[2]+"  "+datevalues[3]+":"+datevalues[4]+":"+datevalues[5] )
         .write();
   JSDOM.fromURL("http://ncov.mohw.go.kr/en/bdBoardList.do?brdId=16&brdGubun=161&dataGubun=&ncvContSeq=&contSeq=&board_id=&gubun=").then(dom => {
-    var rawData = dom.window.document.getElementsByClassName('num')[0].querySelectorAll("tr");
+          var enDat = dom.window.document.getElementsByClassName('ca_value'); //[0].querySelectorAll("li")
+        db.set('korea.'+"Confirmed Cases",   enDat[0].textContent.trim() )
+          .write();
+          db.set('korea.'+"Released from Quarantine",   enDat[2].textContent.trim() )
+            .write();
+          db.set('korea.'+"Quarantined",   enDat[4].textContent.trim() )
+            .write();
+            db.set('korea.'+"Deceased",   enDat[6].textContent.trim() )
+              .write();
 
-    var defs = rawData[0].textContent.trim().split("\n");
-    var nums = rawData[1].textContent.trim().split("\n");
-    for (var  i = 0; i<defs.length; i++) {
-      defs[i]= defs[i].trim();
-      if(defs[i]=="Confirmed Cases") {
-        db.set('korea.'+defs[i],   nums[i].trim() )
-          .write();
-      }
-      if(defs[i]=="Released from Quarantine") {
-        db.set('korea.'+defs[i],   nums[i].trim() )
-          .write();
-      }
-      if(defs[i]=="Quarantined") {
-        db.set('korea.'+defs[i],   nums[i].trim() )
-          .write();
-      }
-      if(defs[i]=="Deceased") {
-        db.set('korea.'+defs[i],   nums[i].trim() )
-          .write();
-      }
-    }
-
-    const KPdata= dom.window.document.getElementsByClassName('num')[0].innerHTML;
-    var kphtml = `<table>`+KPdata+'	</table>';
-    fs.writeFile('data/koreaPEN.html', kphtml, (err) => {
-    if (err) throw err;
-  });
+  //   const KPdata= ``
+  //   var kphtml = `<table>`+KPdata+'	</table>';
+  //   fs.writeFile('data/koreaPEN.html', kphtml, (err) => {
+  //   if (err) throw err;
+  // });
   });
   JSDOM.fromURL("https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%ED%99%98%EC%9C%A8&oquery=nodejs%ED%99%98%EC%9C%A8&tqi=UErGPdprvhGssmuiLu0sssssstN-341467").then(dom => {
-    var rawData = dom.window.document.getElementsByClassName('rate_table_info')[0].querySelectorAll("tr");
-    var defs=rawData[0].textContent.trim().split(" ");
-    var us=rawData[1].textContent.trim().split(" ");
-    var jp=rawData[2].textContent.trim().split(" ");
-    var eu =rawData[3].textContent.trim().split(" ");
-    var cn=rawData[4].textContent.trim().split(" ");
+    var enDat = dom.window.document.getElementsByClassName('rate_table_info')[0].querySelectorAll("tr");
+    var defs=enDat[0].textContent.trim().split(" ");
+    var us=enDat[1].textContent.trim().split(" ");
+    var jp=enDat[2].textContent.trim().split(" ");
+    var eu =enDat[3].textContent.trim().split(" ");
+    var cn=enDat[4].textContent.trim().split(" ");
     for( var i = 0; i<5; i++){
-      var a = rawData[i].textContent.trim().split(" ");
+      var a = enDat[i].textContent.trim().split(" ");
       db.set('currency.'+a[0],  a.slice(1,a.length) )
         .write();
     }
   });
 
   JSDOM.fromURL("http://ncov.mohw.go.kr/en/bdBoardList.do?brdId=16&brdGubun=163&dataGubun=&ncvContSeq=&contSeq=&board_id=&gubun=").then(dom => {
-    var rawData = dom.window.document.getElementsByClassName('num')[0].querySelectorAll("tr");
+    var enDat = dom.window.document.getElementsByClassName('num')[0].querySelectorAll("tr");
 
-    var us = rawData[39].textContent,
-    cn = rawData[1].textContent,
-    jp = rawData[5].textContent
+    var us = enDat[39].textContent,
+    cn = enDat[1].textContent,
+    jp = enDat[5].textContent
     if(us.indexOf("미국")==-1 || cn.indexOf("중국")==-1|| jp.indexOf("일본")==-1) {
-    for ( var i =0; i<rawData.length;i++) {
-        if(rawData[i].textContent.indexOf("미국")!=-1) {
-            us = rawData[i].textContent;
+    for ( var i =0; i<enDat.length;i++) {
+        if(enDat[i].textContent.indexOf("미국")!=-1) {
+            us = enDat[i].textContent;
         }
-        if(rawData[i].textContent.indexOf("중국")!=-1) {
-            cn = rawData[i].textContent;
+        if(enDat[i].textContent.indexOf("중국")!=-1) {
+            cn = enDat[i].textContent;
         }
-        if(rawData[i].textContent.indexOf("일본")!=-1&& rawData[i].textContent.indexOf("크루즈")==-1) {
-            jp = rawData[i].textContent;
+        if(enDat[i].textContent.indexOf("일본")!=-1&& enDat[i].textContent.indexOf("크루즈")==-1) {
+            jp = enDat[i].textContent;
         }
       }
     }
