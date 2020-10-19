@@ -17,7 +17,7 @@
     },
     "MX": {
       "color": 2,
-      "banDetail": "한국 방문한 내외국인 의료문진 실시(2.28)",
+      "banDetail": "▸10.21.까지 멕시코-미국 육로 국경 간 비필수적 이동 제한(9.18.)",
       "website": "http://overseas.mofa.go.kr/mx-ko/index.do"
     },
     "CU": {
@@ -26,13 +26,13 @@
       "website": ""
     },
     "BS": {
-      "color": 4,
-      "banDetail": "입국 전 20일 이내 한국을 방문한 외국인 입국금지(3.5)",
+      "color": 2,
+      "banDetail": "▸11.1.부터 탑승 전 7일 이내의 코로나19 PCR 음성확인서, 도착 후 96시간 이내 신속 검사 실시 예정(10세 이하 신속 검사 면제)",
       "website": ""
     },
     "JM": {
-      "color": 4,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.27)",
+      "color": 2,
+      "banDetail": "▸6.15.부터 국제 공항 및 항구 운영 재개",
       "website": "http://overseas.mofa.go.kr/jm-ko/index.do"
     },
     "HT": {
@@ -81,23 +81,23 @@
       "website": ""
     },
     "GD": {
-      "color": 4,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국금지(3.10)",
+      "color": 2,
+      "banDetail": "▸모든 해외입국자에 대해 비행기 탑승 전 7일 내에 검사한 코로나19 음성확인서 제출 의무(8.1.)",
       "website": ""
     },
     "BB": {
       "color": 2,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 14일 자가격리",
+      "banDetail": "▸모든 해외입국자 대상 비행기 탑승 전 72시간 내에 검사한 코로나19 음성확인서 제 출 의무(9.24.)",
       "website": ""
     },
     "GT": {
-      "color": 4,
-      "banDetail": "3.17. –3.31. 간 국경 봉쇄에 따른 모든 외국인 입국금지(3.16.)",
+      "color": 2,
+      "banDetail": "▸9.18.부터 육·해·공 국경 개방 및 항공편 운항 재개(9.10.)",
       "website": "http://overseas.mofa.go.kr/gt-ko/index.do"
     },
     "BZ": {
-      "color": 4,
-      "banDetail": "입국 전 30일 이내 한국 방문한 외국인 입국 금지(3.15)",
+      "color": 2,
+      "banDetail": "10.1.부터 항공 운항 재개",
       "website": ""
     },
     "SV": {
@@ -111,18 +111,18 @@
       "website": "http://overseas.mofa.go.kr/hn-ko/index.do"
     },
     "NI": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 2,
+      "banDetail": "▸9.19.부터 국제선 정기 항공편 운항 재개(육로 국경을 통한 출입국 불가)",
       "website": ""
     },
     "CR": {
-      "color": 4,
-      "banDetail": "3.19 – 4.12 모든 외국인 입국금지(3.16)",
+      "color": 2,
+      "banDetail": "▸한국 포함 52개국 및 미국 24개주(뉴욕, 캘리포니아, 텍사스 등)에서 항공기로 출 발하는 외국인의 입국 제한적 허용",
       "website": "http://overseas.mofa.go.kr/cr-ko/index.do"
     },
     "PA": {
-      "color": 4,
-      "banDetail": "3.16부터 모든 외국인 입국 금지(3.15)",
+      "color": 2,
+      "banDetail": "▸10.12부터 외국인 입국금지 조치 해제 및 국제항공노선 운항 재개",
       "website": "http://overseas.mofa.go.kr/pa-ko/index.do"
     },
     "TT": {
@@ -167,7 +167,7 @@
     },
     "SR": {
       "color": 4,
-      "banDetail": "3.14부터 국경봉쇄",
+      "banDetail": "▸10.12.부터 10.26.까지 자국민 및 영주권자 제외 모든 여행객 대상 입국금지",
       "website": ""
     },
     "GY": {
@@ -177,12 +177,12 @@
     },
     "VE": {
       "color": 2,
-      "banDetail": "입국 전 한국을 방문한 외국인 발열 검사---검역 신고서 작성(2.27)",
+      "banDetail": "▸11.12.까지 항공편 운항 중단 연장",
       "website": "http://overseas.mofa.go.kr/ve-ko/index.do"
     },
     "CO": {
-      "color": 4,
-      "banDetail": "3.16부터 모든 외국인 입국 금지(3.15)",
+      "color": 2,
+      "banDetail": "▸9.21.부터 7개국(미국, 멕시코, 브라질, 에콰도르, 볼리비아, 과테말라, 도미니카 공화국) 간 국제선 여객기 운항 재개 및 외국인 입국 허용(단, 육상 및 해상 국경 봉쇄는 유지)",
       "website": "http://overseas.mofa.go.kr/co-ko/index.do"
     },
     "BR": {
@@ -217,7 +217,7 @@
     },
     "AR": {
       "color": 4,
-      "banDetail": "3.16일부터 15일간 모든 외국인 출입금지(3.15)",
+      "banDetail": "▸10.25.까지 모든 외국인 입국금지(10.9.)",
       "website": "http://overseas.mofa.go.kr/ar-ko/index.do"
     },
     "UY": {
@@ -262,7 +262,7 @@
     },
     "TW": {
       "color": 4,
-      "banDetail": "3.19부터 모든 외국인 입국 금지",
+      "banDetail": "▸관광 및 일반적 사회 방문 목적(친구 방문, 결혼식 참석, 문화활동 참석 등)의 외 국인 대상 입국 금지(6.24.)",
       "website": "http://overseas.mofa.go.kr/tw-ko/index.do"
     },
     "MO": {
@@ -272,7 +272,7 @@
     },
     "HK": {
       "color": 4,
-      "banDetail": "3.25부터 14일간 홍콩 비거주자 입국 금지",
+      "banDetail": "▸모든 홍콩 비거주자의 홍콩 입국 금지(4.6.)",
       "website": "http://overseas.mofa.go.kr/hk-ko/index.do"
     },
     "BN": {
@@ -316,8 +316,8 @@
       "website": "http://overseas.mofa.go.kr/sg-ko/index.do"
     },
     "TH": {
-      "color": 4,
-      "banDetail": "3.26-4.30 모든 육․해․공 경로를 통해 입국 금지 (3.25)",
+      "color": 2,
+      "banDetail": "▸7.1.부터 제한적 입국 허용",
       "website": "http://www.thaiembassy.org/seoul/ko/"
     },
     "TL": {
@@ -332,12 +332,12 @@
     },
     "NP": {
       "color": 4,
-      "banDetail": "3.20부터 4.12 한국 방문한 외국인 입국 금지(3.18)",
+      "banDetail": "▸외국인 대상 입국 금지",
       "website": "http://overseas.mofa.go.kr/np-ko/index.do"
     },
     "MV": {
-      "color": 4,
-      "banDetail": "3.27부터 도착비자 발급 전면중단",
+      "color": 2,
+      "banDetail": "▸7.15.부터 일반 관광객의 입국 허용 및 이전과 동일한 방식으로 도착비자 발급",
       "website": ""
     },
     "BD": {
@@ -356,18 +356,18 @@
       "website": "http://overseas.mofa.go.kr/lk-ko/index.do"
     },
     "IN": {
-      "color": 4,
-      "banDetail": "3.3 이전 발급된 비자 무력화---신규비자 발급 중단(3.13)",
+      "color": 2,
+      "banDetail": "▸국제선 여객기 운항 중단(5.25.)",
       "website": "http://overseas.mofa.go.kr/in-ko/index.do"
     },
     "PK": {
       "color": 2,
-      "banDetail": "입국하는 모든 승객 음성 진단서 제출(3.17)",
+      "banDetail": "파키스탄발 국제 항공편 일부 운항 재개(5.30.)",
       "website": "http://overseas.mofa.go.kr/pk-ko/index.do"
     },
     "IR": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 2,
+      "banDetail": "8.2.부터 관광비자 및 도착 관광비자 발급 중단(노동, 유학, 종교 등 복수비자 소지자는 해당 없음)",
       "website": "http://overseas.mofa.go.kr/ir-ko/index.do"
     },
     "AF": {
@@ -382,17 +382,17 @@
     },
     "KZ": {
       "color": 4,
-      "banDetail": "3.8 이후 한국을 방문한 외국인 입국 금지(3.5)",
+      "banDetail": "▸1회 입국시 최장 30일 무비자 입국 허용(6.29.)",
       "website": "http://overseas.mofa.go.kr/kz-ko/index.do"
     },
     "KG": {
-      "color": 4,
-      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(3.1)",
+      "color": 2,
+      "banDetail": "▸10.5.부터 코로나19 음성확인서(PCR) 소지 의무화 시행(미소지 또는 발열 등 증상 있을 경우 입국 불허)",
       "website": "http://overseas.mofa.go.kr/kg-ko/index.do"
     },
     "TJ": {
       "color": 2,
-      "banDetail": "한국을 방문한 외국인 격리(2.25)",
+      "banDetail": "▸타지키스탄 정부 발행 입국 허가서, 비자, 코로나19 음성확인서(입국 96시간 이 전 발급) 소지자는 입국 가능(8.18.)",
       "website": "http://overseas.mofa.go.kr/tj-ko/index.do"
     },
     "TM": {
@@ -401,8 +401,8 @@
       "website": "http://overseas.mofa.go.kr/tm-ko/index.do"
     },
     "LB": {
-      "color": 4,
-      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(2.28)",
+      "color": 2,
+      "banDetail": "▸7.1.부로 국제공항 운영 재개 및 입국제한 완화",
       "website": "http://overseas.mofa.go.kr/lb-ko/index.do"
     },
     "BH": {
@@ -412,7 +412,7 @@
     },
     "SA": {
       "color": 4,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(3.8)",
+      "banDetail": "▸국경봉쇄에 따른 외국인 입국금지",
       "website": "http://overseas.mofa.go.kr/sa-ko/index.do"
     },
     "SY": {
@@ -427,12 +427,12 @@
     },
     "AM": {
       "color": 4,
-      "banDetail": "한국에서 입국하는 모든 외국인 입국 금지",
+      "banDetail": "외국인의 항공 입국 허용, 육로 입국 제한 유지(9.10.)",
       "website": ""
     },
     "AZ": {
-      "color": 1,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 격리(3.16)",
+      "color": 4,
+      "banDetail": "▸11.2.까지 국경봉쇄에 따라 모든 외국인 입국 금지",
       "website": "http://overseas.mofa.go.kr/az-ko/index.do"
     },
     "YE": {
@@ -451,23 +451,23 @@
       "website": "http://overseas.mofa.go.kr/jo-ko/index.do"
     },
     "IQ": {
-      "color": 4,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.25)",
+      "color": 2,
+      "banDetail": "▸공항 운영 및 상업용 항공 운항 재개로 모든 입출국 정상화(7.23.)",
       "website": "http://overseas.mofa.go.kr/iq-ko/index.do"
     },
     "IL": {
-      "color": 4,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.24)",
+      "color": 2,
+      "banDetail": "▸최근 14일 이내 한국 등 그린국가를 제외한 레드국가(코로나19 위험국가)를 방문 후 입국하는 여행객 대상 지정시설(또는 자가)에서 14일간 격리 조치",
       "website": "https://embassies.gov.il/seoul/Pages/default.aspx"
     },
     "QA": {
-      "color": 4,
-      "banDetail": "입국 전 1달 이내 한국을 방문한 외국인 입국 금지(3.2)",
+      "color": 2,
+      "banDetail": "▸8.1.부터 코로나19 저위험국가(한국 포함 40개국)에서 출발하는 거주허가증 소지 외국인의 입국을 제한적으로 허용(7.21.)",
       "website": "http://overseas.mofa.go.kr/qa-ko/index.do"
     },
     "KW": {
-      "color": 4,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.25)",
+      "color": ,
+      "banDetail": "▸8.1.부터 코로나19 고위험국가* 외 제3국가에서 최소 14일 이상 체류하고 PCR 음성 확인서(72시간 이내 발급) 제출 시 입국 허용(8.1)",
       "website": "http://overseas.mofa.go.kr/kw-ko/index.do"
     },
     "CY": {
@@ -486,13 +486,13 @@
       "website": "http://overseas.mofa.go.kr/ps-ko/index.do"
     },
     "GS": {
-      "color": 2,
-      "banDetail": "입국 전 21일 이내 한국을 방문한 외국인 검역---면담 실시(2.28.)",
+      "color": 4,
+      "banDetail": "▸국경봉쇄 및 외국인 입국금지(6.25.)",
       "website": "http://overseas.mofa.go.kr/ge-ko/index.do"
     },
     "DJ": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 2,
+      "banDetail": "모든 내외국민 입국시 코로나19 진단검사 실시",
       "website": ""
     },
     "ER": {
@@ -502,17 +502,17 @@
     },
     "ET": {
       "color": 1,
-      "banDetail": "모든 외국민 대상 14일간 격리(3.20)",
+      "banDetail": "입국 후 7일간 자가격리",
       "website": "http://overseas.mofa.go.kr/et-ko/index.do"
     },
     "KE": {
-      "color": 4,
-      "banDetail": "한국을 방문한 외국인 입국 금지(3.15)",
+      "color": 2,
+      "banDetail": "코로나19 음성확인서 소지",
       "website": "http://overseas.mofa.go.kr/ke-ko/index.do"
     },
     "SC": {
-      "color": 4,
-      "banDetail": "입국 전 14일 이내 한국을 방문한 외국인 입국 금지(2.25)",
+      "color": 2,
+      "banDetail": "▸저위험국가* 출발 또는 사전 허가 받은 외국인 입국허용(6.1.)",
       "website": ""
     },
     "SO": {
@@ -521,23 +521,23 @@
       "website": ""
     },
     "TZ": {
-      "color": 1,
-      "banDetail": "한국을 방문한 외국인 14일간 격리(3.23)",
+      "color": 2,
+      "banDetail": "8.5.부터 모든 여행객(복귀 거주자 포함)은 소속 국가 또는 이용 항공사가 코로나19 음성판정)",
       "website": "http://overseas.mofa.go.kr/tz-ko/index.do"
     },
     "CF": {
       "color": 2,
-      "banDetail": "입국 전 한국을 방문한 외국인 자가 격리 권고(3.6)",
+      "banDetail": "코로나19 발병국 방문 후 입국 시 21일간 자가격리",
       "website": ""
     },
     "CD": {
-      "color": 4,
-      "banDetail": "모든 외국인 입국금지(3.24)",
+      "color": 2,
+      "banDetail": "▸8.15.부터 국경봉쇄조치 해제",
       "website": "http://overseas.mofa.go.kr/cd-ko/index.do"
     },
     "UG": {
-      "color": 4,
-      "banDetail": "모든 외국인 대상 사실상 입국 금지(3.20)",
+      "color": 2,
+      "banDetail": "코로나19 음성확인서 소지 의무",
       "website": "http://overseas.mofa.go.kr/ug-ko/index.do"
     },
     "BI": {
@@ -556,8 +556,8 @@
       "website": ""
     },
       "SD": {
-      "color": 4,
-      "banDetail": "3.16 이후 국경 봉쇄",
+      "color": 2,
+      "banDetail": "▸모든 국제선 운항 재개(국가보건비상사태는 유지)",
       "website": "http://overseas.mofa.go.kr/sd-ko/index.do"
     },
     "BJ": {
@@ -566,8 +566,8 @@
       "website": ""
     },
     "BF": {
-      "color": 4,
-      "banDetail": "3.21부터 2주간 국경 봉쇄로 모든 내외국인 입출국 금지(3.20)",
+      "color": 2,
+      "banDetail": "▸항공을 통한 입국 재개(7.28.)",
       "website": ""
     },
     "CV": {
@@ -576,13 +576,13 @@
       "website": ""
     },
     "TD": {
-      "color": 4,  
-      "banDetail": "3.19부터 국제공항 봉쇄 내외국인 입국 금지",
+      "color": 2,  
+      "banDetail": "코로나19 PCR 음성확인서 제출 및 7일간 자가격리(7.30.)",
       "website": ""
     },
     "CI": {
-      "color": 4,
-      "banDetail": "3.16부터 한국을 방문한 외국인 입국 금지(3.16)",
+      "color": 2,
+      "banDetail": "코로나19 음성확인서 제출 의무",
       "website": "http://overseas.mofa.go.kr/ci-ko/index.do"
     },
     "GM": {
@@ -612,7 +612,7 @@
     },
     "ML": {
       "color": 2,
-      "banDetail": "입국 전 한국을 방문한 외국인 14일간 자가 격리",
+      "banDetail": "7.25.부터 항공편을 이용한 출입국 및 경유 허용",
       "website": ""
     },
     "MR": {
@@ -631,18 +631,18 @@
       "website": "http://overseas.mofa.go.kr/ng-ko/index.do"
     },
     "SN": {
-      "color": 1,
-      "banDetail": "입국 전 25일 이내 한국 방문한 외국인 격리(3.18)",
+      "color": 2,
+      "banDetail": "▸7.15.부터 항공편을 이용한 입국 허용",
       "website": ""
     },
     "SL": {
-      "color": 1,
-      "banDetail": "3.16부터 한국 방문한 외국인 14일간 격리(3.14)",
+      "color": 2,
+      "banDetail": "▸(입국 전) 출발시간 기준 72시간 이내 검사 실시 후 코로나19 음성확인서 소지, 출발지 공항 체크인 카운터에서 여행허가서류(Traveler’s Authorization)* 제시",
       "website": "http://www.sierra-leone.or.kr/ko/"
     },
     "TG": {
-      "color": 4,
-      "banDetail": "3.20부터 2주간 모든 여행객 대상 육로 국경 봉쇄",
+      "color": 2,
+      "banDetail": "모든 입국자에 대해 5일 이내 검사받은 COVID-19 PCR 검사 음성확인서 제출 의 무(",
       "website": ""
     },
     "CG": {
@@ -651,8 +651,8 @@
       "website": ""
     },
     "GQ": {
-      "color": 4,
-      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(2.26)",
+      "color": 2,
+      "banDetail": "모든 국제선 승객은 항공기 탑승시점 기준 48시간 이내 PCR 검사 음성확인서",
       "website": "http://overseas.mofa.go.kr/gq-ko/index.do"
     },
     "GA": {
@@ -666,18 +666,18 @@
       "website": "http://overseas.mofa.go.kr/cm-ko/index.do"
     },
     "ST": {
-      "color": 4,
-      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(3.4)",
+      "color": 2,
+      "banDetail": "▸7.16.부터 코로나19 대응 3단계 완화 조치 시행하여 상업 항공 운항 재개 허가 및 상투메프린시페 내 섬 지역간 이동(항공 및 선박) 허가",
       "website": ""
     },
     "DZ": {
       "color": 4,
-      "banDetail": "모든 항공 여객 및 선박 중단(3.17)",
+      "banDetail": "▸국경(육․해․공) 봉쇄에 따라 모든 내외국인 대상 입국금지(5.28.)",
       "website": "http://overseas.mofa.go.kr/dz-ko/index.do"
     },
     "EG": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 2,
+      "banDetail": "▸9.1.부터 항공, 육로, 선박편으로 입국하는 모든 내외국인은 현지도착 기준 72시 간 이내 발급된 PCR 검사 음성확인서(영문 또는 아랍어) 제출(6세 미만 아동은 PCR 음성확인서 소지 의무 면제)의무",
       "website": "http://overseas.mofa.go.kr/eg-ko/index.do"
     },
     "LY": {
@@ -701,8 +701,8 @@
       "website": ""
     },
     "AO": {
-      "color": 4,
-      "banDetail": "입국 전 한국을 방문한 외국인 입국 금지(2.29)",
+      "color": 2,
+      "banDetail": "코로나19 음성확인서 소지 의무",
       "website": "http://overseas.mofa.go.kr/ao-ko/index.do"
     },
     "BW": {
@@ -711,8 +711,8 @@
       "website": ""
     },
     "SZ": {
-      "color": 0,
-      "banDetail": "현재 입국 제한 없음",
+      "color": 2,
+      "banDetail": "입국시 출발 72시간 내 발급된 코로나19 음성확인서 제출 필요",
       "website": ""
     },
     "LS": {
@@ -737,7 +737,7 @@
     },
     "MZ": {
       "color": 2,
-      "banDetail": "한국을 방문한 외국인 14일간 자가격리(3.3)",
+      "banDetail": "▸(비자) △입국 비자 발급 중지 및 기 발급된 입국 비자 취소(단 기술 이전, 봉 사활동, 프로젝트, 인도주의 등의 경우 모잠비크 정부 승인 시 비자 발급 가능)",
       "website": "http://overseas.mofa.go.kr/mz-ko/index.do"
     },
     "NA": {
@@ -752,12 +752,12 @@
     },
     "ZM": {
       "color": 2,
-      "banDetail": "한국을 방문한 외국인 14일간 자가격리(2.26)",
+      "banDetail": "입국일로부터 10일간 자가격리",
       "website": ""
     },
     "ZW": {
       "color": 2,
-      "banDetail": "한국을 방문한 외국인 입국시 검사",
+      "banDetail": "출국일로부터 48시간 이내 발급된 코로나19 음성확인서 지참 권장,",
       "website": "http://overseas.mofa.go.kr/zw-ko/index.do"
     },
     "PT": {
@@ -821,13 +821,13 @@
       "website": ""
     },
     "HR": {
-      "color": 4,
-      "banDetail": "3.19부터 30일간 비 EU회원국 및 비 쉥겐협약가입국에서 오는 외국인 입국금지(3.18)",
+      "color": 2,
+      "banDetail": "▸11.2까지 한국 포함 비EU 및 비쉥겐협약가입국 대상 입국 제한적 허용(10.16)",
       "website": "http://overseas.mofa.go.kr/hr-ko/index.do"
     },
     "IT": {
-      "color": 4,
-      "banDetail": "관광 목적으로 입국한 외국인 대상 입국금지(3.17)",
+      "color": 2,
+      "banDetail": "▸7.1.부터 한국 포함 EU+ 역외국가(한국, 호주, 캐나다, 조지아, 일본, 뉴질랜드, 르완다, 튀니지, 우루과이, 태국) 대상 입국 제한 완화",
       "website": "http://overseas.mofa.go.kr/it-ko/index.do"
     },
     "IS": {
@@ -846,8 +846,8 @@
       "website": ""
     },
     "DK": {
-      "color": 4,
-      "banDetail": "3.14부터 4.13까지 모든 외국인 입국 금지(3.13)",
+      "color": 2,
+      "banDetail": "▸한국을 포함한 안전국가(지난 2주간 인구 10만명당 확진자 20명 이하인 국가) 거주민에 대한 국경통제 완화",
       "website": "https://sydkorea.um.dk/ko/"
     },
     "FI": {
@@ -881,8 +881,8 @@
       "website": ""
     },
     "RU": {
-      "color": 4,
-      "banDetail": "3.18부터 모든 외국인 입국 금지",
+      "color": 2,
+      "banDetail": "3▸9.27.부터 한국(인천)과 정기항공편 운항을 재개하여 한-러간 직항 항공편에 대 해 우리 국민의 러시아 입국 허용(제3국 경유 입국 및 육로 입국은 불허용)",
       "website": "http://overseas.mofa.go.kr/ru-ko/index.do"
     },
     "RO": {
@@ -911,8 +911,8 @@
       "website": "http://overseas.mofa.go.kr/sk-ko/index.do"
     },
     "UA": {
-      "color": 4,
-      "banDetail": "3.15부터 2주간 모든 외국인 입국 금지(3.13)",
+      "color": 2,
+      "banDetail": "▸9.28.부터 외국인 입국 허용",
       "website": "http://overseas.mofa.go.kr/ua-ko/index.do"
     },
     "CZ": {
@@ -927,7 +927,7 @@
     },
     "HU": {
       "color": 4,
-      "banDetail": "3.16부터 모든 외국인 입국 금지(3.16)",
+      "banDetail": "▸11.1.까지 외국인 입국 금지",
       "website": "http://overseas.mofa.go.kr/hu-ko/index.do"
     },
     "FR": {
@@ -1072,7 +1072,7 @@
     },
     "FJ": {
       "color": 4,
-      "banDetail": "한국 여권 소지자의 입국 금지(3.21)",
+      "banDetail": "▸모든 외국인 입국금지 및 국경 봉쇄(5.4.)",
       "website": "http://overseas.mofa.go.kr/fj-ko/index.do"
     },
     "PF": {
@@ -1086,5 +1086,5 @@
     "n12": 58,
     "n34": 46
   },
-  "last_update": "2020.3.15  22:41:31"
+  "last_update": "2020.10.19  22:41:31"
 }
