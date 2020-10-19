@@ -466,7 +466,7 @@
       "website": "http://overseas.mofa.go.kr/qa-ko/index.do"
     },
     "KW": {
-      "color": ,
+      "color":2,
       "banDetail": "▸8.1.부터 코로나19 고위험국가* 외 제3국가에서 최소 14일 이상 체류하고 PCR 음성 확인서(72시간 이내 발급) 제출 시 입국 허용(8.1)",
       "website": "http://overseas.mofa.go.kr/kw-ko/index.do"
     },
@@ -576,7 +576,7 @@
       "website": ""
     },
     "TD": {
-      "color": 2,  
+      "color": 2,
       "banDetail": "코로나19 PCR 음성확인서 제출 및 7일간 자가격리(7.30.)",
       "website": ""
     },
@@ -1077,7 +1077,7 @@
     },
     "PF": {
       "color": "2",
-      "banDetail": "1.1. 이후 한국 방문한 입국한 외국인 검역설문지 제출,",
+      "banDetail": "1.1. 이후 한국 방문한 입국한 외국인 검역설문지 제출",
       "website": ""
     }
   },
