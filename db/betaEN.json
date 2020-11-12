@@ -1029,8 +1029,8 @@
     "website": "http://overseas.mofa.go.kr/ug-ko/index.do"
   },
   "US": {
-    "color": 4,
-    "banDetail": "Halt regular visa services in Korea (90 days short visit is possible)",
+    "color": 1,
+    "banDetail": "All foreign travelers have to submit negetive COVID-19 PCR testing results before entry",
     "website": "https://kr.usembassy.gov/ko/"
   },
   "UY": {
